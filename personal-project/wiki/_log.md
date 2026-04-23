@@ -7,6 +7,16 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-04-22] update | Expanded three core concept pages
+
+- memory-wall.md: full expansion from stub — five failure modes, tasks vs. jobs distinction, why bigger context doesn't fix it, architectural responses, PRIME (Stanford MCTS), connection to startup thesis
+- discovery-problem.md: full expansion — three layers, IoA framework (Guo et al.), why trust is the hardest layer, what a full solution requires
+- subagents-and-orchestration.md: new page — tool/skill/subagent/agent taxonomy (Piskala), clean room data flow model, PRIME orchestration, modular decomposition (Pan et al.), specialist vs. generalist routing question
+- econ136-proposal.md: revised proposal — dropped auction framing, centered on market formation failure and substitutes for missing social infrastructure
+- _index.md: updated to reflect new and revised pages
+
+---
+
 ## [2026-04-22] init | Wiki initialized
 
 - Created folder structure following root CLAUDE.md conventions

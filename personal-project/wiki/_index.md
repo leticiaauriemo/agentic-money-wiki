@@ -24,8 +24,9 @@ Master catalog of all wiki pages. Read first when answering queries.
 | Page | Summary |
 |------|---------|
 | [[the-five-problems]] | Detailed breakdown of all five interlocking problems |
-| [[memory-wall]] | Five failure modes of long-running agents; why bigger context doesn't fix it |
-| [[discovery-problem]] | Three layers of discovery; why MCP alone is insufficient |
+| [[memory-wall]] | Five failure modes of long-running agents; why bigger context doesn't fix it; architectural responses |
+| [[discovery-problem]] | Three layers of discovery; IoA framework; why MCP alone is insufficient; trust as the hardest layer |
+| [[subagents-and-orchestration]] | Tool/skill/sub-agent/agent taxonomy; how data flows to specialists; PRIME (Stanford MCTS); clean room model |
 | [[sandboxed-execution]] | Technical isolation for cross-org trust |
 | [[client-context-moat]] | The compounding per-client context advantage |
 | [[continuous-evaluation]] | Quality flywheel via benchmarks and staked reputation |
@@ -36,6 +37,7 @@ Master catalog of all wiki pages. Read first when answering queries.
 |------|---------|
 | [[competitive-landscape]] | Stack layers table; positioning vs. AgentCore, MindStudio, Mem0, Coinbase, etc. |
 | [[open-questions]] | Living list: product, market, strategic, technical, competitive |
+| [[econ136-proposal]] | Econ 136 project proposal — market design for AI agent marketplaces |
 
 ## Companies
 
