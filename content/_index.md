@@ -18,6 +18,7 @@ Read this first when answering queries to find relevant pages.
 | [[x402]] | Coinbase's HTTP-native stablecoin micropayment protocol; 167.96M txns, $49.51M all-time volume |
 | [[mpp]] | Stripe + Tempo's Machine Payments Protocol; 50.7K txns, $7.27K volume; tracked on MPPscan |
 | [[ap2]] | Google's Agent Payments Protocol; 60+ partners; Mandate/VC model; A2A x402 extension |
+| [[acp]] | OpenAI's Agentic Commerce Protocol; product feed + agentic checkout + delegated payment; PayPal + Stripe implement |
 
 ---
 
