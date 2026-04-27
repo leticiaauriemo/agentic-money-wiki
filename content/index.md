@@ -18,6 +18,7 @@ A research wiki tracking how AI agents are moving, optimizing, and transacting m
 - [[x402]] — Coinbase's HTTP-native stablecoin micropayment protocol (167M+ txns)
 - [[mpp]] — Stripe + Tempo's Machine Payments Protocol (session-based)
 - [[ap2]] — Google's Agent Payments Protocol (60+ partners)
+- [[acp]] — OpenAI's Agentic Commerce Protocol; PayPal + Stripe implement
 
 ## Key themes
 
