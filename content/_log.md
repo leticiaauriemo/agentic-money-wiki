@@ -7,6 +7,16 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-04-27] update | Expanded stablecoin concept page
+
+[[stablecoin]] concept page expanded with:
+- New **Settlement speed & velocity** section: seconds/24-7 settlement; velocity doubled 2.6x→6x (a16z Q1 2026); gross vs. adjusted volume distinction (HFT/DeFi flipping effect); $33T gross 2025 +72% YoY flagged as unverified
+- New **Volume & growth trends** section: C2B +128% YoY, stablecoin card collateral $300M+/month by early 2026
+- New **Geography** section: Asia ~2/3, intra-country shift from ~50%→~75% (cross-border declining, counterintuitive); BRLA ~$400M/month
+- Sources updated: added [[stablecoin-volume-record-2025]] and [[9-charts-stablecoins-a16z]]
+
+---
+
 ## [2026-04-26] ingest | Batch 3 — 15 new sources → 20 pages
 
 Summary pages created: [[who-authorized-this-x402]], [[post-bankless-x]], [[introducing-agentic-market]], [[post-exa-ai-labs-x]], [[erc-8004-trustless-agents]], [[near-intents]], [[openclaw-product]], [[9-charts-stablecoins-a16z]], [[get-started-with-bvnk]], [[enterprise-stablecoin-payments-bvnk]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]], [[agentic-commerce-solutions-paypal]], [[payments-for-ai-agents-natural]], [[agentic-payments-memo-natural]]
