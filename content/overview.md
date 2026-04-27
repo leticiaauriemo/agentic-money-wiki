@@ -56,6 +56,15 @@ Google's AP2 uses cryptographically-signed Mandates (Intent Mandate + Cart Manda
 
 See [[ap2]], [[mastercard]], [[announcing-ap2-google-cloud]].
 
+### Fiat commerce layer: ACP
+OpenAI's Agentic Commerce Protocol defines three specs: **product feed** (how merchants expose catalogs to AI platforms), **agentic checkout** (how agents create and complete checkout sessions), and **delegated payment** (how AI platforms obtain one-time-use payment tokens from PSPs like PayPal/Braintree). The token model means buyer credentials never leave the PSP — the AI platform only ever sees a single-use nonce.
+
+**Best for:** Structured consumer commerce (buy a specific product) via existing AI chat interfaces (ChatGPT, Perplexity, Google); merchants who want to reach AI shopping surfaces without rebuilding their payment stack.
+
+**Confirmed implementations:** [[paypal]] (Braintree nonces), [[stripe]] (Agentic Commerce Suite), ChatGPT, Perplexity, Google.
+
+See [[acp]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]].
+
 ### The strategic split
 x402 and MPP solve "how to pay." Neither solves "should this payment happen at all." The decision layer — routing logic that chooses rail, validates authorization, checks balance — is where the actual moat will form. See [[missing-infrastructure-ai-agents-a16z]].
 
@@ -215,7 +224,7 @@ The strategy: preserve PayPal as the settlement layer and merchant-of-record eve
 | Layer | What it is | Key players |
 |-------|-----------|-------------|
 | **Settlement rails** | Underlying transaction infrastructure | [[x402]] (Base), [[mpp]] (Tempo), card networks, ACH, Kinexys, NEAR Intents |
-| **Protocol standards** | How agents request and authorize payments | [[ap2]] (Google), [[mpp]] (Stripe/Tempo), [[x402]] (Coinbase) |
+| **Protocol standards** | How agents request and authorize payments | [[acp]] (OpenAI), [[ap2]] (Google), [[mpp]] (Stripe/Tempo), [[x402]] (Coinbase) |
 | **Wallets & custody** | Where agent money sits | [[meow-technologies]], [[slash]], [[era]], [[catena-labs]], [[natural]], Coinbase AgentKit |
 | **Stablecoin issuance** | The money itself | [[circle]] (USDC), [[tempo]] (TIP-20), [[bvnk]] (Layer1 infra) |
 | **Card network adapters** | Extending existing rails for agents | [[mastercard]] (Agent Pay), [[visa]] (Intelligent Commerce) |
@@ -233,7 +242,7 @@ The strategy: preserve PayPal as the settlement layer and merchant-of-record eve
 
 The thesis has sharpened considerably with new data:
 
-**1. Two separate markets, two separate rails.** Enterprise internal automation scales on existing card/bank infrastructure (Ramp, Brex, corporate cards). Open-network agent commerce scales on stablecoin/crypto rails (x402, MPP, Natural). The former is much larger near-term; the latter is more structurally novel. Card networks (Mastercard, Visa) are extending into both. Crypto-native rails are building toward the second.
+**1. Four protocols, two philosophies.** ACP and AP2 are the "trusted commerce" protocols — fiat-native, identity-preserving, built on existing payment infrastructure. x402 and MPP are the "permissionless" protocols — crypto-native, no merchant agreements required. ACP is winning structured consumer commerce (ChatGPT, Perplexity, Google shopping); AP2 is winning enterprise mandate-based payments; x402 leads permissionless micropayments; MPP leads high-frequency agent loops.
 
 **2. Stablecoins are going local, not just cross-border.** The dominant narrative (stablecoins = remittances, cross-border payments) is being overtaken by data. Intra-country transactions now make up ~75% of stablecoin payment volume. C2B commerce is the fastest-growing category (+128% YoY). Stablecoins are becoming domestic payment infrastructure, which means they will be everywhere agents transact — not just at the international boundary.
 
