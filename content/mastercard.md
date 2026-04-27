@@ -6,7 +6,7 @@ tags: [card-rails, infrastructure, agentic-commerce, identity-kyc, compliance]
 founded: 1966
 stage: public
 hq: Purchase, NY
-sources: [Mastercard advances agentic payments in Latin America and the Caribbean with live transactions completed across the region.md, Mastercard goes live with agentic payments in Singapore Malaysia.md, Santander and Mastercard complete Europe's first live end-to-end payment executed by an AI agent.md]
+sources: ["Mastercard advances agentic payments in Latin America and the Caribbean with live transactions completed across the region.md", "Mastercard goes live with agentic payments in Singapore Malaysia.md", "Santander and Mastercard complete Europe's first live end-to-end payment executed by an AI agent.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [card-rails, infrastructure, agentic-commerce, compliance]
-sources: [Santander and Mastercard complete Europe's first live end-to-end payment executed by an AI agent.md]
+sources: ["Santander and Mastercard complete Europe's first live end-to-end payment executed by an AI agent.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

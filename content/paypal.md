@@ -6,7 +6,7 @@ tags: [payment-processor, agentic-commerce, identity-kyc, wallet]
 founded: 1998
 stage: public
 hq: San Jose, CA
-sources: [2957-4390-068.2026.issue-004-en.pdf, Thread by @fintechfrank.md]
+sources: ["2957-4390-068.2026.issue-004-en.pdf", "Thread by @fintechfrank.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

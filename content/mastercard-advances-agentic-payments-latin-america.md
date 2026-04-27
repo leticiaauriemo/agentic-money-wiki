@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [card-rails, infrastructure, agentic-commerce, compliance]
-sources: [Mastercard advances agentic payments in Latin America and the Caribbean with live transactions completed across the region.md]
+sources: ["Mastercard advances agentic payments in Latin America and the Caribbean with live transactions completed across the region.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

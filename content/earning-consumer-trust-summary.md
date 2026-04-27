@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [agentic-commerce, compliance, identity-kyc, card-rails]
-sources: [earning-consumer-trust-in-the-age-of-agentic-commerce.txt]
+sources: ["earning-consumer-trust-in-the-age-of-agentic-commerce.txt"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

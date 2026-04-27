@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [agentic-commerce, stablecoin, infrastructure, crypto-l2]
-sources: [Machine Economy 2030.md]
+sources: ["Machine Economy 2030.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -6,7 +6,7 @@ tags: [card-rails, infrastructure, agentic-commerce, stablecoin, identity-kyc]
 founded: 1958
 stage: public
 hq: San Francisco, CA
-sources: [Visa advances agentic commerce with developer updates.md, Visa Intelligent Commerce for Agents.md, Thread by @fintechfrank.md]
+sources: ["Visa advances agentic commerce with developer updates.md", "Visa Intelligent Commerce for Agents.md", "Thread by @fintechfrank.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [infrastructure, compliance, agentic-commerce, identity-kyc, stablecoin, bank-api]
-sources: [2957-4390-068.2026.issue-004-en.pdf]
+sources: ["2957-4390-068.2026.issue-004-en.pdf"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

@@ -3,7 +3,7 @@ title: "Stablecoin"
 type: concept
 topic: agentic-money
 tags: [stablecoin, infrastructure, cross-border, agentic-commerce, compliance]
-sources: [What are stablecoins? ⋅ Tempo 1.md]
+sources: ["What are stablecoins? ⋅ Tempo 1.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -6,7 +6,7 @@ tags: [wallet, agentic-commerce, infrastructure, yield-optimization]
 founded:
 stage: private
 hq:
-sources: [Make Claude manage your money.md]
+sources: ["Make Claude manage your money.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

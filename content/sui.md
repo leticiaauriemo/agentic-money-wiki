@@ -6,7 +6,7 @@ tags: [infrastructure, crypto-l1, stablecoin, wallet]
 founded: 2021
 stage: private
 hq: Palo Alto, CA
-sources: [Sui Unveils Infrastructure for AI-Driven 'Agentic Finance'.md]
+sources: ["Sui Unveils Infrastructure for AI-Driven 'Agentic Finance'.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

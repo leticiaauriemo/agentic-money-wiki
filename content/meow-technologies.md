@@ -6,7 +6,7 @@ tags: [infrastructure, bank-api, wallet, agentic-commerce, compliance]
 founded: 2021
 stage: private
 hq: San Francisco, CA
-sources: [Meow Technologies launches the first agentic banking platform for AI agents.md]
+sources: ["Meow Technologies launches the first agentic banking platform for AI agents.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

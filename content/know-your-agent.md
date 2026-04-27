@@ -3,7 +3,7 @@ title: "Know Your Agent (KYA)"
 type: concept
 topic: agentic-money
 tags: [identity-kyc, compliance, infrastructure, agentic-commerce]
-sources: [Should we give AI a bank account?.md, Is 2026 the Year of Agentic Payments?.md, Agentic Payments Use Cases Risks & How to Get Started.md]
+sources: ["Should we give AI a bank account?.md", "Is 2026 the Year of Agentic Payments?.md", "Agentic Payments Use Cases Risks & How to Get Started.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [card-rails, agentic-commerce, infrastructure]
-sources: [Visa advances agentic commerce with developer updates.md]
+sources: ["Visa advances agentic commerce with developer updates.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

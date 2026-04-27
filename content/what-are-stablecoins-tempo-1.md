@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [stablecoin, infrastructure, agentic-commerce, compliance, cross-border]
-sources: [What are stablecoins? ⋅ Tempo 1.md]
+sources: ["What are stablecoins? ⋅ Tempo 1.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

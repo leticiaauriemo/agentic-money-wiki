@@ -6,7 +6,7 @@ tags: [stablecoin, infrastructure, compliance]
 founded: 2013
 stage: public
 hq: Boston, MA
-sources: [Should we give AI a bank account?.md, Stablecoins Were Just the Beginning.md]
+sources: ["Should we give AI a bank account?.md", "Stablecoins Were Just the Beginning.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

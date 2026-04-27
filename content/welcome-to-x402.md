@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, agentic-commerce, crypto-l2]
-sources: [Welcome to x402.md]
+sources: ["Welcome to x402.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

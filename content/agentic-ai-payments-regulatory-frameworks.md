@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [compliance, agentic-commerce, bank-api, card-rails]
-sources: [Agentic AI Payments Navigating Consumer Protection, Innovation, and Regulatory Frameworks.md]
+sources: ["Agentic AI Payments Navigating Consumer Protection", "Innovation, and Regulatory Frameworks.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

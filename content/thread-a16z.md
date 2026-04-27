@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [agentic-commerce, infrastructure, crypto-l2, stablecoin]
-sources: [Thread by @a16z.md]
+sources: ["Thread by @a16z.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

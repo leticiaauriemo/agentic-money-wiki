@@ -3,7 +3,7 @@ title: "Universal Commerce Protocol (UCP)"
 type: concept
 topic: agentic-money
 tags: [infrastructure, agentic-commerce, identity-kyc]
-sources: [2957-4390-068.2026.issue-004-en.pdf]
+sources: ["2957-4390-068.2026.issue-004-en.pdf"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [infrastructure, crypto-l1, stablecoin, wallet]
-sources: [Sui Unveils Infrastructure for AI-Driven 'Agentic Finance'.md]
+sources: ["Sui Unveils Infrastructure for AI-Driven 'Agentic Finance'.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

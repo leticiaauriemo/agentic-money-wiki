@@ -6,7 +6,7 @@ tags: [stablecoin, infrastructure, payment-processor, agentic-commerce, cross-bo
 founded:
 stage: private
 hq:
-sources: [What are stablecoins? ⋅ Tempo 1.md]
+sources: ["What are stablecoins? ⋅ Tempo 1.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [wallet, agentic-commerce, infrastructure, yield-optimization]
-sources: [Make Claude manage your money.md]
+sources: ["Make Claude manage your money.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

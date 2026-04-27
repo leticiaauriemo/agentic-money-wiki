@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [b2b-payments, agentic-commerce, compliance, card-rails]
-sources: [Agentic Payments Use Cases, Risks & How to Get Started.md]
+sources: ["Agentic Payments Use Cases", "Risks & How to Get Started.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

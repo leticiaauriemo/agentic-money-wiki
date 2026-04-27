@@ -3,7 +3,7 @@ title: "Session Payments"
 type: concept
 topic: agentic-money
 tags: [infrastructure, agentic-commerce, payment-processor]
-sources: [Agentic Payments ⋅ Tempo.md, Post by @0xCygaar on X.md, Introducing the Machine Payments Protocol.md]
+sources: ["Agentic Payments ⋅ Tempo.md", "Post by @0xCygaar on X.md", "Introducing the Machine Payments Protocol.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

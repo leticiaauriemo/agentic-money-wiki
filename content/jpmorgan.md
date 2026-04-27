@@ -6,7 +6,7 @@ tags: [bank-api, infrastructure, stablecoin, compliance]
 founded: 1799
 stage: public
 hq: New York, NY
-sources: [JPMorgan and Citi Square Off on the Next Payments Frontier.md, Agentic Commerce The Future of AI-Powered Shopping.md]
+sources: ["JPMorgan and Citi Square Off on the Next Payments Frontier.md", "Agentic Commerce The Future of AI-Powered Shopping.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

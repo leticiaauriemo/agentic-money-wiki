@@ -6,7 +6,7 @@ tags: [infrastructure, stablecoin, identity-kyc, compliance, wallet]
 founded: 2025
 stage: private
 hq: Unknown
-sources: [Catena Labs.md, Should we give AI a bank account?.md, Stablecoins Were Just the Beginning.md]
+sources: ["Catena Labs.md", "Should we give AI a bank account?.md", "Stablecoins Were Just the Beginning.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

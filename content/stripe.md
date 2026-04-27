@@ -6,7 +6,7 @@ tags: [infrastructure, payment-processor, stablecoin, agentic-commerce]
 founded: 2010
 stage: private
 hq: San Francisco, CA
-sources: [Introducing the Machine Payments Protocol.md, Understanding x402 and MPP in One Article Two Routes for Agent Payments.md]
+sources: ["Introducing the Machine Payments Protocol.md", "Understanding x402 and MPP in One Article Two Routes for Agent Payments.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

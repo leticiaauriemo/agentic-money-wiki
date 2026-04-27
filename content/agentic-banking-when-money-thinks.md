@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [bank-api, agentic-commerce, infrastructure, compliance, identity-kyc]
-sources: [Agentic Banking When Money Starts Thinking in Systems.md]
+sources: ["Agentic Banking When Money Starts Thinking in Systems.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

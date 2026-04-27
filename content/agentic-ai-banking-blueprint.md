@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [bank-api, agentic-commerce, infrastructure, compliance]
-sources: [Agentic AI in Banking A Blueprint for Modern Customer Experience.md]
+sources: ["Agentic AI in Banking A Blueprint for Modern Customer Experience.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

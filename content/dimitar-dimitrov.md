@@ -3,7 +3,7 @@ title: "Dimitar Dimitrov"
 type: player
 topic: agentic-money
 tags: [founder]
-sources: [three-gaps-agentic-payments.md.md]
+sources: ["three-gaps-agentic-payments.md.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

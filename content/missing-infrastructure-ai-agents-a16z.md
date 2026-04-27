@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [infrastructure, identity-kyc, crypto-l2, agentic-commerce, compliance]
-sources: [The missing infrastructure for AI agents 5 ways blockchains can help.md]
+sources: ["The missing infrastructure for AI agents 5 ways blockchains can help.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

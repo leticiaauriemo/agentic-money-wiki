@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [bank-api, agentic-commerce, compliance, infrastructure]
-sources: [Banks Shift AI From Chatbots to Autonomous Money Movement.md]
+sources: ["Banks Shift AI From Chatbots to Autonomous Money Movement.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

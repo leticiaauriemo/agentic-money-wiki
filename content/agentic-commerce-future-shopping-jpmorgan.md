@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [agentic-commerce, card-rails, bank-api, compliance]
-sources: [Agentic Commerce The Future of AI-Powered Shopping.md]
+sources: ["Agentic Commerce The Future of AI-Powered Shopping.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

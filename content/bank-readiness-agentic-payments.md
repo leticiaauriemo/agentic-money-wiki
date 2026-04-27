@@ -3,7 +3,7 @@ title: "Bank Readiness for Agentic Payments"
 type: concept
 topic: agentic-money
 tags: [compliance, identity-kyc, bank-api, infrastructure, agentic-commerce]
-sources: [three-gaps-agentic-payments.md.md]
+sources: ["three-gaps-agentic-payments.md.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

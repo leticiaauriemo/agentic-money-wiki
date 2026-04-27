@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [bank-api, agentic-commerce, infrastructure]
-sources: [Agentic banking How AI agents are transforming finance.md]
+sources: ["Agentic banking How AI agents are transforming finance.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

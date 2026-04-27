@@ -6,7 +6,7 @@ tags: [infrastructure, agentic-commerce, wallet, stablecoin]
 founded:
 stage: private
 hq:
-sources: [Post by @merit_systems on X.md, One balance access to every API on the internet..md, Marketplace x402scan.md, Machine Economy 2030.md]
+sources: ["Post by @merit_systems on X.md", "One balance access to every API on the internet..md", "Marketplace x402scan.md", "Machine Economy 2030.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

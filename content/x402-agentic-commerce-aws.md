@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, agentic-commerce, crypto-l2, compliance, bank-api]
-sources: [x402 and Agentic Commerce Redefining Autonomous Payments in Financial Services.md]
+sources: ["x402 and Agentic Commerce Redefining Autonomous Payments in Financial Services.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

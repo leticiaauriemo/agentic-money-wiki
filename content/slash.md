@@ -6,7 +6,7 @@ tags: [infrastructure, agentic-commerce, wallet, compliance, card-rails]
 founded:
 stage: private
 hq:
-sources: [Slash for Agents — Agentic Commerce via MCP Cards Payments & Spend Controls.md]
+sources: ["Slash for Agents — Agentic Commerce via MCP Cards Payments & Spend Controls.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

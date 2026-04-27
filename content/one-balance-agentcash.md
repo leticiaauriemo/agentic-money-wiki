@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, agentic-commerce, wallet, payment-processor]
-sources: [One balance, access to every API on the internet..md]
+sources: ["One balance, access to every API on the internet..md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -6,7 +6,7 @@ tags: [infrastructure, agentic-commerce, compliance, identity-kyc]
 founded: 2019
 stage: private
 hq: New York, NY
-sources: [Agentic Payments Use Cases Risks & How to Get Started.md, Coding agents ignore their own budgets.md, Post by @RampLabs on X.md]
+sources: ["Agentic Payments Use Cases Risks & How to Get Started.md", "Coding agents ignore their own budgets.md", "Post by @RampLabs on X.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

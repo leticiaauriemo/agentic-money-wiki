@@ -3,7 +3,7 @@ title: "Headless Merchants"
 type: concept
 topic: agentic-money
 tags: [agentic-commerce, stablecoin, infrastructure, payment-processor]
-sources: [The missing infrastructure for AI agents 5 ways blockchains can help.md, Agentic Commerce Won't Kill Cards, But It'll Open A Gap.md]
+sources: ["The missing infrastructure for AI agents 5 ways blockchains can help.md", "Agentic Commerce Won't Kill Cards", "But It'll Open A Gap.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

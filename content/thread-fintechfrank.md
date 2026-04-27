@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [card-rails, stablecoin, agentic-commerce, infrastructure]
-sources: [Thread by @fintechfrank.md]
+sources: ["Thread by @fintechfrank.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

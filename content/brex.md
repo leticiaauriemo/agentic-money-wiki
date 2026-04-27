@@ -6,7 +6,7 @@ tags: [infrastructure, agentic-commerce, compliance, bank-api]
 founded: 2017
 stage: private
 hq: San Francisco, CA
-sources: [Agents on Brex Welcome to intelligent finance.md]
+sources: ["Agents on Brex Welcome to intelligent finance.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

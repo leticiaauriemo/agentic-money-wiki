@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [card-rails, agentic-commerce, infrastructure, identity-kyc]
-sources: [Visa Intelligent Commerce for Agents.md]
+sources: ["Visa Intelligent Commerce for Agents.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

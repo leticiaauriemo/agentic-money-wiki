@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, stablecoin, agentic-commerce, payment-processor]
-sources: [Introducing the Machine Payments Protocol.md]
+sources: ["Introducing the Machine Payments Protocol.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

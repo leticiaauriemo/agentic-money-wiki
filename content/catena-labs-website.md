@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, wallet, compliance, identity-kyc, stablecoin]
-sources: [Catena Labs.md]
+sources: ["Catena Labs.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

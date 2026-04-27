@@ -3,7 +3,7 @@ title: "Agentic Banking"
 type: concept
 topic: agentic-money
 tags: [bank-api, agentic-commerce, infrastructure, compliance]
-sources: [Agentic banking How AI agents are transforming finance.md, Agentic Banking When Money Starts Thinking in Systems.md, Banks Shift AI From Chatbots to Autonomous Money Movement.md]
+sources: ["Agentic banking How AI agents are transforming finance.md", "Agentic Banking When Money Starts Thinking in Systems.md", "Banks Shift AI From Chatbots to Autonomous Money Movement.md"]
 created: 2026-04-26
 updated: 2026-04-26
 ---

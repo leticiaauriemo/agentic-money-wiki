@@ -3,7 +3,7 @@ title: "Agentic Commerce"
 type: concept
 topic: agentic-money
 tags: [agentic-commerce, infrastructure, stablecoin, card-rails]
-sources: [Machine Economy 2030.md, Is 2026 the Year of Agentic Payments?.md, Agentic Commerce The Future of AI-Powered Shopping.md, The Agentic Economy Will Be Massive. Agentic Commerce Won't.md]
+sources: ["Machine Economy 2030.md", "Is 2026 the Year of Agentic Payments?.md", "Agentic Commerce The Future of AI-Powered Shopping.md", "The Agentic Economy Will Be Massive. Agentic Commerce Won't.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

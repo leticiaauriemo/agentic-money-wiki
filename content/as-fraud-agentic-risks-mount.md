@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [compliance, agentic-commerce, bank-api, identity-kyc]
-sources: [As Fraud and Agentic Risks Mount, Data Provides Continuity.md]
+sources: ["As Fraud and Agentic Risks Mount", "Data Provides Continuity.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -6,7 +6,7 @@ tags: [infrastructure, stablecoin, crypto-l2, wallet, agentic-commerce]
 founded: 2012
 stage: public
 hq: San Francisco, CA
-sources: [Welcome to x402.md, x402 - Payment Required.md, Understanding x402 and MPP in One Article Two Routes for Agent Payments.md, Announcing Agent Payments Protocol (AP2) Google Cloud Blog.md]
+sources: ["Welcome to x402.md, x402 - Payment Required.md", "Understanding x402 and MPP in One Article Two Routes for Agent Payments.md", "Announcing Agent Payments Protocol (AP2) Google Cloud Blog.md"]
 created: 2026-04-25
 updated: 2026-04-25
 ---
