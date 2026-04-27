@@ -8,16 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "Agentic Money Movement",
+    pageTitleSuffix: " — Wiki",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "leticiaauriemo.github.io/agentic-money-wiki",
+    ignorePatterns: ["private", "templates", ".obsidian", "raw"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
