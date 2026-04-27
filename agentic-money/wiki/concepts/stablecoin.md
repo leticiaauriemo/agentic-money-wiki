@@ -1,0 +1,93 @@
+---
+title: "Stablecoin"
+type: concept
+topic: agentic-money
+tags: [stablecoin, infrastructure, cross-border, agentic-commerce, compliance]
+sources: ["What are stablecoins? ⋅ Tempo 1.md", "stablecoin-volume-record-2025.md", "9 charts on what stablecoins are becoming.md"]
+created: 2026-04-25
+updated: 2026-04-27
+---
+
+# Stablecoin
+
+**One-line:** A blockchain-based digital asset pegged to a stable value (usually 1 USD) via reserves, enabling programmable, 24/7, sub-second payments without cryptocurrency volatility.
+
+## How it works
+
+Fully reserved fiat-backed stablecoins (the dominant type for payments) operate via **mint-and-burn**:
+1. User deposits fiat with a regulated issuer
+2. Issuer mints equivalent stablecoins on-chain and sends to user
+3. On redemption, issuer burns tokens and returns fiat from reserves
+
+Reserves typically held in cash and short-term government securities at licensed financial institutions. Major issuers publish reserve attestations (frequency and detail vary).
+
+## Why it matters for agentic money
+
+Stablecoins solve three critical problems for agent-initiated payments:
+1. **Micropayment economics** — sub-cent transactions are viable on-chain in a way that card rails (1–3% fees) make impossible
+2. **Programmability** — smart contracts can trigger payments automatically based on rules, with no human approval required at transaction time
+3. **Always-on settlement** — agents operate 24/7; ACH and card rails run on banking hours; stablecoins don't
+
+This is why [[x402]], [[mpp]], and [[ap2]] all route through stablecoins rather than traditional fiat rails.
+
+## Settlement speed & velocity
+
+Stablecoins settle in **seconds**, 24/7, with no banking hours or clearing windows. This is architecturally important for agents that need payment confirmation before proceeding to the next step.
+
+**Velocity** is the ratio of transfer volume to circulating supply — how hard each dollar is working. Stablecoin velocity has **doubled from 2.6x to 6x** since early 2024 (a16z, Q1 2026). The same supply is doing 6x more work — the signature of a real payments network, not a store-of-value asset.
+
+The gross volume figure ($33 trillion in 2025, up 72% YoY) is partly driven by this velocity effect: high-frequency trading bots and DeFi protocols "flip" the same stablecoin dollar thousands of times a day, so gross on-chain volume far exceeds true commerce payments. Adjusted volume (stripping HFT, DeFi recycling, treasury flows) is estimated at ~$350–550B in true payments/year — still large and growing fast.
+
+> **Note (2026-04-27):** The $33T gross figure is from web search, unverified against primary source. Adjusted volume estimate from a16z Q1 2026 data — see [[9-charts-stablecoins-a16z]].
+
+## Volume & growth trends
+
+- **Gross volume:** $33 trillion in 2025, up **72% YoY** — *[[stablecoin-volume-record-2025]]*
+- **Adjusted volume:** ~$4.5T in Q1 2026 alone (a16z estimate) — *[[9-charts-stablecoins-a16z]]*
+- **C2B (consumer-to-business) transactions:** +**128% YoY** (284.6M transactions in 2025 vs 124.9M in 2024) — fastest-growing category by count
+- **Stablecoin card collateral** (Rain-powered cards like Etherfi Cash, Kast, Wallbit): near zero in Nov 2024 → **$300M+/month by early 2026**
+
+## Geography
+
+- **Asia: ~2/3 of volume** (Singapore, Hong Kong, Japan dominant)
+- **North America: ~1/4**
+- **Europe: ~13%** (growing post-MiCA; non-USD stablecoins gaining ground)
+- Latin America + Africa: < $1B combined (but local-currency stablecoins are emerging here — BRLA reached ~$400M/month by early 2026, driven by Brazil's PIX integration)
+
+### The counterintuitive shift: cross-border is declining
+
+Conventional wisdom assumed stablecoins would be primarily a cross-border payments tool. The data shows the opposite: **intra-country share grew from ~50% to ~75%** of payment volume (early 2024 → early 2026). Stablecoins are becoming **local payment infrastructure running on global rails** — a fundamental reframe for the agentic payments thesis.
+
+## Current state
+
+- Circulating supply: ~**$300 billion** (grown 10x over 5 years) — *[[what-are-stablecoins-tempo-1]]*
+- US Treasury projects $3 trillion by 2030
+- Dominant assets: USDC (Circle/Coinbase, compliance-focused), USDT (Tether, largest by market cap)
+
+## Key regulatory frameworks
+
+| Jurisdiction | Framework | Status |
+|---|---|---|
+| EU | MiCA | In force — reserve mandates, issuer licensing; driving non-USD stablecoin adoption |
+| US | GENIUS Act | Proposed federal stablecoin framework, evolving |
+
+## Key players using / building this
+
+- [[coinbase]] — issues USDC (with Circle), uses USDC as x402's primary rail
+- [[tempo]] — purpose-built stablecoin payments infrastructure, MPP co-author; TIP-20 standard
+- Circle — USDC issuer
+- Tether — USDT issuer (largest stablecoin by market cap)
+
+## Related concepts
+
+- [[programmable-money]]
+- [[x402]]
+- [[mpp]]
+- [[ap2]]
+- [[agentic-commerce]]
+
+## Sources
+
+- [[what-are-stablecoins-tempo-1]]
+- [[stablecoin-volume-record-2025]]
+- [[9-charts-stablecoins-a16z]]
