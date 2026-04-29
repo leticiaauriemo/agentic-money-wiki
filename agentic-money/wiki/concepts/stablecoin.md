@@ -5,7 +5,7 @@ topic: agentic-money
 tags: [stablecoin, infrastructure, cross-border, agentic-commerce, compliance]
 sources: ["What are stablecoins? ⋅ Tempo 1.md", "stablecoin-volume-record-2025.md", "9 charts on what stablecoins are becoming.md"]
 created: 2026-04-25
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 # Stablecoin
@@ -69,7 +69,20 @@ Conventional wisdom assumed stablecoins would be primarily a cross-border paymen
 | Jurisdiction | Framework | Status |
 |---|---|---|
 | EU | MiCA | In force — reserve mandates, issuer licensing; driving non-USD stablecoin adoption |
-| US | GENIUS Act | Proposed federal stablecoin framework, evolving |
+| US | GENIUS Act | Signed; encodes conservative reserve requirements (T-bills, cash, liquid instruments) |
+
+## OCC National Trust Charter race
+
+Post-GENIUS Act, stablecoin issuers are racing for an **OCC National Trust Charter**. The immediate benefits are regulatory legitimacy and institutional credibility. The long-term stakes: if OCC charter holders receive **direct access to Federal Reserve payment rails**, early movers become integrated into the core payment hierarchy — potentially becoming the foundation for onchain credit and capital markets at scale. — *[[the-new-stack-for-global-finance-stablecoins]]*
+
+## The payments-specific blockchain category
+
+A new blockchain category has emerged — purpose-built for stablecoin payments, competing on:
+- Stablecoin-native gas fees (no separate gas token needed)
+- Privacy guarantees
+- Predictable transaction costs (essential for fintechs modeling costs)
+
+Key entrants: [[tempo]] (Stripe's chain), [[circle-arc]] (Circle's chain). These compete with general-purpose L2s (Base, Polygon) for the financial services workload. — *[[the-new-stack-for-global-finance-stablecoins]]*
 
 ## Key players using / building this
 
@@ -91,3 +104,4 @@ Conventional wisdom assumed stablecoins would be primarily a cross-border paymen
 - [[what-are-stablecoins-tempo-1]]
 - [[stablecoin-volume-record-2025]]
 - [[9-charts-stablecoins-a16z]]
+- [[the-new-stack-for-global-finance-stablecoins]]

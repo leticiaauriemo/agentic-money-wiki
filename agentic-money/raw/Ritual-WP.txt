@@ -1,0 +1,1195 @@
+Symphony: Execution-Aware Consensus
+and Proposer Disaggregation
+Ritual
+April 20, 2026
+Abstract
+Blockchain consensus protocols optimize performance (latency and throughput) under
+the implicit assumption that transaction execution is computationally inexpensive. This
+assumption, however, fails for workloads that are resource-intensive, heterogeneous, and
+randomized. For randomized computations under independent private randomness, repli-
+cated state machine execution fails as a correctness mechanism: honest replicas evaluat-
+ing the same randomized function with independent random coins produce divergent out-
+puts. Proposers in current blockchain instantiations have extreme discretionary (and uni-
+lateral) power over the set of transactions in a block and their ordering. We present Sym-
+phony, an execution-aware consensus framework that disaggregates this bundle of powers
+(multi-laterally) into protocol-enforced inclusion, exclusion, timing, and ordering guarantees,
+each enforced as a conjunct of the block validity function verified in the consensus critical
+path. Delegated execution proceeds via verifiable computation over a product lattice of
+non-interactive proof systems with heterogeneous soundness-completeness-latency profiles.
+Distributed proof generation exploits the algebraic structure of computational objects (com-
+positional hierarchy, parameter symmetry, repeated sub-computation), while distributed
+verification assigns proof shards to validator committees via deterministic sampling. We
+characterize the class of consensus protocols supporting extended external validity as those
+providing predictable validity, derive committee safety bounds via hypergeometric analysis
+under uniform staking, prove soundness composition for independent proof systems, and for-
+malize the tradeoff between transaction-level censorship resistance and liveness degradation
+in the presence of proposer disaggregation.
+Contents
+1 Introduction 4
+1.1 The Proposer Powers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.2 The Execution-Cost Inversion . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.3 Randomness as a Structural Barrier . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.4 Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.5 Paper Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2 F ormal F ramework 6
+2.1 System Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2.2 Randomized Computation and the Limits of Replication . . . . . . . . . . . . . 6
+2.2.1 Hardware Non-Reproducibility . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.2.2 Algorithmic Randomness . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.2.3 Combined Effect . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.3 Non-Interactive Proof Systems . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+2.4 Product Lattice over Proof Systems . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.5 Predictable Validity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+1
+2.6 Proposer Power Bundle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.7 Extended State Machine . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3 Superposition of Execution Models 14
+3.1 Replicated Execution (Deterministic Path) . . . . . . . . . . . . . . . . . . . . 14
+3.2 Delegated Execution (Randomized / Resource-Intensive Path) . . . . . . . . . 15
+3.3 Superposition over Shared State . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.4 Two-Phase Delegated Execution via Saga Semantics . . . . . . . . . . . . . . . 17
+4 V erifiable Computation with Distributed Proving and V erification 18
+4.1 Verifiable Delegated Computation . . . . . . . . . . . . . . . . . . . . . . . . . 19
+4.2 Structure-Exploiting Workload Decomposition . . . . . . . . . . . . . . . . . . 19
+4.2.1 Algebraic Structure of Computational Objects . . . . . . . . . . . . . . . 19
+4.2.2 Formal Decomposition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4.2.3 Reference Decompositions: Transformers . . . . . . . . . . . . . . . . . . . 22
+4.2.4 Verification Units . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3 Distributed Verification via Committee Sampling . . . . . . . . . . . . . . . . . 23
+4.3.1 Committee Assignment . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3.2 Specialization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3.3 Quorum and Quorum-Skip . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3.4 Security-Eﬀiciency Tradeoff . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+4.3.5 Prover-Friendly Design Point . . . . . . . . . . . . . . . . . . . . . . . . . 24
+5 Multi-System V erification Model 25
+5.1 Lattice Structure and Verification State . . . . . . . . . . . . . . . . . . . . . . 25
+5.2 Soundness-Completeness-Latency Pareto Frontier . . . . . . . . . . . . . . . . . 25
+5.3 Failure Correlation Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.4 Monotonic State Advancement . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.5 Temporal Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.6 Irrevocable Execution with Economic Safety . . . . . . . . . . . . . . . . . . . 27
+5.7 Application Safety Declarations . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+5.8 Proof System Degradation Protocol . . . . . . . . . . . . . . . . . . . . . . . . 28
+6 Extended External V alidity 29
+6.1 Extended Block Validity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6.2 Power Guarantees as Validity Conjunct . . . . . . . . . . . . . . . . . . . . . . 30
+6.3 Predictable Validity Requirement . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+6.4 Censorship Resistance / Liveness Tradeoff . . . . . . . . . . . . . . . . . . . . . 31
+6.4.1 Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+6.4.2 Block Construction Feasibility . . . . . . . . . . . . . . . . . . . . . . . . 32
+6.4.3 Liveness under Power Guarantees . . . . . . . . . . . . . . . . . . . . . . . 32
+6.5 Predicate Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+6.5.1 Default: Full Deterministic Evaluation . . . . . . . . . . . . . . . . . . . . 33
+7 Inclusion and Exclusion Guarantees 33
+7.1 Inclusion Guarantees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+7.1.1 Comparison to Existing Mechanisms . . . . . . . . . . . . . . . . . . . . . 34
+7.2 Exclusion Guarantees . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+7.2.1 Use Cases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+7.2.2 Comparison to Existing Mechanisms . . . . . . . . . . . . . . . . . . . . . 36
+7.3 Interaction between inclusion and exclusion . . . . . . . . . . . . . . . . . . . . 36
+7.3.1 Conflict Detection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+2
+7.3.2 Runtime Conflict Resolution . . . . . . . . . . . . . . . . . . . . . . . . . 37
+7.4 Integration with the Verification Lattice . . . . . . . . . . . . . . . . . . . . . . 37
+8 Application-Defined Ordering Guarantees 38
+8.1 Transaction Ordering as Application-Layer Authority . . . . . . . . . . . . . . 38
+8.2 Formal Definition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+8.3 MEV Surface Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+8.4 Block Building Challenges and Mitigations . . . . . . . . . . . . . . . . . . . . 41
+8.4.1 Finalized-State and Non-Finalized-State Ordering . . . . . . . . . . . . . 42
+9 Safety and Liveness 43
+9.1 Safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+9.1.1 Replicated Execution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+9.1.2 Delegated Execution: Single Proof System . . . . . . . . . . . . . . . . . . 44
+9.1.3 Delegated Execution: Multiple Independent Proof Systems . . . . . . . . 45
+9.1.4 Delegated Execution: Correlated Proof Systems . . . . . . . . . . . . . . . 45
+9.1.5 Distributed Verification: Hypergeometric Committee Bounds . . . . . . . 45
+9.2 Liveness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+9.2.1 SMR Liveness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+9.2.2 Executor Liveness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+9.2.3 Prover Liveness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+9.2.4 Liveness Under Inclusion & Exclusion Guarantees . . . . . . . . . . . . . 48
+9.2.5 Liveness Under Ordering Guarantees . . . . . . . . . . . . . . . . . . . . . 49
+10 Discussion 49
+10.1 Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+11 Conclusion 50
+3
+1 Introduction
+Blockchain state machine replication (SMR) protocols have converged on optimizing perfor-
+mance, namely latency and throughput. Recent work has driven finality times down and block
+production up: Solana’s Alpenglow [ 60], MonadBFT [ 63], Simplex [ 61], and Minimmit [ 62] re-
+duce latency; DAG-based protocols (Narwhal [ 29], Bullshark [ 75]) decouple dissemination from
+ordering to achieve higher throughput. The implicit assumption underlying this trajectory is
+that transaction execution is cheap relative to SMR.
+This assumption is breaking as increasingly off-chain compute comes on-chain. Workloads
+that are resource-intensive (requiring GPUs, hundreds of gigabytes of memory, minutes to hours
+of compute), heterogeneous (different transactions requiring fundamentally different hardware),
+and randomized (producing different outputs on each execution) do not fit the replicated exe-
+cution model on which blockchain SMR was built.
+1.1 The Proposer Powers
+Block proposers in existing protocols exercise several distinct powers that are often treated
+as atomic: which transactions to include, which to exclude, how to order them, and when to
+propose. Recent Ethereum discussions have explored unbundling proposer or validator roles
+at a high level [ 84, 85]. However, most concrete protocol proposals still intervene on individ-
+ual powers in isolation and for particular objectives, rather than offering a general framework
+in which these powers are explicitly separated and can be independently constrained or reas-
+signed. For example, Proposer-Builder Separation [ 23] shifts block construction to a builder, but
+still transfers the relevant bundle largely as a unit. Protocol-Enforced Proposer Commitments
+(PEPC) push further in this direction by allowing proposers to make more general commit-
+ments about block contents that are enforced by the protocol, rather than merely outsourcing
+block construction wholesale [ 86]. Inclusion lists such as EIP-7547 [ 35] constrain omission dis-
+cretion, order-fairness protocols [ 57] constrain sequencing through a global ordering rule, while
+encrypted mempools [ 74] reduce the proposer’s informational advantage without redistributing
+decision authority. Symphony generalizes this design space by transferring the decisions about
+block contents to on-chain applications and the users interacting with them at the protocol
+level.
+1.2 The Execution-Cost Inversion
+When SMR was the bottleneck, execution was an afterthought: all replicas could afford to ex-
+ecute all transactions because transactions were lightweight (token transfers, storage updates,
+simple contract calls), and the cost of reaching agreement dominated. For the workload class
+that motivates Symphony, this relationship inverts. Neural network inference with billions of
+parameters requires tens to hundreds of gigabytes of GPU memory and seconds to minutes
+of compute per forward pass; Monte Carlo simulations, probabilistic optimization, and other
+resource-intensive computations have similar profiles. Execution latency exceeds SMR latency
+by three to six orders of magnitude. Replicated execution of these workloads is not merely
+expensive: it requires every validator to possess specialized hardware, undermining the decen-
+tralization properties that replicated execution was designed to preserve.
+1.3 Randomness as a Structural Barrier
+The cost argument alone would motivate optimization but not architectural change. The struc-
+tural barrier is randomness, which enters through two independent channels.
+4
+Hardware non-reproducibility . Replicated state machine execution [73] assumes that given
+the same input and pre-state, all correct replicas compute the same post-state. For GPU-
+accelerated workloads, however, this assumption fails at the hardware level. Floating-point
+accumulation in parallel GPU threads is non-associative: the order in which partial sums are
+reduced depends on thread scheduling, which varies across architectures and even across runs
+on the same device [ 54]. Two honest replicas executing the same neural network forward pass
+with the same weights, the same input, and the same random seed on different GPU hardware
+will produce bit-different outputs. This is not a software bug or a randomness problem; it is a
+consequence of IEEE 754 arithmetic under parallel reduction. Deterministic GPU modes exist
+but impose severe performance penalties (10–30  slowdown) and are not universally available,
+defeating the purpose of hardware acceleration. No amount of seed-sharing or protocol-level
+coordination eliminates hardware-level divergence across heterogeneous validators.
+Algorithmic randomness. Independently of hardware, many target workloads are intention-
+ally randomized. Neural network inference with temperature sampling ( T > 0), Monte Carlo
+simulation, and probabilistic optimization all map inputs to distributions over outputs. When
+replicas sample independently, they produce different outputs not because any replica is faulty
+but because the function is inherently randomized. A standard workaround—deriving shared
+randomness from a beacon or VRF seed—makes the computation deterministic given the seed,
+but re-exposes it to hardware non-reproducibility and makes the output predictable from the
+public seed.
+Consequence. Either source of randomness, alone, breaks replication. Together they make
+it untenable for the target workload class. Correctness requires proving that a given output is
+consistent with the computation, not comparing outputs across replicas. This is the domain of
+verifiable computation [42,81]. Section 2.2 formalizes the distinction and defines the randomness
+models Symphony supports.
+1.4 Contributions
+Symphony is an execution-aware SMR framework organized around a single principle: protocol-
+enforced guarantees. This paper makes the following contributions:
+1. Protocol-enforced guarantees. The set of blocks that a proposer can build is con-
+strained in order to provide guarantees on inclusion, exclusion, and sequencing to appli-
+cations and users. Each guarantee is enforced as a conjunct of the block validity function
+via extended external validity [ 24].
+2. Superposition of execution models. A single state machine simultaneously supports
+replicated execution (for deterministic, lightweight workloads) and delegated execution
+(for randomized or resource-intensive workloads) over shared state. Delegated execution
+follows a saga pattern [ 40] with no-rollback semantics and economic safety currently, but
+will in future work.
+3. Product lattice verification. Delegated computations are verified through a product
+lattice [15] of non-interactive proof systems [17] with heterogeneous soundness-completeness-
+latency profiles. Applications declare safety requirements as upsets in the lattice.
+4. Distributed proving and verification. Proof generation exploits the algebraic struc-
+ture of computational objects (compositional hierarchy, parameter symmetry, repeated
+sub-computation) for workload-level decomposition. Verification is distributed across val-
+idator committees via deterministic sampling [ 43].
+5
+5. F ormal results. We prove that predictable validity (the proposer can compute the
+post-confirmation state) is necessary for extended external validity with current-state
+predicates, derive committee safety bounds via hypergeometric analysis, prove soundness
+composition for independent proof systems under explicit independence assumptions, and
+formalize the censorship-resistance/liveness tradeoff.
+Each contribution builds on established techniques (external validity [ 24], verifiable computa-
+tion [ 42], saga transactions [ 40], hypergeometric sampling [ 43]). The novelty is in their compo-
+sition and the unified enforcement model, not in any individual primitive.
+1.5 Paper Organization
+Section 2 establishes the formal framework: system model, randomized computations, proof
+systems, product lattice, predictable validity requirement, and block-content guarantees. Sec-
+tion 3 describes the superposition of replicated and delegated execution. Section 4 presents
+verifiable computation with structure-exploiting distributed proving and committee-based ver-
+ification. Section 5 develops the product lattice verification model. Section 6 defines extended
+external validity and derives the CR/liveness tradeoff. Section 7 instantiates inclusion and ex-
+clusion guarantees. Section 8 instantiates ordering guarantees. Section 9 establishes safety and
+liveness. Section 10 discusses limitations and future work. Section 11 concludes.
+2 Formal Framework
+This section establishes the formal foundations on which Symphony is built. We define the
+system model, characterize the class of computations that require delegated execution, introduce
+the proof systems and product lattice used for verification, identify the structural property
+of SMR protocols that enables extended external validity, and present the protocol-enforced
+guarantees over inclusion, exclusion, and intra-block ordering of transactions.
+2.1 System Model
+We consider a distributed system of n stake-weighted replicas (validators), of which at most
+f < n/ 3 are Byzantine. The system operates under partial synchrony [ 34]: there exists a
+Global Stabilization Time (GST) and a message delay bound ∆, both unknown to the protocol,
+such that after GST all messages between correct replicas are delivered within ∆. Before GST,
+messages may be delayed arbitrarily but are not lost.
+Each replica i holds stake wi > 0 with ∑n
+i=1 wi = W . A set of replicas S constitutes a
+quorum if ∑
+i∈S wi > 2W/3. Byzantine replicas control at most fW < W/ 3 total stake.
+We analyze safety under both uniform staking ( wi = W/n for all i) and non-uniform staking
+distributions. Committee safety bounds (Section 9.1.5) are derived under the uniform assump-
+tion and then relaxed.
+The system runs a state machine replication (SMR) protocol [73]. SMR (equivalently, atomic
+broadcast) is the task of maintaining a totally-ordered log of state transitions such that all
+correct replicas agree on the same sequence of transitions and apply them in the same order.
+Formally: given a deterministic state transition function δ : S  T ! S , SMR guarantees that
+(1) all correct replicas deliver the same sequence of transactions, and (2) the resulting state is
+uniquely determined by applying δ to the initial state in that order. We extend the standard
+SMR model with additional state components defined in Section 2.7.
+2.2 Randomized Computation and the Limits of Replication
+A workload is a triple W = (Θ, F, D) where:
+6
+• Θ  Rd is a parameter space (finite-dimensional, possibly very large),
+• X is the input space and Y is the output space,
+• F : Θ  X ! D (Y) maps parameters and input to a probability distribution over outputs,
+• D = (ccompute, cmemory, ctime) is a resource descriptor.
+Replicated execution assumes deterministic state transitions: given the same input and
+pre-state, all correct replicas compute the same post-state [ 73]. Two independent sources of
+randomness violate this assumption for the target workload class.
+2.2.1 Hardware Non-Reproducibility
+In practice, re-execution often does not yield identical results across machines. Floating-point
+accumulation in parallel GPU threads is non-associative: the order of reduction depends on
+thread scheduling and hardware-specific reduction trees [ 54]. Two correct replicas executing the
+same neural network forward pass with identical weights, input, and random seed on different
+GPU architectures can produce bit-different outputs—a consequence of IEEE 754 arithmetic,
+not a software defect. Neural network inference on GPUs exhibits this for any model with par-
+allel reductions (attention, layer normalization). Deterministic GPU modes exist but impose
+severe performance penalties and are not universally available. No protocol-level coordination
+restores bit-exact agreement across heterogeneous validators; replication fails because the hard-
+ware cannot produce identical outputs. This necessitates delegated execution with external
+verification.
+2.2.2 Algorithmic Randomness
+Independently of hardware, many target workloads are intentionally randomized: they sample
+from distributions rather than computing deterministic functions. Neural network inference
+with temperature sampling, Monte Carlo simulation, and randomized optimization all map in-
+puts to distributions over outputs. When replicas sample independently, they produce different
+outputs—not because any replica is faulty, but because the function is inherently randomized.
+Any comparison scheme that requires identical outputs across replicas will fail. This motivates
+delegated execution: correctness requires proving that a given output is consistent with the
+computation, not comparing outputs across replicas.
+Definition 2.1 (Deterministic Workload) . A workload W is deterministic if for all θ 2 Θ
+and x 2 X , the distribution Fθ(x) is a point mass: there exists a unique y 2 Y such that
+Pr[Fθ(x) = y] = 1 .
+Definition 2.2 (Algorithmically Randomized Workload) . A workload W is algorithmically
+randomized if there exist θ 2 Θ and x 2 X such that Fθ(x) has positive Shannon entropy:
+H(Fθ(x)) > 0.
+A shared seed derived from a beacon or VRF [ 43] makes the computation deterministic given
+the seed, addressing algorithmic randomness. But this re-exposes the workload to hardware non-
+reproducibility (Section 2.2.1) and makes the output predictable from the public seed.
+2.2.3 Combined Effect
+Either source of randomness alone breaks replication. Hardware non-reproducibility is the
+more fundamental barrier: it is intrinsic to the execution substrate and cannot be eliminated
+by protocol design. Algorithmic randomness is addressable by shared seeds but at the cost
+7
+of predictability and with the residual problem that the “deterministic” replay is still not bit-
+reproducible across hardware.
+For workloads exhibiting either or both forms of randomness, correctness requires proving
+that a given output y is consistent with Fθ(x) rather than comparing outputs across replicas.
+This is the domain of verifiable computation [ 42, 81].
+Randomness model. Symphony’s delegated execution path supports three randomness mod-
+els, declared when registering a delegated computation (Section 3.4):
+1. Sealed-seed execution (primary). The user (or the protocol) selects a random seed r and
+encrypts it to the executor’s TEE attestation-derived public key: e = Enc(pkTEE, r). The
+ciphertext e is committed on-chain when the delegated computation is registered. The
+TEE decrypts r inside the enclave, evaluates y = Fθ(x; r), and produces an attestation
+covering the tuple (M, θ, x, e, y), where M is the workload identity (the TD measurement
+in Intel TDX, i.e., the hash of the trust domain’s initial state). The executor—the ma-
+chine operator outside the enclave—never observes r in plaintext. Grinding is prevented:
+the executor cannot enumerate seeds because the seed is encrypted to the TEE, and can-
+not selectively suppress outputs because the attestation is produced atomically with the
+computation. The workload identity M ensures the enclave binary is immutable post-
+attestation, so the executor cannot modify the program to leak r or branch on the output
+before reporting it.
+This model provides distributional integrity under the TEE soundness assumption : the
+output y is the result of faithfully executing Fθ(x; r) for a seed r that the executor could
+not observe, choose, or grind over. The soundness parameter s1 of the hardware attes-
+tation (Section 2.3) bounds the probability that this guarantee is violated. If the TEE
+is compromised (side-channel attack, firmware vulnerability), the attacker can decrypt r
+and grind; this failure mode is already captured by s1.
+2. Executor-chosen randomness. The executor selects r freely and proves y = Fθ(x; r) for
+the chosen r. The proof establishes support membership : y is in the range of Fθ(x). It
+does not establish distributional fairness—the executor can grind over r to bias the output.
+This model is appropriate when the application cares only that y is a feasible output, not
+that it was sampled fairly (e.g., selecting any valid completion of a prompt).
+3. Protocol-derived randomness. The seed r is derived from a protocol-provided source (bea-
+con, VRF) fixed before execution. The executor proves y = Fθ(x; r) for the specific r. This
+model provides deterministic replay and eliminates executor grinding, but the output is
+predictable given r and x.
+Under model (1), the “valid sample” claim is backed by the TEE’s execution integrity: the
+seed was user-chosen and executor-blind, and the program was measured and immutable. Under
+model (2), the claim is limited to support membership. Under model (3), it is deterministic
+correctness.
+User-chosen vs. protocol-chosen seeds. In model (1), the seed originator matters. If
+the user provides r, they can choose it adversarially to manipulate their own output; this is
+acceptable when the output affects only the user’s own state (e.g., a user requesting inference on
+their own prompt). When the output affects shared state (e.g., oracle prices, risk assessments
+consumed by other contracts), the seed should originate from a source the user does not control:
+a randomness beacon, a VRF, or a commit-reveal scheme where the seed is committed before
+the user’s input is known. The choice of seed originator is declared at registration time alongside
+the randomness model.
+8
+2.3 Non-Interactive Proof Systems
+Symphony’s verification layer is built on proof systems. We adopt the standard definition [ 17,46]
+with a deliberate architectural restriction to non-interactive systems [ 17].
+Definition 2.3 (Non-Interactive Proof System) . A non-interactive proof system for a relation
+R  X  W is a pair of probabilistic polynomial-time algorithms (Prove, Verify) such that:
+• Prove(x, w) ! π: given statement x and witness w, produces a proof π in a single message.
+• Verify(x, π) ! f0, 1g: accepts or rejects without further interaction.
+Definition 2.4 (Completeness and Soundness). A non-interactive proof system V = (Prove, Verify)
+satisfies:
+• Completeness with parameter cV 2 [0, 1]: for all (x, w) 2 R,
+Pr[Verify(x, Prove(x, w)) = 1]  cV .
+• Soundness with parameter sV 2 [0, 1]: for all x such that no w satisfies (x, w) 2 R , and
+for all (possibly adversarial) proofs π∗,
+Pr[Verify(x, π∗) = 1]  sV .
+We extend the standard definition with one parameter relevant to the blockchain setting:
+Definition 2.5 (Extended Proof System) . An extended proof system is a tuple
+V = (Prove, Verify, s V , c V , ℓ V )
+where sV and cV are soundness and completeness parameters, and ℓV is the expected proving
+latency (time for Prove to produce π).
+Latency is an engineering parameter. The purpose of this extension is to make the soundness-
+completeness-latency tradeoff explicit. Failure correlation between proof systems (whether com-
+promise of one implies compromise of another) is a property of proof system pairs, not of
+individual systems, and is analyzed in Section 5.3.
+The non-interactivity constraint. Symphony restricts to non-interactive proof systems.
+This excludes interactive verification schemes, including optimistic fraud proofs as used in Op-
+timism [ 66] and Arbitrum [ 3]. The restriction is a deliberate architectural choice with three
+consequences:
+1. No synchrony assumptions in verification. Interactive fraud proofs require a synchrony
+assumption: the honest challenger must submit a fraud proof within a bounded challenge
+window. This introduces a synchrony requirement beyond what the underlying SMR
+protocol demands (which operates under partial synchrony [ 34]). Non-interactive proof
+systems require no additional synchrony: a proof is valid or invalid regardless of when it
+is checked.
+2. Simpler peer-to-peer layer. Non-interactive proofs are data: they can be gossiped, stored,
+and verified independently by any replica at any time. Interactive verification requires a
+protocol layered on top of the SMR protocol, with its own liveness and safety requirements.
+Symphony avoids this additional protocol complexity.
+9
+3. Bounded verification latency. The time from proof generation to verification acceptance
+is ℓV + δ, where δ is the network propagation delay. There are no interactive rounds, no
+challenge periods, and no dispute games. For fraud proofs, the equivalent latency includes
+the full challenge period (typically days in production systems).
+The tradeoff is that some computations eﬀiciently verifiable via interactive protocols may
+not be eﬀiciently verifiable non-interactively [ 45]. In practice, the proof systems relevant to
+Symphony—hardware attestations, SNARKs [ 48], STARKs [ 12]—are all non-interactive.
+2.4 Product Lattice over Proof Systems
+Standard SMR treats transactions as opaque: validity is structural (signatures, well-formedness).
+Symphony’s delegated execution requires application-specific verification (ZK proofs, hardware
+attestations, or combinations thereof), and different applications have different safety needs.
+The product lattice allows users to dictate their own safety requirements: an application can
+require “at least one hardware attestation and one ZK proof,” or “any two of three proof
+systems,” without the protocol imposing a single global choice. This flexibility is the motivation
+for the construction below.
+Given m non-interactive proof systems fV1, . . . , Vmg, we define the verification state of a
+delegated computation result o as a vector:
+σ(o) = ( v1, . . . , vm) 2 f0, 1gm
+where vi = 1 if and only if proof system Vi has verified the result (i.e., a quorum of assigned
+validators has accepted the proof under Vi).
+The set f0, 1gm with componentwise ordering forms a boolean hypercube with a natural
+partial order. For two states σ = (v1, . . . , vm) and σ′ = (v′
+1, . . . , v′
+m):
+σ  σ′ ( ) vi  v′
+i for all i 2 [m].
+The lattice has 2m elements, a bottom element ? = (0, . . . ,0) (no proof system has verified),
+and a top element > = (1, . . . ,1) (all proof systems have verified). The meet and join operations
+are componentwise min and max, respectively.
+Boolean hypercubes with componentwise ordering are a standard construction in computer
+science, appearing in information flow security, abstract interpretation, and distributed knowl-
+edge models.
+Definition 2.6 (Application Safety Requirement) . An application ’s safety requirement is an
+upset (upward-closed set) U  f 0, 1gm: if σ 2 U and σ  σ′, then σ′ 2 U . A result o is
+accessible to an application with requirement U if and only if σ(o) 2 U .
+Upsets are the natural formalism for “at least this much verification. ” For example, with
+m = 3 proof systems (hardware attestation, SNARK, STARK):
+• “At least one hardware attestation and one cryptographic proof” defines the upset U =
+f(1, 1, 0), (1, 0, 1), (1, 1, 1)g and its upward closure.
+• “At least two of three” defines a different upset.
+• “All three” defines the singleton upset f(1, 1, 1)g.
+Proposition 2.7 (Soundness Composition for Independent Proof Systems) . Let V1, . . . , Vm
+be proof systems with independent failure modes and soundness parameters s1, . . . , sm. The
+probability that an invalid result is accepted by all m systems is at most ∏m
+i=1 si.
+10
+Proof. By independence, the event that Vi accepts an invalid result is independent across i. The
+joint acceptance probability is the product of marginal acceptance probabilities, each bounded
+by si.
+For correlated proof systems (e.g., multiple hardware attestations from the same vendor),
+independence does not hold and the joint analysis requires explicit modeling of the correlation
+structure, as standard in reliability theory [ 10]. The lattice structure makes the independence
+assumptions explicit: applications that require high combined soundness should specify proof
+systems with independent failure modes, which correspond to orthogonal dimensions in the
+lattice.
+2.5 Predictable Validity
+Extended external validity (Section 6) requires that the block proposer and all correct validators
+agree on the state against which validity predicates are evaluated. When a proposer’s turn
+comes to propose a block, they can exactly compute the state resulting from confirmation of
+their block—that is predictable validity. We formalize this as a property of the underlying SMR
+protocol.
+Definition 2.8 (Predictable Validity) . An SMR protocol provides predictable validity if the
+following holds: when a correct proposer P constructs a block B at time t, there exists a unique
+state S (the state P is building on) such that:
+1. S is derived from the committed prefix of the ledger from P ’s view. (Other validators may
+lag behind P ’s view of the committed prefix; the key is that P builds on a well-defined
+prefix.)
+2. P can compute S from its local information at time t. For every correct validator V
+that receives B, V can verify that S is the correct pre-state (derived from the committed
+prefix) and that B is valid when applied to S—without needing to re-execute delegated
+computations in B, which are verified via proofs.
+3. For any predicate p : S ! f 0, 1g over the state space, p(S) is well-defined and yields the
+same result for P and all correct validators.
+This property is a direct consequence of total-order state machine replication [ 73]: when
+a proposer is about to propose a block, they can exactly compute the state resulting from
+confirmation of their block—they know the contents they are building on. This is commonly
+called predictable validity in the SMR literature.
+Proposition 2.9 (Predictable Validity Requirement for Extended External Validity) . Let Π be
+an SMR protocol and let p : S ! f 0, 1g be a state predicate used in the block validity function.
+If Π does not provide predictable validity, then there exist executions in which a correct proposer
+P constructs a block B that P considers valid (because p(SP ) = 1 under P ’s view of the state)
+but a correct validator V considers invalid (because p(SV ) = 0 under V ’s view), or vice versa.
+Proof. Suppose Π does not provide predictable validity. Then there exist a correct proposer P
+at time t and a correct validator V at time t′ > t such that the states SP and SV derived from
+their respective local information differ: SP 6= SV . Since p is an arbitrary predicate, there exists
+a p that distinguishes SP and SV (e.g., p(S) = 1[S = SP ]). For this p, p(SP ) = 1 but p(SV ) = 0 .
+If p is a conjunct of the block validity function, the proposer constructs a block that it believes
+is valid (it includes transactions mandated by p), but the validator rejects the block (because
+p is not satisfied under SV ). This contradicts the agreement property of the SMR protocol:
+correct replicas disagree on the validity of a block proposed by a correct proposer.
+11
+Classification of SMR protocols. We classify existing SMR protocols by this property:
+Protocol family Predictably valid? Staleness
+Single-leader, linear (CometBFT [ 21], Hot-
+Stuff [ 83])
+Yes 0
+Single-leader, pipelined (MonadBFT, Sim-
+plex [ 61])
+Yes 0
+Leaderless, metastable (A valanche [71]) Probabilistic Convergence-dep.
+DAG-based (Bullshark [ 75], Narwhal [ 29]) Over committed prefix  commit interval
+The key parameter is staleness [9]: the gap between the latest state and the predictably valid
+state available at proposal time. Linear protocols have staleness 0: the proposer’s predecessor
+state is precisely the latest committed state. DAG-based protocols have staleness bounded by
+the commit interval. The state corresponding to the last committed anchor round is predictably
+valid, but more recent state depends on future vertices and is not yet determined.
+Predicates over the current state (the common case for applications: “trigger when price
+crosses threshold,” “include when oracle updates”) require staleness 0. Predicates that tolerate
+bounded staleness δ (“trigger when price crossed threshold at some point in the last δ rounds”)
+can operate on DAG-committed prefixes. This is not a binary classification but a parameterized
+one.
+2.6 Proposer Power Bundle
+In a leader-based SMR protocol, a proposer has discretion over which valid block to submit for
+a given pre-state. Most protocols impose basic constraints on block validity, e.g. that the block
+is well-formed, all transaction signatures are valid, and the parent hash is correct. Outside of
+these basic checks, the proposer has full power to determine the contents of the block. Some
+existing protocols further constrain the block proposer’s discretion over the block. For example,
+in Ethereum, all included transactions must pay at least a base fee that is burned by the protocol
+(EIP-1559) for a block to be considered valid. In this way, the protocol limits the ability of the
+proposer to include arbitrary transactions, even if the block has space remaining.
+Some other existing modifications further limit the proposer’s abilities (both in- and out-of-
+protocol):
+Mechanism Action
+Inclusion lists [ 35] Enforce transaction inclusion in the next block
+Hyperliquid [ 7] Enforces cancel prioritization over take orders
+MEV bundles [ 39] Enforce atomicity of transaction bundles
+Note that these constraints differ from the baseline validity checks on blocks in that they
+are specifically designed to provide additional features to applications and users. In other
+words, enforced restrictions of the proposer’s action space can be interpreted as guarantees that
+applications and users find economically valuable. Symphony supports a much broader class of
+such guarantees by streamlining their enforcement through consensus and allowing applications
+and users to register according to their needs.
+In this paper, we instantiate three categories of guarantees (Table 1). These are grouped
+by the block-construction dimension they primarily restrict and are use-case driven rather than
+fundamental, as the families can overlap and may conflict (see e.g. Section 7.3).
+Inclusion guarantees promise that a designated transaction will be present whenever a
+state predicate is true. An inclusion constraint consists of a transaction T and a predicate
+P : S ! f 0, 1g, and if P (S) = 1 , then any block B such that T 62 B is invalid. Observe that
+12
+Guarantee Typical registrant Enforcement
+Inclusion User Block invalid if triggered tx absent
+Exclusion Protocol / User / App Block invalid if excluded tx present
+Ordering Application Block invalid if order violates (πC, fτig)
+Table 1: Families of guarantees provided by Symphony.
+inclusion guarantees are attached to a specific transaction, and are determined entirely as a
+function of the pre-state, with no other dependence on the content of block B. See Section 7.1
+for a more in-depth treatment of inclusion guarantees.
+Exclusion guarantees promise that certain transactions will not be present. They consist
+of a predicate Q : S  T ! f 0, 1g, where if Q(S, T ) = 1 for state S and transaction T , then
+any block B containing T is invalid. Exclusion guarantees can be registered by different parties:
+Users can attach exclusion guarantees to a specific transaction to prohibit its inclusion as a
+function of state (e.g., a user can submit a transaction to trade with an AMM, but require
+that it cannot be included if the AMM price is outside a certain desirable range). Applications
+can apply exclusion guarantees to all transactions that interact with the application (e.g., a
+trading application can implement a circuit-breaker when oracle staleness exceeds a threshold).
+Finally, the protocol itself can use exclusion guarantees (e.g., quarantine during proof system
+degradation). See Section 7.2 for a more in-depth treatment of exclusion guarantees.
+Ordering guarantees make promises about the relative ordering of the subsequence of trans-
+actions targeting an application in a block. A contract C declares an ordering policy (πC, fτig):
+a finite ordered list of recognized call sequences over C’s functions, with optional tiebreakers
+τi evaluated on finalized state for intra-priority ordering. Transactions whose call sequences
+match a recognized pattern must appear in the block in the order specified by πC; transactions
+with unrecognized call sequences are automatically deprioritized and placed below all recognized
+transactions. See Section 8 for a more in-depth treatment of ordering guarantees.
+Each guarantee has distinct implications for the incentives of participants and the consensus
+mechanism. Inclusion guarantees strengthen censorship resistance at the cost of liveness (more
+mandatory inclusions increase the proposer’s critical-path work). Exclusion guarantees enable
+application-level safety controls but introduce a potential griefing vector (malicious exclusion
+predicates). Ordering rights constrain the proposer’s intra-application ordering for adopting
+contracts but do not constrain inter-application ordering (where the application’s transaction
+subsequence sits within the block), inclusion decisions (which transactions targeting the contract
+enter the block), or interleaving with other contracts’ transactions. MEV shifts from the intra-
+application ordering surface to the inclusion, interleaving, and composability surfaces. Each
+requires its own incentive analysis (akin to [ 72]).
+2.7 Extended State Machine
+The standard SMR model treats transactions as opaque: the validity condition checks structural
+properties (signatures, well-formedness) and execution correctness (replicated transactions are
+re-executed by all validators). Symphony introduces flexibility into the state and validity layers:
+the state includes pending delegated computations, active triggers, and ordering policies; the
+validity function references these via extended external validity. This subsection defines the
+extended state.
+Symphony extends the standard SMR model [ 73] with additional state components:
+Definition 2.10 (Symphony State) . The state S consists of:
+13
+• Execution state Sexec: account balances, contract storage (standard).
+• Async result registry Sasync: for each pending or settled delegated computation, a record
+(id, θ, x, status, y, σ) where status 2 f Pending, Settled, Disputed, Expiredg, y is the
+output (if settled), and σ 2 f0, 1gm is the verification state.
+• Trigger pools : a set of active inclusion triggers I = f(Pi, Ti, TTLi)g and exclusion trig-
+gers E = f(Qj, TTLj)g, where each Qj is scoped to transactions targeting the registering
+contract.
+• Ordering policies : a map from contract addresses to ordering policies f(πC, fτig)gC∈C.
+• Verification state: per-proof-system attestations and committee assignments.
+State transitions fall into the following categories:
+1. Replicated execution: deterministic state transitions executed by all correct replicas (stan-
+dard EVM semantics).
+2. Async commit: registers a delegated computation (id, θ, x) with status Pending.
+3. Async settlement : transitions a pending computation to Settled with output y and
+initial verification state σ.
+4. Verification attestation: advances a component vi of σ(o) from 0 to 1 upon quorum attes-
+tation.
+5. Safety promotion : transitions verification state when all required proof systems have ver-
+ified (triggered via inclusion guarantees).
+6. Dispute: transitions to Disputed when a proof system rejects a previously-attested result.
+7. Trigger registration/deregistration: adds or removes inclusion/exclusion triggers and or-
+dering policies.
+The block validity function over this extended state is defined in Section 6.
+3 Superposition of Execution Models
+A blockchain state machine typically assumes a single execution model: all replicas execute all
+transactions deterministically. Symphony replaces this assumption with a superposition of two
+execution models operating over shared state within a single block. This is not lane separation
+(isolated execution environments with separate state) but genuine superposition: both models
+read and write the same state, and their interactions are mediated by the verification lattice.
+This section describes the two execution modes, how they compose, and the saga-based
+mechanism for long-lived delegated execution.
+3.1 Replicated Execution (Deterministic Path)
+Deterministic state transition functions that fit within the block’s computational budget are
+executed by all correct replicas in the standard SMR manner [ 73]. This is identical to how
+Ethereum, Solana, and other replicated-execution blockchains process transactions today.
+Formally, a replicated transaction tx applies a deterministic function g : S ! S to the
+current state:
+S′ = g(S, tx)
+14
+Figure 1: Execution-cost inversion. Standard SMR assumes deterministic, lightweight state
+transitions (top). Heterogeneous GPU workloads produce divergent state roots across replicas,
+breaking the replication assumption (bottom).
+Every correct replica computes g independently and arrives at the same S′. Safety follows
+from the determinism of g and the agreement property of the SMR protocol (Theorem 9.1).
+Replicated execution handles the vast majority of blockchain transactions: token transfers,
+AMM swaps, governance votes, contract deployments. These are deterministic, lightweight, and
+well-served by the standard model. Symphony does not modify or replace this path.
+3.2 Delegated Execution (Randomized / Resource-Intensive Path)
+Workloads that are randomized (Definition 2.2) or that exceed the per-block computational
+budget are executed by a single staked executor. The remaining replicas verify proofs of the
+execution rather than re-executing.
+A delegated transaction for workload W = (Θ, F, D) with input x proceeds as follows:
+1. Executor selection. A staked executor E with suﬀicient resources (matching the re-
+source descriptor D) is selected. Selection may be deterministic (round-robin among
+qualified executors) or market-based, via a two-sided matching mechanism that accounts
+for heterogeneous user valuations and heterogeneous node costs [ 6].
+2. Execution. E evaluates y  Fθ(x) inside the TEE, producing an output y and an initial
+proof (the hardware attestation π1). Proofs for slower proof systems ( π2, . . . , πm) are
+generated asynchronously and may arrive much later.
+3. Settlement. E submits a settlement transaction containing (y, π1). The result enters
+the verification lattice at position (1, 0, . . . ,0). Subsequent proofs πi are submitted in
+separate transactions as they become available, each advancing the corresponding lattice
+dimension.
+4. V erification. Each proof πi is verified independently by its assigned committee (Sec-
+tion 9.1.5). Upon committee quorum for Vi, the lattice dimension vi advances from 0 to
+1. Proofs arrive and are verified on their own timescales: hardware attestation within
+milliseconds of execution, ZKPs minutes to hours later.
+Other replicas never execute Fθ(x). They verify proofs, which is computationally cheaper,
+both for TEE and ZK proofs.
+15
+Figure 2: Superposition architecture. The critical path handles lightweight deterministic trans-
+actions via replicated execution. Resource-intensive or randomized workloads are delegated to
+a single executor and verified asynchronously by committees, merging back into shared state
+upon settlement.
+The Fabric Execute-Order-Validate (EOV) architecture [ 2] is the closest architectural ances-
+tor. Fabric’s endorsement policies play the role of proof systems, but endorsement policies are
+interactive (endorsing peers must be online and responsive) and based on identity rather than
+cryptographic soundness. Symphony replaces endorsement policies with non-interactive proof
+systems (Section 2.3), adds the product lattice for heterogeneous verification (Section 5), and
+enshrines intra-block guarantees via external validity (Section 6).
+3.3 Superposition over Shared State
+Both execution modes operate on the same state S within a single block. A block’s state
+transition is a composition:
+STFblock(S) = STFreplicated(STFdelegated(S))
+The ordering shown (delegated settlements processed before replicated transactions) is a sim-
+plification. In practice, the block applies transactions in their sequential order within the block,
+regardless of type. Each transaction’s type (replicated vs. delegated settlement/commit) deter-
+mines which execution path processes it, but the ordering is the block’s transaction sequence,
+not a type-based partition. The composition is uniquely determined by the block contents and
+the transaction sequence, which is agreed upon by SMR.
+The interactions between modes are explicit and mediated by the verification lattice:
+Replicated reads delegated results. A replicated transaction can read the output of a
+settled delegated computation, subject to the constraint that the result’s lattice position meets
+or exceeds the application’s declared safety requirement (Definition 2.6). If the result has not
+yet reached the required lattice position, the read returns a sentinel value indicating “not yet
+verified at required level,” and the replicated transaction can branch on this.
+Replicated triggers delegated execution. A replicated transaction can register an async
+commit for a delegated computation. For example, a smart contract receiving a price up-
+16
+date (replicated, deterministic) can trigger an ML-based risk assessment (delegated, resource-
+intensive). The trigger is mediated by the async result registry (Section 2.7).
+Delegated settlement triggers replicated actions. When a delegated computation settles
+and its lattice position reaches a specified threshold, an inclusion trigger (Section 7.1) can fire a
+replicated transaction that consumes the result. This is the mechanism for “chaining” delegated
+and replicated computations.
+Shared state, not shared execution. The two modes share state but not execution. Repli-
+cated transactions are executed by all correct replicas. Delegated transactions are executed by
+one executor and verified by committees. The state is the integration point; the execution paths
+are distinct. This is an unbundling of SMR from execution that is within a single protocol, not
+across protocols (as in the Celestia/rollup modular architecture [ 26]).
+3.4 Two-Phase Delegated Execution via Saga Semantics
+Delegated execution is inherently long-lived: proof generation for large workloads takes minutes
+to hours. The chain cannot block during this period. Symphony uses a two-phase pattern based
+on the saga model [ 40]:
+Phase 1: Commit. An async commit transaction anchors the computation parameters on-
+chain:
+• Computation identifier id.
+• Parameters θ (or a hash commitment to parameters stored off-chain).
+• Input x (or a hash commitment).
+• Designated executor E (or an open assignment for market-based selection).
+• Time-to-live TTL: maximum blocks until settlement.
+• Proof system requirements: which dimensions of the lattice must be populated.
+The result registry is updated: (id, θ, x) 7! Pending. The executor’s bond for this computa-
+tion is locked.
+Phase 2: Settlement. In a future block (possibly many blocks later), the executor submits
+a settlement transaction:
+• Output y.
+• Proofs fπ1, . . . , πmg (some may be submitted later if proof generation is ongoing).
+• Auxiliary data for verification (e.g., intermediate commitments for distributed verifica-
+tion).
+The result status transitions to Settled, and verification begins. The lattice position starts
+at ? = (0, . . . ,0) and advances as proof systems verify.
+17
+Compensating action on failure. If the TTL expires without settlement:
+1. The result status transitions to Expired. (This status is formally defined in the extended
+state machine, Definition 2.10, alongside Pending, Settled, and Disputed.)
+2. The executor’s bond is partially slashed ( β  b for slashing parameter β 2 (0, 1]).
+3. The computation becomes eligible for rescheduling: any qualified executor can claim it.
+4. Applications that had registered downstream triggers on this computation’s result are
+notified via a sentinel state, enabling compensating actions (e.g., falling back to a cached
+result, reverting to a safe default, or refunding the user).
+No locks. Between commit and settlement, the chain advances freely. No state is locked.
+Other transactions can read, write, and modify any state except the result registry entry for
+the pending computation. Pending results are not readable as settled values; any transaction
+that attempts to read a pending result receives the sentinel value.
+This differs from two-phase commit (2PC) [ 14] in a critical way: 2PC locks resources until
+the coordinator decides. Sagas release resources immediately and use compensating transac-
+tions on failure. For a blockchain where state is globally visible and blocks must be produced
+continuously, sagas are the appropriate model.
+Stale-precondition risk (TOCTOU—Time-Of-Check to Time-Of-Use). Between the
+async commit at block N and the settlement at block N + k, other transactions may alter the
+state assumptions on which the delegated computation relies. The executor computed y = Fθ(x)
+against state SN , but settlement occurs against state SN +k, which may invalidate the relevance
+of y. Symphony does not enforce read-set consistency between commit and settlement at the
+protocol level; this is a deliberate design choice that shifts atomicity responsibility to the appli-
+cation layer. Applications requiring state consistency across the async gap should (a) declare
+the relevant state slots at commit time, (b) check for state drift in the settlement transaction,
+and (c) trigger compensating actions if drift exceeds tolerance. The default behavior—settling
+without read-set verification—is safe for computations whose correctness is independent of in-
+termediate state changes (e.g., proving properties of the model weights, which do not change
+during the async gap), but is a “foot-gun” for computations that depend on volatile state (e.g.,
+computing a liquidation amount based on prices at commit time).
+Downstream chaining. Computations can be chained: the output of one delegated compu-
+tation serves as input to the next, or triggers a replicated transaction. Chaining is mediated by
+inclusion triggers: “when result R reaches lattice position σmin, include transaction T . ” This
+allows pipelines of mixed replicated and delegated execution without blocking the chain at any
+stage.
+4 Verifiable Computation with Distributed Proving and Verifi-
+cation
+Delegated execution requires that the network can verify a result without re-executing the
+computation. This section describes how Symphony implements verifiable computation [ 42, 81]
+with two key extensions: (a) distributed proof generation that exploits the algebraic structure
+of the computational objects, and (b) distributed verification via committee sampling.
+18
+4.1 Verifiable Delegated Computation
+A single staked executor evaluates Fθ(x), producing output y and proofs fπ1, . . . , πkg for k
+registered non-interactive proof systems. This is standard verifiable computation [ 42] extended
+in two directions:
+1. Randomized computations. For a randomized workload W (Definition 2.2), the proof estab-
+lishes that y is consistent with Fθ(x) under the declared randomness model (Section 2.2).
+Under the primary sealed-seed model, the user encrypts a seed r to the TEE’s attestation-
+derived key; the enclave decrypts r, evaluates Fθ(x; r), and attests the result alongside
+the workload identity M and the on-chain ciphertext e. The executor never observes r
+and cannot grind. Under executor-chosen randomness, the proof shows y = Fθ(x; r) for
+some executor-selected r, establishing support membership but not distributional fairness.
+Under protocol-derived randomness, the proof shows y = Fθ(x; r) for a beacon/VRF seed
+r committed on-chain, establishing deterministic correctness. The ZKP (when present)
+proves the computation trace including r; the TEE attestation covers the enclave environ-
+ment, workload identity, and the ciphertext binding. Note that SNARK-friendly inference
+circuits operate over finite fields ( Fp), where arithmetic is exact and associative. Hardware
+non-reproducibility (Section 2.2.1) does not arise in the ZKP verification path; the only
+source of non-determinism within the circuit is the randomness input r.
+2. Multiple proof systems simultaneously. The executor produces proofs for multiple proof
+systems, each with different soundness-completeness-latency profiles (Section 2.3). The
+proofs are independent: each proof system’s proof is generated and verified without refer-
+ence to the others.
+4.2 Structure-Exploiting Workload Decomposition
+For large workloads, proof generation by a single machine is infeasible or impractically slow.
+Symphony distributes proof generation across multiple machines. The key insight is that the
+computational objects over which delegated STFs operate are not arbitrary circuits — they
+exhibit algebraic structure that makes decomposition natural and eﬀicient.
+4.2.1 Algebraic Structure of Computational Objects
+The workloads relevant to Symphony, including neural network inference, probabilistic simula-
+tion, and optimization, share structural properties that generic circuit-level decomposition [ 82]
+does not exploit:
+Compositional hierarchy . A neural network is a composition of layers: F = fLfL−1  f1,
+where each fi : Rdi ! Rdi+1 is a layer function (linear transformation followed by nonlinearity).
+Layers are natural partition boundaries: the interface between consecutive layers is an activation
+tensor of fixed, architecture-determined dimension (e.g., shape (s, dmodel) for a transformer), not
+an arbitrary set of wire values.
+Parameter symmetry . In transformer architectures [ 80], attention heads within a layer are
+structurally identical sub-computations operating on different parameter slices. If a layer has h
+attention heads, each computing Attention (Qi, Ki, Vi) for i 2 [h], the heads are interchangeable
+up to their parameters. This symmetry enables balanced partitioning: each head can be assigned
+to a different prover with guaranteed uniform workload.
+19
+Repeated sub-computation. Residual blocks in ResNets, recurrent cells in RNNs, and
+timesteps in diffusion models are iterated applications of the same or similar structure. Regu-
+larity enables uniform partition sizing and predictable proving costs.
+These structures are well-studied in the parallel and distributed computing literature [ 32,
+55]. Applying them to the distributed proving problem (rather than the distributed execution
+problem) yields partition boundaries aligned with the object’s algebraic structure.
+4.2.2 F ormal Decomposition
+Graph partition model. Represent the computation as a directed acyclic graph G = (V, E),
+where vertices V are primitive operations and edges E carry tensors between them. A partition
+of G into k shards is a division of V into disjoint subsets V1, . . . , Vk. Each shard Vi induces a
+sub-computation SGi (the subgraph restricted to Vi).
+Definition 4.1 (Boundary and Boundary Width) . The boundary (cut-set) between shards Vi
+and Vj is Ei,j
+cut = f(u, v) 2 E j u 2 Vi, v 2 Vjg. The boundary data T i,j
+boundary is the set of tensors
+on these edges. The boundary width is:
+W i,j
+B =
+∑
+t∈T i,j
+boundary
+size(t)
+measured in scalar field elements. The total boundary width of a partition is WB = ∑
+i<j W i,j
+B .
+A forward pass through G produces intermediate tensors T0, T1, . . . , Tk, where T0 is the input
+and Ti = SGi(Ti−1) for a sequential partition, or more generally, SGi takes as input the tensors
+on all incoming cut edges.
+Shard proofs and linking. The parallel proving phase generates a set of proofs fπigk
+i=1,
+where each πi attests to the statement “ Ti is the correct output of computing SGi on input
+Ti−1. ” The choice of proof system per shard is independent: different shards may use different
+proof constructions.
+Three security properties must hold for the composite proof to be sound:
+1. Shard validity : each πi is a valid proof for its sub-computation.
+2. Completeness: the union of all shards spans the full computation graph. No shard is
+missing.
+3. Boundary consistency (linking) : the public output committed to in πi is identical to the
+public input committed to in πi+1, for all adjacent shards.
+Linking cost. The cost of enforcing boundary consistency is a direct function of the boundary
+width WB. Whether linking is implemented via recursive proof composition [ 19], accumulation
+schemes, or permutation arguments enforcing copy constraints across shard boundaries, the cost
+scales linearly with WB: Clink = O(WB). For recursive formulations, the prover cost of πi+1
+includes the cost of verifying πi, which itself scales with the number of public inputs at the
+boundary.
+Residual connections. In architectures with skip connections (ResNets, Transformers with
+residual streams), shard SGi+1 may depend not only on the output of SGi but also on the
+output of some earlier shard SGi−j. The boundary data must include these non-contiguous
+dependencies, and the linking proof must verify consistency across all incoming edges, not
+just the immediately preceding shard. This means the partition DAG has skip edges — edges
+20
+Figure 3: Structure-exploiting tree reduction for proof aggregation. Inner provers generate
+dense block proofs and residual-link proofs independently. Outer provers recursively aggregate
+subtrees, overfitting to network topology. Symphony bypasses monolithic aggregation by broad-
+casting subtrees and leaf proofs directly to randomized validator committees.
+connecting non-adjacent shards, arising from residual connections in the underlying architecture.
+The boundary width WB accounts for them: the boundary data at shard Vi+1 includes tensors
+from both SGi and SGi−j.
+F at vs. narrow boundaries. Not all partition points are equal. A partition placed at a point
+where the data flow is narrow (few scalar elements crossing the boundary) incurs low linking
+cost. A partition placed inside an expansion layer (where the internal dimension is much larger
+than the input/output dimension) incurs high linking cost.
+Optimal partitioning is a multi-objective problem: balance the computational complexity
+within each shard (to equalize prover workload) while minimizing WB (to reduce linking over-
+head). For architectures with alternating expansion and contraction (the common pattern in
+neural networks), the narrow points between components are the natural partition boundaries.
+No aggregation. Because shard proofs are verified by committees off-chain and are not stored
+on-chain (Section 4.3.5), the k shard proofs do not need to be recursively compressed into a
+single succinct proof. Each πi is broadcast independently to its assigned committee. The only
+additional proof obligation beyond the individual shard proofs is boundary linking. This is a
+direct consequence of the prover-friendly design: aggregation is an optimization for on-chain
+verification cost, which does not apply here.
+We refer to the graph-partition-based proving strategy described above — partitioning at
+narrow boundaries, exploiting compositional hierarchy and architectural symmetry, with inde-
+pendent shard proofs and boundary linking — as structure-exploiting decomposition.
+Relationship to IVC. Incrementally verifiable computation (IVC) [ 79] decomposes by time
+step ( F = gT for T iterations of step function g). Structure-exploiting decomposition decom-
+poses by the structural units of the computational object (layers, heads, blocks), which may
+include both sequential components (depth) and parallel components (width). IVC requires
+a uniform step function; structure-exploiting decomposition accommodates heterogeneous sub-
+computations with varying resource profiles.
+21
+Figure 4: Structure-exploiting decomposition for transformer inference. Partition boundaries
+are placed at narrow inter-block interfaces (dimension dmodel), avoiding fat boundaries inside
+FFN expansion layers (dimension dffn  4dmodel). Each shard is proved independently; linking
+cost scales with boundary width.
+4.2.3 Reference Decompositions: T ransformers
+The partition design principles above apply concretely to autoregressive transformer models.
+The key dimensions are: dmodel (hidden dimension, e.g., 4096), dffn (FFN intermediate dimen-
+sion, typically 4  dmodel), and s (sequence length). Tensors flowing between transformer blocks
+have shape (s, dmodel).
+Narrow boundaries. The natural partition points are between transformer blocks, or be-
+tween the multi-head self-attention (MHSA) sub-layer and the feed-forward network (FFN)
+sub-layer. At these points, the boundary tensor has dimension dmodel, giving WB = s  dmodel.
+F at boundaries. The FFN sub-layer projects from dmodel to dffn  4  dmodel, applies a
+nonlinearity, then projects back to dmodel. Partitioning inside the FFN expansion creates a
+boundary tensor of dimension dffn, increasing WB by a factor of 4 and correspondingly
+increasing the linking cost.
+Partition strategy . Group consecutive transformer blocks into M partitions, cutting at the
+narrow inter-block boundaries. Within each partition, attention heads provide further paral-
+lelism (heads are independent up to the output projection). Residual connections within a
+partition are internal and do not affect WB; residual connections across partition boundaries
+add skip-edge tensors to the boundary data.
+Other architectures. Convolutional networks decompose by stage (convolution-pooling groups),
+with feature maps as boundary data. Diffusion models decompose by timestep group, with the
+noisy image tensor at each boundary. Models exhibiting embarrassingly parallel structure (em-
+bedding lookups, random forests, mixture-of-experts routing) can be partitioned ahead of time
+without a forward pass. For arbitrary workloads, the developer provides a decomposition man-
+ifest specifying the sub-computation DAG, interface types, and partition assignment.
+22
+4.2.4 V erification Units
+Each shard proof πi (plus its boundary linking data) constitutes one verification unit. The total
+number of verification units for a computation is k (the number of shards). Each verification
+unit is assigned to a validator committee independently.
+4.3 Distributed Verification via Committee Sampling
+Full-network verification (every validator checks every proof) provides the strongest safety guar-
+antee but is redundant in the sense that proof validity is a deterministic property. Committee-
+based verification introduces a different trust model: the SMR protocol no longer relies on every
+validator independently verifying every proof, but instead trusts that sampled committees with
+honest majorities will correctly report verification results. This reduces per-validator load but
+changes the safety guarantee from deterministic to statistical, parameterized by the committee
+compromise probability (Section 9.1.5).
+4.3.1 Committee Assignment
+Proof shards are assigned to validator subsets (committees) via deterministic sampling. The
+mechanism draws from two traditions:
+• Algorand’s cryptographic sortition [ 43]: committee members self-select using a VRF, pre-
+venting an adaptive adversary from targeting committee members before they reveal them-
+selves.
+• Ethereum’s beacon chain committees [ 22]: deterministic assignment of validators to com-
+mittees for attestation duties, where the assignment is public but the large validator set
+limits adaptive targeting.
+Symphony’s committee assignment uses a verifiable random function seeded by the epoch’s
+randomness beacon: (epoch, shard_id) ! committee. Note: unlike Algorand’s sortition, Sym-
+phony’s deterministic assignment reveals committee membership before verification begins, cre-
+ating an adaptive-corruption surface. If an adversary can corrupt or DoS specific validators
+after learning their committee assignment, the hypergeometric safety bounds (Section 9.1.5) do
+not apply. Mitigations include short epochs (limiting the corruption window) and requiring
+committees to be large enough that targeted corruption of a majority is impractical. A full
+treatment of adaptive adversaries is left to future work.
+4.3.2 Specialization
+Validators opt into verification duties by workload type and proof system type. ZKP verification
+does not require GPU hardware because proof verification is a CPU-bound operation involving
+field arithmetic and hash evaluations that runs on commodity hardware. Validators without
+any specialized hardware can verify both ZKPs and hardware attestations.
+A general-purpose fallback ensures that every proof shard has a committee: validators that
+do not opt into any specialization are assigned to the fallback pool. Specialization enables
+verification key caching (a validator repeatedly verifying the same proof system type can cache
+verification parameters) and hardware-specific optimizations.
+4.3.3 Quorum and Quorum-Skip
+Each committee uses a simple majority quorum. Once a quorum of committee members has
+verified and attested to a proof shard, the shard is considered verified. The corresponding lattice
+dimension advances.
+23
+Validators that join the committee after quorum has been reached can skip verification of
+that shard—an optimization that reduces work for late-joining validators. This is analogous
+to Tendermint’s fast-sync [ 21]: a syncing validator can accept the quorum’s attestation rather
+than re-verifying from scratch. The security argument is identical: the quorum attestation is
+a certificate of the shard’s validity, backed by the committee’s stake. No safety is weakened;
+liveness improves for validators that are syncing or joining mid-epoch.
+4.3.4 Security-Eﬀiciency T radeoff
+The committee size k parameterizes the tradeoff between verification eﬀiciency and safety.
+Smaller committees reduce the aggregate verification work (each proof shard is checked by
+k validators instead of n) but increase the committee compromise probability (Section 9.1.5).
+The total verification work scales as:
+Total work = M  S  k  cverify
+where M is the number of workload partitions, S is the number of proof shards per partition, k
+is the committee size, and cverify is the per-shard verification cost. For full-network verification,
+k = n; for committee-based verification, k  n, yielding a factor of n/k reduction in per-
+validator work on average.
+The protocol selects k to achieve a target committee compromise probability (e.g., 10−9)
+given the validator set size n and adversary bound f , using the hypergeometric bounds from
+Theorem 9.7.
+4.3.5 Prover-F riendly Design Point
+Committee-based off-chain verification changes which axis of the prover/verifier tradeoff is bind-
+ing, relative to the on-chain verification model used by ZK rollups.
+In ZK rollups, the proof is verified by an L1 smart contract. Every byte of proof costs gas;
+every verification cycle costs gas. This creates strong pressure to minimize proof size (constant-
+size SNARKs, recursive compression) and verification time (constant or polylog verification),
+even at the cost of slower proving.
+Symphony’s verification model inverts this. Proofs are gossiped across the peer-to-peer
+layer to committee members who verify off-chain. Proof size is bounded by network bandwidth
+(hundreds of megabytes per second in practice), not by on-chain gas costs. Proofs are not stored
+on-chain. Verification cost is distributed across committee members on commodity hardware,
+not concentrated in a single EVM transaction. The binding constraint is prover latency : in the
+dual-finality model (Section 5), the interval between hardware attestation (milliseconds) and
+ZKP verification (minutes to hours) is the verification window during which safety depends on
+the TEE and the economic model. Every reduction in proving time shrinks this window and
+strengthens the system’s cryptographic safety posture.
+Because proofs are not aggregated into a single on-chain artifact (Section 4.2.2), the system
+avoids the most expensive step in typical ZKP pipelines: recursive compression. Each shard
+proof is verified independently by its committee, so the prover never pays the cost of folding
+k proofs into one. This alone saves the majority of proving time. Additionally, because proof
+compactness is not a constraint (proofs are bounded by P2P bandwidth, not on-chain gas), the
+system is free to use proof constructions optimized for prover speed rather than succinctness.
+This includes GKR-based systems with O(N ) prover time (vs. O(N log N ) for PLONK-style
+systems), constructions that trade proof size for fewer prover rounds, and schemes whose par-
+allelization properties align with the shard decomposition. Verification cost per shard ( cverify)
+remains CPU-bound field arithmetic on commodity hardware, distributed across committee
+members.
+24
+Figure 5: Product lattice over proof systems. Verification state advances monotonically as
+independent proof systems (e.g., TEE attestation, ZKP) provide attestations. Applications
+declare safety requirements as upsets (upward-closed regions) in the lattice; a result becomes
+accessible when its state enters the required upset.
+5 Multi-System Verification Model
+The verification state vector over proof systems, introduced in Section 2.4, is the data structure
+through which applications interact with delegated computation results. Verification states form
+a boolean hypercube f0, 1gm with componentwise ordering. This standard structure gives the
+paper a natural partial order (“at least this much verification”) and monotonicity properties.
+This section develops the operational semantics: how verification state evolves, how applications
+declare and consume safety requirements, how the no-rollback semantics works, and how proof
+system degradation is handled.
+5.1 Lattice Structure and Verification State
+Recall from Section 2.4 that the verification state of a delegated computation result o is:
+σ(o) = ( v1, . . . , vm) 2 f0, 1gm
+where vi = 1 indicates that proof system Vi has verified the result (committee quorum attained).
+The product lattice (f0, 1gm, ) with componentwise ordering has 2m elements.
+For m = 2 (hardware attestation V1 and SNARK V2), the lattice has four elements:
+? = (0, 0) (0 , 1) (1 , 0) > = (1, 1)
+and the Hasse diagram is a diamond. For m = 3 , the lattice is a cube with 8 elements and 12
+edges.
+5.2 Soundness-Completeness-Latency Pareto Frontier
+No single proof system dominates all others across all three dimensions of soundness, complete-
+ness, and latency. This is the fundamental reason for using multiple proof systems rather than
+selecting the “best” one.
+25
+Hardware attestations achieve high completeness (if the hardware is functioning, the attes-
+tation is always produced), low latency (milliseconds), but correlated soundness (a vendor-wide
+vulnerability compromises all attestations from that vendor simultaneously). They dominate
+the latency-completeness frontier but not the soundness frontier.
+Cryptographic proofs (SNARKs, ST ARKs) achieve high soundness (negligible error
+under computational assumptions, independent across instances), but lower completeness (the
+prover may fail for very large computations) and high latency (minutes to hours for large
+workloads). They dominate the soundness frontier but not the latency frontier.
+The product lattice exposes this tradeoff to applications. An application that needs fast
+finality can declare a safety requirement of (1, 0) (hardware attestation suﬀicient). An applica-
+tion that needs cryptographic soundness can require (0, 1) (SNARK suﬀicient) or (1, 1) (both).
+The lattice is the mechanism through which applications navigate the Pareto frontier.
+5.3 Failure Correlation Analysis
+The soundness composition proposition (Theorem 2.7) requires independence of failure modes.
+In practice, independence must be assessed per proof system pair.
+Independent failures. Hardware attestation (TDX) and cryptographic proof systems (SNARKs,
+STARKs) fail for unrelated reasons: the former via hardware compromise (physical attack,
+firmware vulnerability), the latter via cryptographic assumption failure. These failures are
+independent under any reasonable threat model.
+Correlated failures. Multiple hardware attestations from the same vendor are correlated:
+a firmware vulnerability affects all instances simultaneously. The correlation structure is per-
+vendor: attestations from different vendors (Intel SGX, AMD SEV, ARM TrustZone) are ap-
+proximately independent.
+This analysis follows standard reliability theory [ 10]. Common-mode failure analysis iden-
+tifies correlated failure channels and ensures that the lattice dimensions assigned to correlated
+systems are not treated as independent in the safety analysis.
+Definition 5.1 (Failure Correlation Matrix). For m proof systems, the failure correlation matrix
+ρ 2 [0, 1]m×m has entries ρij denoting the correlation between failure events of systems Vi and
+Vj. Independence corresponds to ρij = 0 for i 6= j.
+Applications requiring high combined soundness should specify proof systems from orthogo-
+nal dimensions in the lattice — those with ρij  0. The lattice structure makes this explicit: the
+soundness guarantee for a lattice position σ = (v1, . . . , vm) depends on the correlation structure
+among the proof systems with vi = 1.
+5.4 Monotonic State Advancement
+Verification state transitions are monotonically increasing in the lattice.
+Invariant 5.2 (Monotonicity). For any result o, the verification state σ(o) can only advance:
+vi can transition from 0 to 1, never from 1 to 0. No rollback of verification attestations occurs.
+This invariant holds because:
+1. Each vi = 0 ! 1 transition is guarded by a committee quorum attestation. Once a
+quorum of validators has attested, the attestation is recorded on-chain and is immutable
+(backed by the SMR protocol’s finality).
+26
+2. There is no mechanism for “un-verifying”: proof system verification is a one-way gate.
+The lattice has two absorbing regions:
+• T op: σ(o) = > = (1 , . . . ,1). All proof systems have verified. This is the terminal state
+for a correctly executed computation.
+• Disputed: a special status entered when proof systems disagree (one accepts, another
+rejects). If Vi has verified ( vi = 1 ) but Vj rejects ( vj cannot advance to 1 because the
+committee quorum rejected the proof), the result’s status transitions from Settled to Dis-
+puted. Disputed results are quarantined: no application can read them regardless of their
+lattice position. Formally, accessibility (Definition 2.6) is conditioned on both the lattice
+position and the result status: a result o is accessible to an application with requirement
+U if and only if σ(o) 2 U and status(o) = Settled.
+5.5 Temporal Consistency
+Different proof systems complete verification at different times. Hardware attestations complete
+in milliseconds; SNARK proofs may take minutes to hours. During this interval, different
+applications observe different lattice positions depending on their declared safety requirements.
+Symphony provides three consistency guarantees, each grounded in the distributed database
+literature:
+Monotonic reads [ 77]. Once an application observes a result o at lattice position σ, it never
+subsequently observes o at a position σ′ < σ . This follows directly from the monotonicity
+invariant: the on-chain state only advances.
+Snapshot isolation [ 13]. An application’s view of the result registry is consistent with a
+specific block height. Within a single transaction, the application sees a snapshot of all results
+at their lattice positions as of that block.
+Bounded staleness [ 9]. The gap between the “latest” lattice position of a result (the position
+that would be observed if all pending verifications completed instantly) and the application-
+visible position is bounded by the latency of the slowest required proof system. For a result
+requiring verification by proof systems Vi with latencies ℓi, the bounded staleness is:
+δstale(o) = max
+i∈req(U ), vi=0
+ℓi
+This quantity decreases monotonically as proof systems complete. An application requiring
+only hardware attestation experiences staleness  ℓHW  milliseconds. An application requiring
+a SNARK proof experiences staleness  ℓZKP  minutes to hours.
+5.6 Irrevocable Execution with Economic Safety
+Delegated computation results are not rolled back, even if a proof system later rejects the result.
+This is a deliberate design choice with consequences for the safety model.
+Why no rollback. Rolling back a settled result would require reverting all downstream state
+transitions that consumed the result. In a blockchain with composable contracts, a single
+result may be consumed by hundreds of downstream transactions within seconds of settlement.
+Rollback would create a cascade of reversions, violating the finality expectations of users and
+applications that interacted with the post-settlement state. This is the same argument that
+motivates irrevocable transactions in the saga model [ 40]: compensating actions are preferable
+to rollback when the cost of rollback exceeds the cost of the incorrect state.
+27
+Economic safety argument. In the absence of rollback, safety is maintained economically.
+If a result y∗ passes hardware attestation ( v1 = 1 ) but is later rejected by the SNARK proof
+(v2 = 0), the result enters the Disputed state. The executor who submitted y∗ is slashed: their
+bond b is distributed to affected parties (users who consumed y∗ in downstream transactions,
+the protocol treasury, the committee that detected the dispute).
+A rational executor does not submit incorrect results when b  MEV(W, S). This is mecha-
+nism design [ 53, 72], not cryptographic safety. The assumptions are: rational adversary, correct
+bond sizing, live slashing mechanism.
+Interaction with the lattice. The no-rollback semantics is reflected in the lattice: the
+Disputed state is absorbing (no transition out of it without protocol governance intervention).
+Applications that consumed the disputed result at a lower lattice position (e.g., based on hard-
+ware attestation only) accepted the risk encoded in their safety requirement. Applications that
+required the full lattice ( >) never consumed the result (it never reached >) and are unaffected.
+5.7 Application Safety Declarations
+Applications declare their safety requirements as upsets in the lattice (Definition 2.6).
+Declaration mechanism. A smart contract registers a safety requirement by calling a reg-
+istry function:
+declareSafety(U ) where U  f0, 1gm is an upset.
+In practice, upsets are specified by their minimal elements (the antichain generating the upset),
+which is compact: for m = 2, the antichain has at most 2 elements.
+Join propagation. When contract A calls contract B and B consumes a delegated compu-
+tation result, the effective safety requirement is the join (least upper bound) of A’s and B’s
+requirements. This ensures that a caller never receives data verified at a level below its own
+requirement, even through transitive calls.
+Explicit downcasting. A contract can explicitly lower its effective safety requirement for a
+specific read. This is logged on-chain (for auditability), scoped to the current transaction (does
+not affect the contract’s declared requirement), and does not propagate to callers (the caller
+still sees the result through the lens of its own requirement). Downcasting is the mechanism by
+which applications opt into faster finality at reduced safety.
+5.8 Proof System Degradation Protocol
+When a proof system is compromised (e.g., a hardware vendor discloses a firmware vulnerability,
+or a cryptographic assumption is broken), the protocol enters a degraded mode for that system.
+Detection. Proof system compromise is detected externally (vendor disclosure, academic pub-
+lication) and reported via a governance transaction. The protocol does not attempt automatic
+detection of proof system compromise; this is a deliberate limitation (automatic detection of,
+e.g., a broken cryptographic assumption is an open problem).
+Response.
+1. The compromised proof system Vj is marked as Degraded in the protocol state.
+28
+Figure 6: Extended external validity. Symphony augments standard SMR validity rules with
+three additional conjuncts—inclusion, exclusion, and ordering compliance—each enforced deter-
+ministically by every validator. Blocks violating any conjunct are rejected.
+2. Applications that required Vj (i.e., their upset includes a dimension where vj = 1 ) are
+notified: their effective safety requirement can no longer be met by existing proofs. They
+must either:
+• Accept a reduced safety level (explicitly downcast past the degraded dimension).
+• Wait for re-verification under a replacement proof system (if one is added).
+• Trigger a compensating action.
+3. Pending results verified only by the degraded system (and no other) are flagged for quar-
+antine via exclusion guarantees: transactions consuming these results are excluded until
+the results are re-verified.
+4. New proofs under the degraded system are not accepted until the degradation is resolved.
+This generalizes certificate revocation [ 52] and key compromise response to the proof system
+setting.
+6 Extended External Validity
+Section 3 addressed the first facet of execution-aware SMR: handling expensive and randomized
+workloads via delegated execution with verifiable computation. This section formalizes the
+second facet: protocol-enforced guarantees from proposers to users and applications. Extended
+external validity is the enforcement mechanism.
+External validity, introduced by Cachin, Kursawe, and Shoup [ 24], is a property of SMR
+protocols that allows the validity condition on proposed values to reference application-specific
+predicates. In standard BFT protocols, the validity condition checks structural properties: well-
+formed blocks, valid signatures, correct state root. External validity extends this with predicates
+that reference the current state.
+Symphony uses extended external validity as the single enforcement mechanism for all guar-
+antees. Each guarantee from Section 2.6 adds a conjunct to the block validity function. The
+29
+proposer retains only the residual power not constrained by these conjuncts. This section de-
+fines the extended validity function, proves that predictable validity is necessary, formalizes the
+eﬀiciency of predicate evaluation, and derives the censorship resistance / liveness tradeoff.
+6.1 Extended Block Validity
+Definition 6.1 (Extended Block Validity) . A block B proposed for state S is valid if and only
+if all of the following conjuncts hold:
+Valid(B, S) = Structural(B) (1)
+^ Execution(B, S) (2)
+^ InclusionComplete(B, S) (3)
+^ ExclusionCompliant(B, S) (4)
+^ OrderingCompliant(B, S) (5)
+The first two conjuncts are standard in any BFT protocol:
+• Structural(B): the block is well-formed, all transaction signatures are valid, the parent
+hash is correct, and the proposer is the designated leader for this round.
+• Execution(B, S): the proposed post-state S′ is the correct result of applying the block’s
+transactions to S. For replicated transactions, every correct validator re-executes and
+checks. For delegated transactions, correctness of the async commit/settlement transitions
+is verified against the protocol rules (Section 2.7).
+The final three conjuncts are Symphony’s extensions:
+• InclusionComplete(B, S): for every active inclusion trigger (Pi, Ti, TTLi) 2 I such that
+Pi(S) = 1 , the transaction Ti (or a transaction satisfying the trigger’s specification) ap-
+pears in B. Section 7.1 defines the semantics.
+• ExclusionCompliant(B, S): for every active exclusion trigger (Qj, TTLj) 2 E , no transac-
+tion T 2 B satisfies Qj(S, T ) = 1 . Section 7.2 defines the semantics.
+• OrderingCompliant(B, S): for every contract C with a registered ordering policy (πC, fτig),
+the subsequence of transactions in B that target C appears in the order specified by
+πC(TxSetC, S) and τi(TxSetC, S). Section 8 defines the semantics.
+6.2 Power Guarantees as Validity Conjunct
+All three guarantees follow the same structure. Each is implemented as a conjunct in Defini-
+tion 6.1:
+1. A beneficiary (user, application, or the protocol itself) registers a guarantee by publishing
+a predicate on-chain. This registers a trigger in I, E, or f(πC, fτig)g.
+2. The predicate becomes a conjunct of the block validity function.
+3. Every block proposed by a correct proposer must satisfy all active conjuncts.
+4. Every correct validator independently evaluates all active conjuncts and rejects blocks that
+violate any. This deterministic evaluation is the default and the basis for Symphony’s BFT
+safety argument.
+30

@@ -1,0 +1,1938 @@
+Earning consumer 
+trust in the 
+age of agentic 
+commerce 
+Understanding 
+how AI assistants 
+are reshaping the 
+buyer journey
+Brought to you by 
+2 
+Contents 
+Executive summary 3 
+About the research 4 
+Consistent consumer insights across markets 5 
+How agents are changing the buyer journey 6 
+What drives and limits adoption 7 
+What this means for payments and you 8 
+Turning the agentic shift into strategic advantage 9 
+Building the next er
+a of commerce, together 10 
+Appendix: Detailed results by market 11 
+Disclaimers 
+Case studies, comparisons, statistics, research and recommendations are provided “AS IS” and intended for informational 
+purposes only and should not be relied upon for operational, marketing, legal, technical, tax, financial or other advice. Visa 
+neither makes any warranty or representation as to the completeness or accuracy of the information within this document, 
+nor assumes any liability or responsibility that may result from reliance on such information. The Information contained 
+herein is not intended as investment or legal advice, and readers are encouraged to seek the advice of a competent 
+professional where such advice is required. 
+©️2025 Visa. All rights reserved.
+3Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Executive summary 
+Visa conducted research to understand how consumers are 
+adapting to the rise of agentic commerce: the emerging 
+world where AI acts on their behalf when shopping and 
+buying. This report summarizes the results of that research 
+covering the United States, Australia, and New Zealand. The 
+full dataset can be found in the Appendix at the end of this 
+report. 
+Across all three markets, consumers show striking 
+consistency: most are already familiar with AI-powered 
+shopping assistants,
+1 and approximately one in three 
+expect to use them regularly.2 From discovery to 
+checkout, AI is beginning to automate everyday buying 
+decisions—and consumers are defining what makes 
+those experiences trustworthy. 
+Three themes stand out: 
+Consistency across 
+markets. 
+Patterns are aligned across the 
+United States, Australia, and New 
+Zealand, suggesting early 
+universality in consumer 
+expectations for transparency, 
+security, and ease. 
+Convenience and 
+savings drive adoption. 
+Roughly two-thirds of surveyed 
+consumers use or would use AI 
+shopping agents to sav
+e time and 
+find better prices. Agents are 
+valued for removing friction and 
+simplifying purchase decisions. 
+Trust and control 
+define loyalty. 
+Nearly nine in ten respondents want 
+transparency into how agents make 
+decisions, and about half would 
+stop using them if that control 
+disappeared.
+ 
+1 2 3 
+Source: Visa Agentic Commerce Consumer Research Surveys — U.S., Australia, New Zealand (2025) 
+Visa research suggests that agentic commerce is no longer theoretical. It is a measurable shift in consumer behavior with the 
+potential to significantly reshape how value moves through the digital economy. This report outlines how consumers are 
+engaging with AI agents, what motivates or limits their use, and how Visa Intelligent Commerce empowers agents to deliver 
+reliable and secure experiences at every step. 
+1 - Figure 1.1  , 2.1  , 3.1 
+2 - Figure 1.6  , 2.6  , 3.6 
+©️2025 Visa. All rights reserved. 
+4 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+About the research 
+Objective 
+Understand consumer familiarity, adoption, 
+motivators, barriers, and brand effect on perception 
+and purchase related to AI-assisted shopping.
+ 
+Focus 
+Measure “agentic substitution”— where AI tools 
+replace or augment human decisions at each stage of 
+the buyer journey. 
+Scope 
+Nationally representative online surveys 
+(United States n=1,600; Australia n=1,600; 
+New Zealand n=500
+). 
+Method 
+15-minute online survey via AYTM agile consumer insights 
+platform, among adults 18–65 who shop online monthly 
+and hold a debit or credit card. 
+Stimuli 
+Respondents were shown a video to illustrate the 
+e-commerce shopping experience assisted by AI in four 
+use cases (birthday gift, groceries, travel, electronics).
+ 
+Survey results summarized
+ 
+Visa Agentic Commerce Consumer research survey in US (2025) 
+Visa Agentic Commerce Consumer research survey in AU  (2025) 
+Visa Agentic Commerce Consumer research survey in NZ (2025) 
+Our approach 
+We looked at how people in three markets would actually use an AI shopping assistant, fr
+om finding what they need to 
+hitting “buy.” Through four everyday shopping categories, we explored when and why people might let an AI agent step in 
+to handle the tasks they normally do themselves. 
+Markets 
+Three regions studied: 
+United States (n=1,600) 
+Australia (n=1,600) 
+New Zealand (n=500)  
+Product stages 
+Four phases of the 
+buyer journe
+y: 
+Discovery 
+Ev
+aluation 
+Cart selection 
+Post-purchase 
+Shopping use cases 
+Four every
+day shopping 
+categories: 
+Birthday gift 
+Electronics 
+Groceries 
+Travel 
+Actions 
+Five key e-c
+ommerce 
+touchpoints: 
+Search engine 
+Online marketplace 
+Business website 
+Social media 
+Online ads 
+©️2025 Visa. All rights reserved. 
+5Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Consistent consumer insights across markets 
+Three consistent themes emerged when considering the three surveyed markets: familiarity with AI shopping assistants, 
+how agents are reshaping the buyer journey, and the drivers and barriers influencing adoption. Together, these findings show 
+how consumers everywhere are beginning to balance curiosity with caution—embracing agents when they deliver speed, 
+savings, and control. 
+Across all three regions, consumer behavior shows strong alignment. Levels of awareness and motivation are similar, even as 
+local preferences differ slightly.
+3 
+Key insight United States Australia New Zealand 
+Familiar with AI shopping assistants 55% 59% 43% 
+Agent would increase consideration 35% 44% 34% 
+Top motivator Save money Time savings Time savings 
+Top concern Data privacy Purchase accuracy Loss of control 
+Source: Visa Agentic Commerce Consumer Research Surveys — U.S., Australia, New Zealand (2025) 
+Consumers across markets appear pragmatic. They want efficiency and control: less time spent searching and more 
+assurance over how data is used.
+4 
+United States 
+Key insight 
+Familiarity with AI assistants is high 
+(55%), and adoption is steady. 
+Confidence correlates with 
+understanding: those who know how 
+agents work are most likely to 
+delegate tasks.5 
+Implication 
+U.S. consumers reward brands that 
+make AI-driven transactions 
+transparent and reversible. Fraud 
+protection, refund policies, and 
+recognizable payment providers 
+remain critical.
+Australia 
+Key insight 
+Australia leads in adoption (59% 
+familiarity; 44% likely to use). Price 
+sensitivity drives behavior. Australian 
+survey respondents use agents to 
+compare deals and optimize value, 
+but transparency is non-negotiable; 
+over half would abandon an agent if 
+data use was unclear.7 
+Implication 
+Providers that demonstrate how 
+tokenization safeguards data will 
+maintain a competitive edge as 
+adoption scales.8 
+New Zealand 
+Key insight 
+Familiarity is lower (43%) but 
+growing. One-third of 
+respondents in New Zealand say 
+they’re likely to try an AI agent 
+within a year. Convenience and 
+time savings outweigh novelty; 
+users are pragmatic, not 
+experimental.9 
+Implication 
+Hybrid experiences that pair 
+human support with AI efficiency 
+can help early adopters build 
+confidence and trust.10 6 
+1. 2. 3. 
+3 - Figure 1.1, 2.1 and 3.1 
+4 - Figure 1.1, 2.1 and 3.1 
+5 - Figure 1.1-1.2 
+6 - Figure 1.11-1.16 
+7 - Figure 2.1, 2.11 and 2.15 
+8 - Figure 2.13 
+9 - Figure 3.1, 3.6 and 3.11 
+10 - Figure 3.13 
+©️2025 Visa. All rights reserved. 
+6 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+How agents are changing the buyer journey 
+Agentic substitution happens when an AI agent executes actions on a person’s behalf. In all 3 countries, across every stage 
+of the digital buyer journey, we see consumer interest in offloading tasks to AI shopping assistants. 
+Buyer journey stages and substitution rates 
+Discovery 
+Initial awareness , 
+interest & early stage 
+product exploration 
+Substitution rate 
+73%
+Tasks replaced: 
+Search engine 
+Browsing site 
+Social media 
+Online ads 
+Ev
+aluation 
+Comparing options, 
+assessing sellers, 
+preparing to purchase 
+Substitution rate 
+69%
+Tasks replaced: 
+Browsing different 
+r
+etailers 
+Reading reviews 
+Social media research 
+Cart & checkout 
+Confirming selections, 
+looking for offers, 
+completing payment 
+Substitution rate 
+62%
+Tasks replaced: 
+Add to cart 
+Shipping information 
+Applying discounts 
+Post-purchase 
+A
+waiting delivery, 
+returning, registering, 
+reviewing 
+Substitution rate 
+64 %
+Tasks replaced: 
+Tracking shipments 
+Managing returns 
+W
+arranty registration 
+Source: Visa Agentic Commerce Consumer Research Surveys — U.S., Australia, New Zealand (2025) 
+Average substitution rate per buyer journey stage based on average of all use cases (Birthday gift, electronics, groceries, 
+and travel) across all markets (US, AU, and NZ) and weighted by sample size (US n=1600, AU n=1600, NZ n=500). 
+Control is the currency of trust 
+While consumers indicate they want AI to assist with some of the more time-
+consuming aspects of e-commer
+ce like comparison shopping, there’s still a 
+strong desire for oversight. Roughly 85% of American respondents say it’s 
+important that they have visibility into data collection and the ability to 
+customize or delete their shopping and purchase information which is 
+consistent with other markets.
+11 
+11 - Figure 1.15 
+©️2025 Visa. All rights reserved. 
+7Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+What drives and limits adoption 
+Drivers of adoption 
+Across markets, consumers view AI agents as 
+tools, not novelty.12
+Automating repetitive tasks such as price 
+comparison or reordering. 
+Access to better deals and personalized 
+recommendations. 
+Reducing decision fatigue through relevant, 
+filtered options. 
+Limits to adoption 
+Adoption barriers mirror concerns from past 
+digital transitions.
+13 
+Data privacy: Around 85%* want explicit control 
+over the data agents can access. 
+P
+urchase accuracy: Nearly 43%* worry an agent 
+could select the wrong pr
+oduct. 
+Loss of control: About 50%* fear “decisions 
+made without me.” 
+*Data points are average of responses across US, AU and NZ. 
+Most important factors when shopping online 
+Price 77% 
+Delivery speed 66% 
+Ease of use 58% 
+Discounts 56% 
+Security 55% 
+Motivating factors for using agent 
+Save money 41% 
+New products 40% 
+Save time 42% 
+Convenience 32% 
+Variety 33% 
+Concerns about AI shopping agent 
+Data security 50% 
+Privacy 44% 
+Purchase Accuracy 42% 
+Reliability 40% 
+Control 36% 
+How important is control 
+over data? 
+Very important or 
+important 
+85% 
+Somewhat or not 
+important 
+15% 
+Would you still use an agent if 
+you didn’t have data control? 
+Extremely 
+or very likely 
+24% 
+Somewhat 
+likely 
+22% 
+Not very or 
+not at all likely 
+54% 
+Source: Visa Agentic Commerce Consumer Research Surveys — 
+U.S., Australia, New Zealand (2025)
+All data tables represent an average across markets weighted by sample size. 
+12 - Figure 1.12, 2.12 and 3.12 
+13 - Figure 1.13, 2.13 and 3.13
+©️2025 Visa. All rights reserved. 
+8 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+What this means for payments and you 
+Agentic commerce is changing how key participants in the payments ecosystem 
+create and sustain trust. 
+Consumers expectations are changing. Merchants, issuers, acquirers, wallets, and developers must collaborate to 
+optimize agentic commerce. This means building the standards, data connections, and guardrails that make agentic 
+commerce safe and scalable. 
+Merchants 
+Agents prioritize structured, 
+machine-readable data: product 
+information, pricing, av
+ailability, 
+and clear policies. 
+Priorities 
+Help ensure products and policies 
+are clear, consistent, and optimized 
+for agents to understand and use. 
+Issuers 
+Cardholder trust must extend into 
+AI-mediated transactions. 
+Tokenization and risk analysis 
+saf
+eguard brand integrity. 
+Priorities 
+Be able to authenticate users 
+across agentic channels with 
+agent-ready tokens and APIs. 
+Acquirers 
+Merchant onboarding should 
+remain simple. Existing 
+frameworks alr
+eady enable secure 
+agentic payments. 
+Priorities 
+Clarify how to streamline 
+acceptance for machine-initiated 
+transactions via current tokenized 
+systems. 
+Wallets 
+Wallets anchor user identity and 
+preference management.
+ 
+Priorities 
+Start embedding agent 
+permissions and spending controls 
+to preserve confidence and choice. 
+Developers & AI partners 
+Developers define user experience 
+but rely on stable infrastructur
+e. 
+Priorities 
+Begin building common standards and 
+capabilities with programs like  Visa 
+Intelligent Commerce. 
+
+9Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Turning the agentic shift into 
+strategic advantage 
+Across markets, more than a third of consumers indicated being more likely to 
+shop with retailers offering agentic purchasing options; a clear signal that early 
+infrastructure investment is likely to pay off.
+14 
+As one of the world’s leading payment networks, Visa is positioned to turn this shift into shared advantage. The company’s 
+tokenization, security, and interoperability standards already underpin much of digital commerce; extending these to agentic 
+environments helps to support safe and scalable innovation. 
+Visa Intelligent Commerce connects issuers, acquirers, wallets, developers, and AI platforms through shared trust protocols 
+which can transform fragmented innovation into cohesive, reliable systems. 
+Trusted companies to provide AI 
+The three most common brands selected across markets were PayPal, 
+Amazon, and Visa, indicating consumers may be more comfortable with 
+shopping agents that originate from recognizable brands in the e-
+commerce space. Other brands receiving 20% or better aggregate interest 
+include Apple, Google and Mastercard while about one in five US 
+consumers said they would not feel comfortable using a shopping agent 
+from any of the listed companies.
+15 
+42 %
+Tier 1 
+PayPal 
+Amazon 
+Visa 
+28%
+Tier 2 
+Apple 
+Google 
+Mastercard 
+15 %
+Tier 3 
+Microsoft 
+Meta 
+American Express 
+Source: Visa Agentic Commerce Consumer Research Surveys — U.S., Australia, New Zealand (2025) 
+All data represent an average across markets weighted by sample size. 
+14 - Figure 1.17, 2.17 and 3.17 
+15 - Figure 1.16, and 2.16 3.16 
+©️2025 Visa. All rights reserved. 
+10 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Building the next era of commerce, together 
+Agentic commerce is accelerating from possibility to practice. 
+The question is no longer whether consumers will use AI agents, but which ecosystem players consumers and agents will 
+trust and ultimately use. Visa Intelligent Commerce can help develop and extend trust through the global standards, 
+infrastructure, and security that let innovation move safely and scale seamlessly. 
+Visa invites partners and potential partners to learn more about Visa 
+Intelligent Commerce. Together we can: 
+Collaborate on 
+shared standards and 
+governance frameworks. 
+Pilot new agentic 
+commerce solutions that 
+demonstrate trust, 
+transparenc
+y, and value. 
+Engage Visa Intelligent 
+Commerce to power 
+secure, scalable, and 
+interoperable agentic 
+experiences. 
+Together, we can develop the trust, go
+vernance, and interoperability that makes agentic commerce safe at scale and turn 
+early adoption into durable advantage. 
+Get in touch 
+Let’s talk about how we can build agentic 
+commerce solutions together. 
+Learn more on Visa.com 
+Contact your Visa representative 
+Email our team 
+11Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+Below are the results from the consumer surveys commissioned by Visa. Jump to a section: 2. AU | 3. NZ 
+1.   United States 
+Figure 1.1: Consumer Familiarity and Usage Frequency 
+ Figure 1.2: Gen AI Usage and Shopping Preferenc e 
+Figure 1.3: Digital vs In-Person and Agentic Replacement 
+ Figure 1.4: Use Cases Comparison 
+Figure 1.5: Additional Use Cases 
+ Figure 1.6: Agent Usage Frequenc
+y 
+Figure 1.7: Product Discov
+ery Stage 
+ Figure 1.8: Product Ev
+aluation Stage 
+Source: Agentic Commerce Consumer research surv ey in US. N=1,600 ©️2025 Visa. All rights reserved. 
+12Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+1.   United States (continued) 
+Figure 1.9: Cart Selection Stage 
+ Figure 1.10: Post-purchase Stage 
+Figure 1.11: Most Important Factors 
+ Figure 1.12: Motivations 
+Figure 1.13: Top Concerns 
+ Figure 1.14: Personal Data Sharing 
+Figure 1.15: Controls and Transpar
+ency 
+ Figure 1.16: Most Trusted Brands 
+Source: Agentic Commerce Consumer research surv ey in US. N=1,600 ©️2025 Visa. All rights reserved. 
+13Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+1.   United States (continued) 
+Figure 1.17: Preference for Retailer with Agent 
+ Figure 1.18: Online Retailers 
+2.  Australia 
+Figure 2.1: Consumer Familiarity and Usage Fr
+equency 
+ Figure 2.2: Gen AI Usage and Shopping Preference 
+Figure 2.3: Substitution Effects 
+ Figure 2.4: Use Cases Comparison 
+Figure 2.5: Additional Use Cases 
+ Figure 2.6: Agent Usage Fr
+equency 
+Source: Agentic Commerce Consumer resear ch survey in US and AU. N=1,600 ©️2025 Visa. All rights reserved. 
+14Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+2.  Australia (continued) 
+Figure 2.7: Product Discovery Stage 
+ Figure 2.8: Product E valuation Stage 
+Figure 2.9: Cart Selection Stage 
+ Figure 2.10: Post-Pur
+chase Stage 
+Figure 2.11: Most Important Factors 
+ Figure 2.12: Motivations 
+Figure 2.13: Top Concerns 
+ Figure 2.14: Personal Data Sharing 
+©️2025 Visa. All rights reserved. Source: Agentic Commerce Consumer research survey in AU. N=1,600 
+15Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+2.  Australia (continued) 
+Figure 2.15: Controls and Transparency 
+ Figure 2.16: Most Trusted Brands 
+Figure 2.17: Preferenc
+e for Retailer with Agent 
+ Figure 2.18: Online Retailers 
+3.  New Zealand 
+Figure 3.1: Consumer Familiarity and Usage Frequenc
+y 
+ Figure 3.2: Gen AI Usage and Shopping Preferenc
+e 
+Figure 3.3: Substitution Effects 
+ Figure 3.4: Use Cases Comparison 
+Source: Agentic Commerce Consumer research surv ey in AU and NZ. AU, N=1,600. NZ, N=500. ©️2025 Visa. All rights reserved. 
+16Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+3.  New Zealand(continued) 
+Figure 3.5: Additional Use Cases 
+ Figure 3.6: Agent Usage Frequency 
+Figure 3.7: Product Discovery Stage 
+ Figure 3.8: Product Evaluation Stage 
+Figure 3.9: Cart Selection Stage 
+ Figure 3.10: Post-Purchase Stage 
+Figure 3.11: Most Important Factors 
+ Figure 3.12: Motivations 
+Source: Agentic Commerce Consumer research surve y in NZ. N=500 ©️2025 Visa. All rights reserved. 
+17Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Appendix: Detailed results by market 
+3.  New Zealand(continued) 
+Figure 3.13: Top Concerns 
+ Figure 3.14: Personal Data Sharing 
+Figure 3.15: Controls and Tr
+ansparency 
+ Figure 3.16: Most Trusted Brands 
+Figure 3.17: Prefer
+ence for Retailer with Agent 
+ Figure 3.18: Online Retailers 
+Source: Agentic Commerce Consumer resear ch survey in NZ. N=500 ©️2025 Visa. All rights reserved. 
+18 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+1.  United States 
+Figure 1.1: Consumer Familiarity and Usage Frequency 
+Summary: This figure presents data on consumer awareness and usage of AI-
+powered shopping assistants, showing that 55% of online shoppers are familiar with 
+these tools, and among those aware, 28% use them frequently. 
+Chart Descriptions: 
+• Chart A - Familiarity Question: Bar chart titled “Are you familiar with online    
+shopping assistants or e-commerce experiences enabled by AI?” 
+• Yes: 55% (dark blue bar) 
+• No: 45% (gray bar) 
+• Chart B - Usage Frequency Question: Bar chart titled “How often do you use 
+digital shopping assistants or an e-commerce experience enabled by AI?” 
+• Always: 9% (dark blue bar) 
+• Often: 19% (dark blue bar) 
+• Sometimes: 31% (dark blue bar) 
+• Rarely: 24% (gray bar) 
+• Never: 17% (gray bar) 
+Key Findings: 
+• 55% of online shoppers are familiar with some version of online AI-powered 
+shopping assistants 
+• 28% of online shoppers familiar with AI-powered assistants often or always 
+use them when shopping 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.2: Gen AI Usage and Shopping Pref erences 
+Summary: This figure sho ws high penetration of Generative AI usage, with only 1 
+in 4 respondents not having used it in the past 3 months. It also reveals consumer 
+preferences regarding businesses that offer AI-powered shopping experiences. 
+Chart Descriptions: 
+• Chart A - Gen AI Chatbot Usage: Bar chart titled “Have you used any of the 
+currently available Gen AI chatbots in the past 3 months? (top 3 shown)” 
+• ChatGPT: 58% (dark blue bar)
+ 
+• Gemini: 33% (dark blue bar) 
+• Meta AI: 24% (dark blue bar) 
+• No, I have not used any of the above: 26% (gray bar) 
+• Chart B - Shopping Preference: Bar chart titled “Would you prefer to shop 
+more or less with businesses that offer an AI-powered shopping assistant 
+experience?” 
+• Shop More: 14% (dark blue bar) 
+• Shop the same: 65% (gray bar) 
+• Shop Less: 21% (gray bar) 
+Key Findings: With only 1 in 4 having not used Generative AI in the past 3 months, 
+market penetration is already high and growing. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.3: Digital vs In-P
+erson and Agentic Replacement 
+Summary: This figure demonstr
+ates strong substitution effects enabled by agentic 
+commerce across the digital buyer journey stages. Product Discovery actions show the 
+highest rate of digital preference and agentic replacement. 
+Chart Descriptions: 
+• Chart A - Digital vs. In-Person Journey: Stacked bar chart showing percentage 
+distribution across four journey stages 
+• Product Discovery: 89% Digital (dark blue), 11% In-Person only (light blue) 
+• Product Evaluation: 84% Digital (dark blue), 16% In-Person only (light blue) 
+• Checkout: 86% Digital (dark blue), 14% In-Person only (light blue) 
+• Post Purchase: 83% Digital (dark blue), 17% In-Person only (light blue) 
+• Chart B - Agentic Replacement of Digital Journey: Stacked bar chart showing 
+replacement vs. non-replacement percentages 
+• Product Discovery: 73% Replacement (dark blue), 27% Non-Replacement 
+(light blue) - 89% Digital Base 
+• Product Evaluation: 70% Replacement (dark blue), 30% Non-Replacement 
+(light blue) - 84% Digital Base 
+• Checkout:  61% Replacement (dark blue), 39% Non-Replacement (light blue) 
+- 86% Digital Base 
+• Post Purchase: 64% Replacement (dark blue), 36% Non-Replacement (light 
+blue) - 83% Digital Base 
+Key Finding: Product Discovery actions are more skewed to digital and show the highest 
+Agentic replacement rate. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Note: Average across 4 product categories: Groceries, Electronics, Travel, Gifts. Agentic 
+Replacement rate based on top digital action by stage of the buyer journey. 
+Figure 1.4: Use Cases Comparison 
+Summary: This figure sho
+ws that across shopping categories (Birthday Gifts and 
+Electronics), digital penetration and agentic replacement remain consistently high 
+throughout all journey stages. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Product Evaluation: 87% Digital (dark blue), 13% In-Person (light blue) 
+• Checkout: 88% Digital (dark blue), 12% In-Person (light blue) 
+• Post Purchase: 86% Digital (dark blue), 14% In-Person (light blue) 
+• Chart B - Birthday Gifts, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 69% Replacement (dark blue), 31% Non- 
+Replacement (light blue) 
+• Product Evaluation: 72% Replacement (dark blue), 28% Non-
+Replacement (light blue) 
+• Checkout: 61% Replacement (dark blue), 39% Non-Replacement 
+(light blue) 
+• Post Purchase: 77% Replacement (dark blue), 23% Non-Replacement 
+(light blue) 
+• Chart C - Electronics, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Product Evaluation: 89% Digital (dark blue), 11% In-Person (light blue) 
+• Checkout: 90% Digital (dark blue), 10% In-Person (light blue) 
+• Post Purchase: 92% Digital (dark blue), 9% In-Person (light blue) 
+• Chart D - Electronics, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 76% Replacement (dark blue), 24% Non-Replacement 
+(light blue) 
+• Product Evaluation: 75% Replacement (dark blue), 25% Non-Replacement 
+(light blue) 
+• Checkout: 69% Replacement (dark blue), 31% Non-Replacement (light blue) 
+• Post Purchase: 63% Replacement (dark blue), 37% Non-Replacement 
+(light blue) 
+Source: Agentic Commerce Consumer research survey in US; Birthday Gifts N=395, 
+Electronics N=400 
+Note: Agentic Replacement rate based on top digital action by stage of the buyer 
+journey. 
+©️2025 Visa. All rights reserved. 
+19 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+1.  United States (continued) 
+Figure 1.5: Additional Use Cases 
+Summary: This figure demonstrates that digital penetration and agentic 
+replacement are strong across all parts of the buyer journey for both Groceries and 
+Travel categories. 
+Chart Descriptions: 
+• Chart A - Groceries, Digital vs. In-Person Journey: Stacked bar chart   
+• Product Discovery: 84% Digital (dark blue), 16% In-Person (light blue) 
+• Product Evaluation: 75% Digital (dark blue), 25% In-Person (light blue) 
+• Checkout: 83% Digital (dark blue), 17% In-Person (light blue) 
+• Post Purchase: 75% Digital (dark blue), 25% In-Person (light blue) 
+• Chart B - Groceries, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 71% Replacement (dark blue), 29% Non-
+Replacement (light blue) 
+• Product Evaluation: 73% Replacement (dark blue), 27% Non-
+Replacement (light blue) 
+• Checkout: 61% Replacement (dark blue), 39% Non-Replacement 
+(light blue) 
+• Post Purchase: 66% Replacement (dark blue), 34% Non-Replacement 
+(light blue) 
+• Chart C - Travel, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 90% Digital (dark blue), 10% In-Person (light blue) 
+• Product Evaluation: 84% Digital (dark blue), 16% In-Person (light blue) 
+• Checkout: 83% Digital (dark blue), 17% In-Person (light blue) 
+• Post Purchase: 79% Digital (dark blue), 21% In-Person (light blue) 
+• Chart D - Travel, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 74% Replacement (dark blue), 26% Non-
+Replacement (light blue) 
+• Product Evaluation: 69% Replacement (dark blue), 31% Non-
+Replacement (light blue) 
+• Checkout: 63% Replacement (dark blue), 37% Non-Replacement 
+(light blue) 
+• Post Purchase: 68% Replacement (dark blue), 32% Non-Replacement 
+(light blue) 
+Source: Agentic Commerce Consumer research survey in US; Groceries N=394, 
+Travel N=411 
+Note: Agentic Replacement rate based on top digital action by stage of the buyer 
+journey. 
+Figure 1.6: Agent Usage F requency 
+Summary: This figure shows anticipated usage patterns for AI-enabled e-commerce 
+experiences, with nearly half of all respondents expecting to use an AI agent at least 
+a few times per month, while nearly 1 in 4 foresee no use at all. 
+Chart Descriptions: 
+• Chart A - Usage Frequency Projection: Bar chart titled “How often do you see 
+yourself using the e-commerce experience enabled by AI shown if available?” 
+• Daily: 6% (dark blue bar) 
+• Weekly: 18% (dark blue bar) 
+• A few times per month: 23% (dark blue bar) 
+• A few times per year: 17% (gray bar) 
+• Once a year or fewer: 13% (gray bar) 
+• Never: 23% (gray bar) 
+Key Findings: Nearly half of all respondents see themselves using an AI agent at 
+least a few times per month, while nearly 1 in 4 foresee no use at all. 
+Source: Agentic Commerce Consumer research survey in US: N=1600 
+©️2025 Visa. All rights reserved. 
+20 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix
+Accessibility Notes 
+1.  United States (continued) 
+Figure 1.7: Product Discovery Stage 
+Summary: This figure illustrates strong substitution effects of agentic commerce 
+during the Product Discovery stage, with search engine (Google) actions being 
+most common and showing strong replacement effects. Substitution impact holds 
+similarly across all product categories regardless of baseline usage. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Product Discovery Stage: Grouped bar chart with 
+baseline percentage and replacement split  
+• Online Marketplace: 68% baseline (35% Replace in dark blue, 35% Not 
+Replace in light blue) 
+• Search Engine: 63% baseline (31% Replace in dark blue, 31% Not Replace 
+in light blue) 
+• Social Media: 36% baseline (38% Replace in dark blue, 62% Not Replace 
+in light blue) 
+• Online Ads: 24% baseline (35% Replace in dark blue, 65% Not Replace 
+in light blue) 
+• Chart B - Electronics, Product Discovery Stage: Grouped bar chart 
+• Online Marketplace: 71% baseline (47% Replace in dark blue, 37% Not 
+Replace in light blue) 
+• Search Engine: 54% baseline (24% Replace in dark blue, 76% Not 
+Replace in light blue) 
+• Business Website: 47% baseline (33% Replace in dark blue, 67% Not 
+Replace in light blue) 
+• Social Media: 35% baseline (39% Replace in dark blue, 61% Not Replace 
+in light blue) 
+• Online Ads: 29% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Chart C - Groceries, Product Discovery Stage: Grouped bar chart 
+• Online Marketplace: 35% baseline (35% Replace in dark blue, 65% Not 
+Replace in light blue) 
+• Search Engine: 50% baseline (29% Replace in dark blue, 71% Not 
+Replace in light blue) 
+• Business Website: 47% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Social Media: 27% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Online Ads: 24% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Chart D - Travel, Product Discovery Stage: Grouped bar chart 
+• Online Marketplace: 32% baseline (37% Replace in dark blue, 63% Not 
+Replace in lig
+ht blue) 
+• Search Engine: 71% baseline (26% Replace in dark blue, 74% Not 
+Replace in light blue) 
+• Business Website: 52% baseline (34% Replace in dark blue, 66% Not 
+Replace in light blue) 
+• Social Media: 36% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+• Online Ads: 34% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+Key Finding: Search engine (Google) actions are most common and show strong 
+replacement effect. Substitution impact holds similarly across all product categories 
+regardless of baseline usage. 
+Source: Based on the following sample sizes: Birthday n=395, Electronics N=400, 
+Groceries n=394, Travel n=411 
+Note: Actions ranked high to low based on Birthday Gifts. 
+Figure 1.8: Product Evaluation Stage 
+Summary: This figure shows strong substitution effects of agentic commerce during 
+the Product Evaluation stage, which enables comparison across different retailers and 
+facilitates expert reviews. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Product Evaluation Stage:  Grouped bar chart   
+• Browse Different Retailers: 54% baseline (33% Replace in dark blue, 
+67% Not Replace in light blue) 
+• Read Web Reviews: 48% baseline (45% Replace in dark blue, 55% Not 
+Replace in light blue) 
+• Browse Same Retailer: 45% baseline (49% Replace in dark blue, 51% Not 
+Replace in light blue) 
+• Read Social Media: 36% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Read Journalists: 24% baseline (48% Replace in dark blue, 52% Not 
+Replace in light blue) 
+• Support via Email: 12% baseline (51% Replace in dark blue, 49% Not 
+Replace in light blue) 
+• Support via Phone: 11% baseline (72% Replace in dark blue, 28% Not 
+Replace in light blue) 
+• Chart B - Electronics, Product Evaluation Stage:  Grouped bar chart   
+• Browse Different Retailers: 52% baseline (25% Replace in dark blue, 
+75% Not Replace in light blue) 
+• Read Web Reviews: 46% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Browse Same Retailer: 45% baseline (27% Replace in dark blue, 73% Not 
+Replace in light blue) 
+• Read Social Media: 35% baseline (30% Replace in dark blue, 70% Not 
+Replace in light blue) 
+• Read Journalists: 33% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Support via Email: 16% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Support via Phone: 12% baseline (62% Replace in dark blue, 38% Not 
+Replace in light blue) 
+• Chart C - Groceries, Product Evaluation Stage:  Grouped bar chart   
+• Browse Different Retailers: 38% baseline (32% Replace in dark blue, 
+68% Not Replace in light blue) 
+• Read Web Reviews: 28% baseline (46% Replace in dark blue, 54% Not 
+Replace in light blue) 
+• Browse Same Retailer: 34% baseline (36% Replace in dark blue, 64% 
+Not Replace in light blue) 
+• Read Social Media: 29% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Read Journalists: 23% baseline (27% Replace in dark blue, 73% Not 
+Replace in light blue) 
+• Support via Email: 14% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Support via Phone: 13% baseline (44% Replace in dark blue, 56% Not 
+Replace in light blue) 
+• Chart D - Travel, Product Evaluation Stage:  Grouped bar chart   
+• Browse Different Retailers: 54% baseline (32% Replace in dark blue, 
+68% Not Replace in light blue) 
+• Read Web Reviews: 44% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Browse Same Retailer: 38% baseline (42% Replace in dark blue, 58% 
+Not Replace in light blue) 
+• Read Social Media: 37% baseline (31% Replace in dark blue, 69% Not 
+Replace in light blue) 
+• Read Journalists: 27% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Support via Email: 22% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Support via Phone: 19% baseline (36% Replace in dark blue, 64% Not 
+Replace in light blue) 
+Key Finding: Enables comparison across different retailers, facilitates expert reviews. 
+Source: Based on the following sample sizes: Birthday n=395, Electronics N=400, 
+Groceries n=394, Travel n=411 
+Note: Actions ranked high to low based on Birthday Gifts. 
+©️2025 Visa. All rights reserved. 
+21Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+1.  United States (continued) 
+Figure 1.9: Cart Selection Stage 
+Summary: This figure demonstrates strong substitution effects of agentic commerce 
+during the Cart Selection stage, which is more prevalent for adding products to cart and 
+providing address and payment details. No major difference exists by use case. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Cart Selection Stage:  Grouped bar chart   
+• Add to Cart: 67% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Confirm Payment: 63% baseline (46% Replace in dark blue, 54% Not 
+Replace in light blue) 
+• Provide Shipping: 61% baseline (48% Replace in dark blue, 52% Not 
+Replace in light blue) 
+• Discount Codes: 40% baseline (41% Replace in dark blue, 59% Not Replace 
+in light blue) 
+• Buy it Now: 33% baseline (50% Replace in dark blue, 50% Not Replace in 
+light blue) 
+• Memberships: 33% baseline (47% Replace in dark blue, 53% Not Replace 
+in light blue) 
+• Chart B - Electronics, Cart Selection Stage:  Grouped bar chart   
+• Add to Cart: 67% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Confirm Payment: 57% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Provide Shipping: 56% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Discount Codes: 43% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Buy it Now: 38% baseline (42% Replace in dark blue, 58% Not Replace in 
+light blue) 
+• Memberships: 30% baseline (31% Replace in dark blue, 69% Not Replace 
+in light blue) 
+• Chart C - Groceries, Cart Selection Stage:  Grouped bar chart   
+• Add to Cart: 67% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Confirm Payment: 51% baseline (44% Replace in dark blue, 56% Not 
+Replace in light blue) 
+• Provide Shipping: 52% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+• Discount Codes: 33% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Buy it Now: 29% baseline (39% Replace in dark blue, 61% Not Replace in
+ 
+light blue) 
+• Memberships: 32% baseline (45% Replace in dark blue, 55% Not Replace 
+in light blue) 
+• Chart D - Travel, Cart Selection Stage:  Grouped bar chart   
+• Add to Cart: 67% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Confirm Payment: 55% baseline (45% Replace in dark blue, 55% Not 
+Replace in light blue) 
+• Provide Shipping: 49% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Discount Codes: 43% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+• Buy it Now: 30% baseline (40% Replace in dark blue, 60% Not Replace in 
+light blue) 
+• Memberships: 34% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+Key Finding: More prevalent for adding product to cart and providing address and 
+payment details. No major difference by use case. 
+Source: Based on the following sample sizes: Birthday n=395, Electronics N=400, 
+Groceries n=394, Travel n=411 
+Note: Actions ranked high to low based on Birthday Gifts. 
+Figure 1.10: Post-Purchase Stage 
+Summary: This figure shows strong substitution effects of agentic commerce during 
+the Post-Purchase stage, focused primarily on tracking shipments. No major difference 
+exists by use case, except lower substitution for Birthday Gifts. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 69% baseline (49% Replace in dark blue, 51% Not Replace in 
+light blue) 
+• Process Return: 37% baseline (56% Replace in dark blue, 44% Not Replace 
+in light blue) 
+• Register Warranty: 32% baseline (55% Replace in dark blue, 45% Not 
+Replace in light blue) 
+• Review on Site: 27% baseline (45% Replace in dark blue, 55% Not Replace 
+in light blue) 
+• Review on Socials: 18% baseline (50% Replace in dark blue, 50% Not 
+Replace in light blue) 
+• Set-up Assistance: 13% baseline (49% Replace in dark blue, 51% Not 
+Replace in light blue) 
+• Chart B - Electronics, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 69% baseline (49% Replace in dark blue, 51% Not Replace in 
+light blue) 
+• Process Return: 32% baseline (39% Replace in dark blue, 61% Not Replace 
+in light blue) 
+• Register Warranty: 43% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Review on Site: 29% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+• Review on Socials: 21% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Set-up Assistance: 20% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Chart C - Groceries, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 56% baseline (36% Replace in dark blue, 64% Not Replace in 
+light blue) 
+• Process Return: 26% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Register Warranty: 23% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Review on Site: 26% baseline (34% Replace in dark blue, 66% Not Replace 
+in light blue) 
+• Review on Socials: 18% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+• Set-up Assistance: 16% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Chart D - Travel, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 56% baseline (32% Replace in dark blue, 68% Not Replace in 
+light blue) 
+• Process Return: 38% baseline (35% Replace in dark blue, 65% Not Replace 
+in light blue) 
+• Register Warranty: 30% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Review on Site: 33% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Review on Socials: 25% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Set-up Assistance: 24% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+Key Finding: Focused on tracking shipments. No major difference by use case, except 
+lower substitution for Birthday Gift. 
+Source: Based on the following sample sizes: Birthday n=395, Electronics N=400, 
+Groceries n=394, Travel n=411 
+Note: Actions ranked high to low based on Birthday Gifts. 
+©️2025 Visa. All rights reserved. 
+22Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+1.  United States (continued) 
+Figure 1.11: Most Important Factors 
+Summary: This figure reveals that shoppers are looking for value and speed, with 
+both price and discounts/promotions considered most important by a majority of 
+consumers. 
+Chart Descriptions: 
+• Chart A - Importance Ranking: Horizontal bar chart titled “Most important 
+factors when shopping online”   
+• Price: 80% 
+• Delivery Speed: 71% 
+• Ease of Use/Convenience: 63% 
+• Discounts and Promotions: 58% 
+• Security of transactions: 54% 
+• Return P
+olicy: 49% 
+• Product Variety: 49% 
+• Trusted business: 48% 
+• Customer Service: 46% 
+• Privacy of my data and purchase history: 42% 
+• Control and visibility of online transactions: 35% 
+• Personalized recommendations: 16% 
+• Automated process for repeat purchases: 13% 
+Key Finding: Shoppers are looking for value and speed, with both price and discounts/ 
+promotions considered most important by a majority. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.12: Motivations 
+Summary: This figure shows that agentic offerings that save shoppers money and time 
+while reducing discovery friction are those most likely to drive adoption. 
+Chart Description: 
+• Chart A - Adoption Motivators:  Horizontal bar chart titled “Which of the 
+following statements would motivate you to use an AI shopping assistant like the 
+one shown above?” 
+• Save money through price matching: 39% 
+• Find me new products I wouldn’t find on my own: 38% 
+• Save time: 38% 
+• More convenient: 32% 
+• Large variety of product options to choose from: 31% 
+• Find the best deals: 31% 
+• Feels more safe and secure: 16% 
+• Other: 1% 
+• None of the above: 23% 
+Key Finding: 
+• Consumers are most motivated by saving money through price matching (39%), 
+discovering new products (38%), and saving time (38%) 
+• Consumers were least motivated by the feeling of safety and security, echoing 
+similar sentiments expressed elsewhere in the study (16%) 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.13: Top Conc
+erns 
+Summary: This figure identifies data security and priv
+acy as top concerns, followed by 
+accuracy/reliability of purchases. Very few consumers have no concerns. Accuracy/ 
+reliability is potentially driven by social media experiences with fake AI or inauthentic 
+images leading to “purchase fails.” 
+Chart Description: 
+• Chart A - Concern Levels:  Horizontal bar chart titled “What concerns might you 
+have about using the online shopping agent you were shown?” 
+• Data Security: 48% 
+• Privacy: 44% 
+• Purchase Accuracy: 44% 
+• Service Reliability: 40% 
+• Lack of Control in Shopping: 37% 
+• Lack of Human Support: 37% 
+• Cost: 35% 
+• Sponsored/Paid Labeling: 25% 
+• Processing Returns: 22% 
+• Poor Customer Service: 20% 
+• Processing Exchanges: 18% 
+• Other, please specify: 4% 
+• None of the above: 7% 
+Key Finding: Data security and privacy as top concerns, followed by accuracy/reliability 
+of purchases. Very few have no concerns. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.14: Personal Data Sharing 
+Summary: This figure r
+eveals that consumers are wary to share their personal 
+information, with less than half willing to do so, and even less willing to share financial 
+information. 1 in 4 would not share any information at all. 
+Chart Description: 
+• Chart A - Data Sharing Willingness: Horizontal bar chart titled “To use this 
+new service, what personal data would you be willing to share with the company 
+offering it?”” 
+• Personal contact information (full name, email, phone): 45% 
+• Home address: 44% 
+• Transaction history: 29% 
+• Online browsing history: 26% 
+• Financial data – credit card number: 26% 
+• Financial data – debit card number: 25% 
+• Business address: 13% 
+• Financial data – bank account number: 13% 
+• None of the above: 26% (shown in black bar) 
+Key Finding: Consumers are wary to share their personal information, with less than 
+half willing to do so, and even less sharing their financial information. 1 in 4 would not 
+share any information at all. 
+Source:  Agentic Commerce Consumer research survey in US, N=1,600 
+©️2025 Visa. All rights reserved. 
+23 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+1.  United States (continued) 
+Figure 1.15: Controls and Transparency 
+Summary: This figure demonstrates that consumer control and transparency over their 
+personal data usage is critical. Only 1 in 5 would still consider using a shopping agent if 
+no control is provided over consumer data usage. 
+Chart Description: 
+• Chart A - Importance of Data Control: Vertical bar chart titled “When using 
+AI-enabled e-commerce, the AI Agent may be collecting information about your 
+shopping preferences and purchases. How important is it that you can control or 
+delete how the Agent uses your data?” 
+• Very important: 62% (dark blue bar) 
+• Important: 23% (dark blue bar) 
+• Somewhat important: 11% (gray bar) 
+• Somewhat not important: 2% (gray bar) 
+• Not important at all: 3% (gray bar) 
+• Chart B - Likelihood of Using Without Control: Vertical bar chart titled “If you 
+cannot control how the Agent uses your data, what is the likelihood that y
+ou will 
+still use the Agent?” 
+• Extremely likely: 9% (dark blue bar) 
+• Very likely: 12% (dark blue bar) 
+• Somewhat likely: 22% (gray bar) 
+• Not very likely: 24% (gray bar) 
+• Not at all likely: 33% (gray bar) 
+Key Finding: Consumer control and transparency over their personal data usage is 
+critical. Only 1 in 5 would still consider using a shopping agent if no control is provided 
+over consumer’s data usage. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.16: Most Trusted Brands 
+Summary: This figure shows trusted companies to provide AI include Amazon 
+marketplace, major payment networks (PayPal, Visa), and Apple. GenAI companies, 
+banks, and other Big Tech are less trusted. 1 in 5 consumers would not feel comfortable 
+using a shopping agent from any of these companies. 
+Chart Description: 
+• Chart A - Company Trust Levels: Horizontal bar chart titled “From which of the 
+following companies would you feel comfortable using the new shopping service 
+you were shown?” 
+• Amazon: 53% 
+• PayPal: 45% 
+• Visa: 34% 
+• Apple: 27% 
+• OpenAI (ChatGPT): 25% 
+• Mastercard: 24% 
+• Google (Alphabet): 24% 
+• Microsoft: 22% 
+• Your primary Bank: 20% 
+• Samsung: 19% 
+• Meta (Facebook): 13% 
+• Amex: 9% 
+• IBM: 5% 
+• Perplexity: 5% 
+• Other, please specify: 1% 
+• None of the above: 20% 
+Key Finding: Trusted Companies to Provide AI: Amazon marketplace, major payment 
+networks (PayPal, Visa) and Apple. GenAI companies, banks, and other Big Tech less 
+trusted. 1 in 5 consumers would not feel comfortable using a shopping agent from any 
+of these companies. 
+Source: Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.17: Prefer
+ence for Retailer with Agent 
+Summary: This figure demonstrates that agents serv
+e as a customer acquisition tool, 
+with 35% of consumers being more likely to shop with a retailer if offering an on-site AI 
+shopping agent. 
+Chart Description: 
+• Chart A - Shopping Likelihood Impact: Vertical bar chart titled “For those retailers 
+you have not made an online purchase in the last 3 months, would an on-site AI 
+shopping agent make you likely to purchase from them?” 
+• More Likely: 35% (dark blue bar)Privacy: 44% 
+• Neither more or Less Likely: 42% (gray bar) 
+• Less Likely: 23% (gray bar) 
+Key Finding: Agents as a customer acquisition tool: 35% of consumers are more likely to 
+shop with a retailer if offering on-site AI shopping agent. 
+Source:  Agentic Commerce Consumer research survey in US, N=1,600 
+Figure 1.18: Online Retailers 
+Summary: This figure shows that marketplaces Amazon and Walmart are far and 
+away the current winners when looking at where shoppers are currently spending. 
+Single brand retailers Apple and Nike still perform well when compared to multi-brand 
+retailers and marketplaces. 
+Chart Description: 
+• Chart A - Recent Purchase Activity: Horizontal bar chart titled “From which of 
+the following retailers have you purchased a product or service online in the past 
+3 months?” 
+• Amazon: 85% 
+• Walmart: 64% 
+• Target: 38% 
+• Ebay: 23% 
+• Home Depot: 21% 
+• Apple: 19% 
+• Best Buy: 17% 
+• Nike: 16% 
+• Etsy: 13% 
+• Macy’s: 11% 
+• Samsung: 8% 
+• Other: 8% 
+• Wayfair: 6% 
+• None of the above: 2% 
+Key Finding: Marketplaces Amazon and Walmart are far and away the current winners 
+when looking where shoppers are currently spending. Single brand retailers Apple and 
+Nike still perform well when compared to multi-brand retailers and marketplaces. 
+Source:  Agentic Commerce Consumer research survey in US, N=1,600 
+©️2025 Visa. All rights reserved. 
+24 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia 
+Figure 2.1: Consumer Familiarity and Usage Frequency 
+Summary: This figure presents data on consumer awareness and usage of AI-
+powered shopping assistants in Australia, showing that 59% of online shoppers are 
+familiar with these tools, and among those aware, 36% use them frequently. 
+Chart Descriptions: 
+• Chart A - Familiarity Question: Bar chart titled “Are you familiar with online    
+shopping assistants or e-commerce experiences enabled by AI?” 
+• Yes: 59% (dark blue bar) 
+• No: 41% (gray bar) 
+• Chart B - Usage Frequency Question: Bar chart titled “How often do you use 
+digital shopping assistants or an e-commerce experience enabled by AI?” 
+• Always: 11% (dark blue bar) 
+• Often: 25% (dark blue bar) 
+• Sometimes: 33% (dark blue bar) 
+• Rarely: 19% (gray bar) 
+• Never: 12% (gray bar) 
+Key Findings: 
+• ~59% of online shoppers are familiar with some version of online AI-powered 
+shopping assistants already 
+• 36% of online shoppers familiar with AI-powered assistants often or always 
+use them when shopping 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.2: Generativ e AI Usage and Shopping Preferences 
+Summary: This figure sho ws high penetration of Generative AI usage in Australia, 
+with only 1 in 5 consumers not having used it in the past 3 months. It also reveals 
+consumer preferences regarding businesses that offer AI-powered shopping 
+experiences. 
+Chart Descriptions: 
+• Chart A - Gen AI Chatbot Usage: Bar chart titled “Have you used any of the 
+currently available Gen AI chatbots in the past 3 months? (top 3 shown)” 
+• ChatGPT: 68% (dark blue bar) 
+• Gemini: 29% (dark blue bar) 
+• Meta AI: 27% (
+dark blue bar) 
+• No, I have not used any of the above: 20% (gray bar) 
+• Chart B - Shopping Preference: Bar chart titled “Would you prefer to shop 
+more or less with businesses that offer an AI-powered shopping assistant 
+experience?” 
+• Shop More: 23% (dark blue bar) 
+• Shop the same: 62% (gray bar) 
+• Shop Less: 15% (gray bar) 
+Key Findings: With only 1 in 5 having not used Generative AI in the past 3 months, 
+market penetration is already high and growing. 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.3: Substitution Effects
+ 
+Summary: This figure demonstr
+ates strong substitution effects enabled by agentic 
+commerce across the digital buyer journey stages. Product Discovery actions are more 
+skewed to digital, also showing highest Agentic replacement. 
+Chart Descriptions: 
+• Chart A - Digital vs. In-Person Journey: Stacked bar chart showing percentage 
+distribution across four journey stages 
+• Product Discovery: 92% Digital (dark blue), 8% In-Person only (light blue) 
+• Product Evaluation: 88% Digital (dark blue), 12% In-Person only (light blue) 
+• Checkout: 90% Digital (dark blue), 10% In-Person only (light blue) 
+• Post Purchase: 86% Digital (dark blue), 14% In-Person only (light blue) 
+• Chart B - Agentic Replacement of Digital Journey: Stacked bar chart showing 
+replacement vs. non-replacement percentages 
+• Product Discovery: 74% Replacement (dark blue), 26% Non-Replacement 
+(light blue) - 92% Digital Base 
+• Product Evaluation: 70% Replacement (dark blue), 30% Non-Replacement 
+(light blue) - 88% Digital Base 
+• Checkout: 62% Replacement (dark blue), 38% Non-Replacement (light blue) 
+- 90% Digital Base 
+• Post Purchase: 66% Replacement (dark blue), 34% Non-Replacement
+ (light blue) - 86% Digital Base 
+Key Finding: Product Discovery actions are more skewed to digital, also showing highest 
+Agentic replacement. 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Note: *Average across 4 product categories: Groceries, Electronics, Travel, Gifts. 
+**Agentic Replacement rate based on top digital action by stage of the buyer journey. 
+Figure 2.4: Use Cases Comparison 
+Summary: This figure sho
+ws that across shopping categories (Birthday Gifts and 
+Electronics), digital penetration and agentic replacement remain consistently high 
+throughout all journey stages. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 94% Digital (dark blue), 6% In-Person (light blue) 
+• Product Evaluation: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Checkout: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Post Purchase: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Chart B - Birthday Gifts, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 69% Replacement (dark blue), 31% Non-Replacement 
+(light blue) 
+• Product Evaluation: 72% Replacement (dark blue), 28% Non-Replacement 
+(light blue) 
+• Checkout: 61% Replacement (dark blue), 39% Non-Replacement (light blue) 
+• Post Purchase: 77% Replacement (dark blue), 23% Non-Replacement 
+(light blue) 
+• Chart C - Electronics, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 95% Digital (dark blue), 5% In-Person (light blue) 
+• Product Evaluation: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Checkout: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Post Purchase: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Chart D - Electronics, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 76% Replacement (dark blue), 24% Non-Replacement 
+(light blue) 
+• Product Evaluation: 75% Replacement (dark blue), 25% Non-Replacement 
+(light blue) 
+• Checkout: 69% Replacement (dark blue), 31% Non-Replacement (light blue) 
+• Post Purchase: 63% Replacement (dark blue), 37% Non-Replacement 
+(light blue) 
+Source: Agentic Commerce Consumer research survey in AUS; Birthday Gifts N=401, 
+Electronics N=397 
+Note: **Agentic Replacement rate based on top digital action by stage of the buyer 
+journey. 
+©️2025 Visa. All rights reserved. 
+25Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia (continued) 
+Figure 2.5: Additional Use Cases 
+Summary: This figure demonstrates that digital penetration and agentic 
+replacement are strong across all parts of the buyer journey for both Groceries and 
+Travel categories. 
+Chart Descriptions: 
+• Chart A - Groceries, Digital vs. In-Person Journey: Stacked bar chart   
+• Product Discovery: 83% Digital (dark blue), 17% In-Person (light blue) 
+• Product Evaluation: 77% Digital (dark blue), 23% In-Person (light blue) 
+• Checkout: 85% Digital (dark blue), 15% In-Person (light blue) 
+• Post Purchase: 76% Digital (dark blue), 24% In-Person (light blue) 
+• Chart B - Groceries, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 71% Replacement (dark blue), 29% Non-
+Replacement (light blue) 
+• Product Evaluation: 73% Replacement (dark blue), 27% Non-
+Replacement (light blue) 
+• Checkout: 61% Replacement (dark blue), 39% Non-Replacement 
+(light blue) 
+• Post Purchase: 66% Replacement (dark blue), 34% Non-Replacement 
+(light blue) 
+• Chart C - Travel, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery:  97% Digital (dark blue), 3% In-Person (light blue) 
+• Product Evaluation: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Checkout: 89% Digital (dark blue), 11% In-Person (light blue) 
+• Post Purchase: 85% Digital (dark blue), 15% In-Person (light blue) 
+• Chart D - Travel, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 74% Replacement (dark blue), 26% Non-
+Replacement (light blue) 
+• Product Evaluation: 69% Replacement (dark blue), 31% Non-
+Replacement (light blue) 
+• Checkout: 63% Replacement (dark blue), 37% Non-Replacement 
+(light blue) 
+• Post Purchase: 68% Replacement (dark blue), 32% Non-Replacement 
+(light blue) 
+Source: Agentic Commerce Consumer research survey in AUS; Groceries N=401, 
+Travel N=401 
+Note: **Agentic Replacement rate based on top digital action by stage of the buyer 
+journey. 
+Figure 2.6: Agent Usage F requency 
+Summary: This figure shows anticipated usage patterns for AI-enabled e-commerce 
+experiences, with three in five respondents seeing themselves using an AI agent at 
+least a few times per month, while fewer than 1 in 5 foresee no use at all. 
+Chart Descriptions: 
+• Chart A - Usage Frequency Projection: Bar chart titled “How often do you see 
+yourself using the e-commerce experience enabled by AI shown if available?” 
+• Daily: 9% (dark blue bar) 
+• Weekly: 20% (dark blue bar) 
+• A few times per month: 28% (dark blue bar) 
+• A few times per year: 18% (gray bar) 
+• Once a year or fewer: 9% (gray bar) 
+• Never: 17% (gray bar) 
+Key Findings: Three in five respondents see themselves using an AI agent at least a 
+few times per month, while fewer than 1 in 5 foresee no use at all. 
+Source: Agentic Commerce Consumer research survey in AUS: N=1600 
+©️2025 Visa. All rights reserved. 
+26Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia (continued) 
+Figure 2.7: Product Discovery Stage 
+Summary: This figure illustrates strong substitution effects of agentic commerce 
+during the Product Discovery stage. The key finding notes that this stage is mainly 
+focused on Google search and Business website search, more salient in the 
+Travel and Home Entertainment use cases. Online Marketplace discovery is more 
+prevalent for Birthday gift. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Product Discovery Stage: Grouped bar chart with 
+baseline percentage and replacement split  
+• Search Engine: 63% baseline (26% Replace in dark blue, 74% Not 
+Replace in light blue) 
+• Online Marketplace: 54% baseline (30% Replace in dark blue, 70% Not 
+Replace in light blue) 
+• Business Website: 48% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Social Media: 38% baseline (31% Replace in dark blue, 69% Not Replace 
+in light blue) 
+• Online Ads: 32% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Chart B - Electronics, Product Discovery Stage: Grouped bar chart 
+• Search Engine: 71% baseline (24% Replace in dark blue, 76% Not 
+Replace in light blue) 
+• Online Marketplace: 47% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Business Website: 54% baseline (33% Replace in dark blue, 67% Not 
+Replace in light blue) 
+• Social Media: 35% baseline (39% Replace in dark blue, 61% Not Replace 
+in light blue) 
+• Online Ads: 29% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Chart C - Groceries, Product Discovery Stage: Grouped bar chart 
+• Search Engine: 50% baseline (29% Replace in dark blue, 71% Not 
+Replace in light blue) 
+• Online Marketplace: 35% baseline (35% Replace in dark blue, 65% Not 
+Replace in light blue) 
+• Business Website: 47% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Social Media: 27% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Online Ads: 24% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Chart D - Travel, Pr
+ oduct Discovery Stage: Grouped bar chart 
+• Search Engine: 71% baseline (26% Replace in dark blue, 74% Not 
+Replace in light blue) 
+• Online Marketplace: 32% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Business Website: 52% baseline (34% Replace in dark blue, 66% Not 
+Replace in light blue) 
+• Social Media: 36% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+• Online Ads: 34% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+Key Finding: Mainly focused on Google search and Business website search, 
+more salient in the Travel and Home Entertainment use cases. Online Marketplace 
+discovery more prevalent for Birthday gift. 
+Source: *Actions ranked high to low based on Birthday Gifts Based on the following 
+sample sizes: Birthday n=401, Home Ent. N=397, Groceries n=401, Travel n=401 
+Figure 2.8: Product Evaluation Stage 
+Summary: This figure shows strong substitution effects of agentic commerce during 
+the Product Evaluation stage, which enables comparison across different retailers and 
+facilitates expert reviews. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Product Evaluation Stage:  Grouped bar chart   
+• Browser Different Retailers: 53% baseline (39% Replace in dark blue, 61% 
+Not Replace in light blue) 
+• Read Web Reviews: 43% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Read Social Media: 39% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Browse Same Retailer: 38% baseline (35% Replace in dark blue, 65% Not 
+Replace in light blue) 
+• Read Journalists: 32% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Support via Email: 16% baseline (50% Replace in dark blue, 50% Not 
+Replace in light blue) 
+• Support via Phone: 11% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Chart B - Home Entertainment, Product Evaluation Stage:  Grouped bar chart   
+• Browser Different Retailers: 52% baseline (25% Replace in dark blue, 75% 
+Not Replace in light blue) 
+• Read Web Reviews: 46% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Read Social Media: 45% baseline (35% Replace in dark blue, 70% Not 
+Replace in light blue) 
+• Browse Same Retailer: 35% baseline (27% Replace in dark blue, 73% Not 
+Replace in light blue) 
+• Read Journalists: 33% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Support via Email: 16% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Support via Phone: 12% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Chart C - Groceries, Product Evaluation Stage:  Grouped bar chart   
+• Browser Different Retailers: 38% baseline (32% Replace in dark blue, 68% 
+Not Replace in light blue) 
+• Read Web Reviews: 28% baseline (46% Replace in dark blue, 54% Not 
+Replace in light blue) 
+• Read Social Media: 29% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Browse Same Retailer: 34% baseline (36% Replace in dark blue, 64% Not 
+Replace in light blue) 
+• Read Journalists: 23% baseline (27% Replace in dark blue, 73% Not Replace 
+in light blue) 
+• Support via Email: 14% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Support via Phone: 13% baseline (44% Replace in dark blue, 56% Not 
+Replace in light blue) 
+• Chart D - Travel Booking, Product Evaluation Stage:  Grouped bar chart   
+• Browser Different Retailers: 54% baseline (32% Replace in dark blue, 68% 
+Not Replace in light blue) 
+• Read Web Reviews: 44% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Read Social Media: 37% baseline (31% Replace in dark blue, 69% Not 
+Replace in light blue) 
+• Browse Same Retailer: 38% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Read Journalists: 27% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Support via Email: 22% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Support via Phone: 19% baseline (36% Replace in dark blue, 64% Not 
+Replace in light blue) 
+Key Finding: Enables comparison across different retailers, facilitates expert reviews. 
+Source: *Actions ranked high to low based on Birthday Gifts Based on the following 
+sample sizes: Birthday n=401, Home Ent. N=397, Groceries n=401, Travel n=401 
+©️2025 Visa. All rights reserved. 
+27 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia (continued) 
+Figure 2.9: Cart Selection Stage 
+Summary: This figure demonstrates strong substitution effects of agentic commerce 
+during the Cart Selection stage, which is more prevalent for adding product to cart and 
+providing address and payment details. No major difference by use case. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Cart Selection Stage:  Grouped bar chart   
+• Add to cart: 62% baseline (42% Replace in dark blue, 58% Not Replace in 
+light blue) 
+• Provide address: 61% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Payment details: 57% baseline (47% Replace in dark blue, 53% Not Replace 
+in light blue) 
+• Discount codes: 49% baseline (36% Replace in dark blue, 64% Not Replace 
+in light blue) 
+• Buy-it-Now: 32% baseline (48% Replace in dark blue, 52% Not Replace in 
+light blue) 
+• Memberships: 30% baseline (47% Replace in dark blue, 53% Not Replace 
+in light blue) 
+• Chart B - Electronics, Cart Selection Stage:  Grouped bar chart   
+• Add to cart: 61% baseline (36% Replace in dark blue, 64% Not Replace in 
+light blue) 
+• Provide address: 56% baseline (41% Replace in dark blue, 59% Not Replace 
+in light blue) 
+• Payment details: 57% baseline (38% Replace in dark blue, 62% Not 
+Replace in light blue) 
+• Discount codes: 43% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Buy-it-Now: 38% baseline (42% Replace in dark blue, 58% Not Replace in 
+light blue) 
+• Memberships: 30% baseline (31% Replace in dark blue, 69% Not Replace 
+in light blue) 
+• Chart C - Groceries, Cart Selection Stage:  Grouped bar chart   
+• Add to cart: 58% baseline (44% Replace in dark blue, 56% Not Replace in 
+light blue) 
+• Provide address: 52% baseline (43% Replace in dark blue, 57% Not Replace 
+in light blue) 
+• Payment details: 51% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Discount codes: 33% baseline (40% Replace in dark blue, 60% Not Replace 
+in light blue) 
+• Buy-it-Now: 29% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Memberships: 32% baseline (45% Replace in dark blue, 55% Not Replace 
+in light blue) 
+• Chart 
+D - Travel Booking, Cart Selection Stage:  Grouped bar chart   
+• Add to cart: 51% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Provide address: 49% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Payment details: 55% baseline (45% Replace in dark blue, 55% Not 
+Replace in light blue) 
+• Discount codes: 43% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+• Buy-it-Now: 30% baseline (40% Replace in dark blue, 60% Not Replace in 
+light blue) 
+• Memberships: 34% baseline (37% Replace in dark blue, 63% Not Replace 
+in light blue) 
+Key Finding: More prevalent for adding product to cart and providing address and 
+payment details. No major difference by use case. 
+Source: *Actions ranked high to low based on Birthday Gifts Based on the following 
+sample sizes: Birthday n=401, Home Ent. N=397, Groceries n=401, Travel n=401 
+Figure 2.10: Post-Purchase Stage 
+Summary: This figure shows strong substitution effects of agentic commerce during 
+the Post-Purchase stage, focused on tracking shipments and registering warranties. No 
+major difference by use case, except lower substitution for Birthday Gift. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 66% baseline (50% Replace in dark blue, 50% Not Replace in 
+light blue) 
+• Process return: 37% baseline (57% Replace in dark blue, 43% Not Replace 
+in light blue) 
+• Register warranty: 31% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Submit review on-site: 28% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+• Publish review social: 23% baseline (51% Replace in dark blue, 49% Not 
+Replace in light blue) 
+• Set-up assistance: 15% baseline (40% Replace in dark blue, 60% Not 
+Replace in light blue) 
+• Chart B - Home Entertainment, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 68% baseline (39% Replace in dark blue, 61% Not Replace in 
+light blue) 
+• Process return: 32% baseline (39% Replace in dark blue, 61% Not Replace 
+in light blue) 
+• Register warranty: 43% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Submit review on-site: 29% baseline (37% Replace in dark blue, 63% Not 
+Replace in light blue) 
+• Publish review social: 21% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Set-up assistance: 20% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Chart C - Groceries, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 56% baseline (36% Replace in dark blue, 64% Not Replace in 
+light blue) 
+• Process return: 26% baseline (44% Replace in dark blue, 56% Not Replace 
+in light blue) 
+• Register warranty: 23% baseline (42% Replace in dark blue, 58% Not 
+Replace in light blue) 
+• Submit review on-site: 26% baseline (34% Replace in dark blue, 66% Not 
+Replace in light blue) 
+• Publish review social: 18% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+• Set-up assistance: 16% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Chart D - Travel, Post-purchase Stage:  Grouped bar chart   
+• Tracking: 56% baseline (32% Replace in dark blue, 68% Not Replace in 
+light blue) 
+• Process Return: 38% baseline (35% Replace in dark blue, 65% Not Replace 
+in light blue) 
+• Register warranty: 30% baseline (39% Replace in dark blue, 61% Not 
+Replace in light blue) 
+• Submit review on-site: 33% baseline (44% Replace in dark blue, 56% Not 
+Replace in light blue) 
+• Publish review social: 25% baseline (41% Replace in dark blue, 59% Not 
+Replace in light blue) 
+• Set-up assistance: 24% baseline (43% Replace in dark blue, 57% Not 
+Replace in light blue) 
+Key Finding: Focused on tracking shipments and registering warranties. No major 
+difference by use case, except lower substitution for Birthday Gift. 
+Source: *Actions ranked high to low based on Birthday Gifts Based on the following 
+sample sizes: Birthday n=401, Home Ent. N=397, Groceries n=401, Travel n=401 
+©️2025 Visa. All rights reserved. 
+28Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia (continued) 
+Figure 2.11: Most Important Factors 
+Summary: This figure reveals that shoppers are looking for value and speed, with 
+both price and discounts/promotions considered most important by a majority of 
+consumers. 
+Chart Descriptions: 
+• Chart A - Importance Ranking: Horizontal bar chart titled “Most important 
+factors when shopping online”   
+• Price: 74% 
+• Delivery Speed: 61% 
+• Security of transactions: 57% 
+• Ease of Use/Convenience: 54% 
+• Discounts and Promotions: 51% 
+• Trusted business: 48% 
+• Privac
+y of my data and purchase history: 41% 
+• Return Policy: 40% 
+• Customer Service: 39% 
+• Product Variety: 37% 
+• Control and visibility of online transactions: 30% 
+• Personalised recommendations: 15% 
+• Automated process for repeat purchases: 12% 
+Key Finding: Shoppers are looking for value and speed, with both price and discounts/ 
+promotions considered most important by a majority. 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.12: Motivations 
+Summary: This figure shows that agentic offerings that save shoppers money and time 
+while reducing discovery friction are those most likely to drive adoption. 
+Chart Description: 
+• Chart A - Adoption Motivators:  Horizontal bar chart titled “Which of the 
+following statements would motivate you to use an AI shopping assistant like the 
+one shown above?” 
+• Save time: 45% 
+• Save money through price matching: 42% 
+• Find me new products I wouldn’t find on my own: 40% 
+• Large variety of product options to choose from: 35% 
+• Fine the best deals: 34% 
+• More convenient: 32% 
+• Feels more safe and secure: 21% 
+• Other: 1% 
+• None of the Above: 16% 
+Key Finding: 
+• Consumers are most motivated by the time-saving benefits (45%) and discovery 
+of new products (40%) offered by AI shopping assistants 
+• Trust in finding the best deals (34%) and access to a wider product variety (35%) 
+also rank high, while emotional factors such as safety and security (21%) play a 
+more limited role in driving adoption 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.13: Top Conc
+erns 
+Summary: This figure identifies data security and priv
+acy as top concerns, followed by 
+accuracy/reliability of purchases (likely driven by past fails on Social commerce). Very 
+few have no concerns. 
+Chart Description: 
+• Chart A - Concern Levels:  Horizontal bar chart titled “What concerns might you 
+have about using the online shopping agent you were shown?” 
+• Data Security: 52% 
+• Privacy: 44% 
+• Reliability of service: 40% 
+• Accuracy of Purchases: 40% 
+• Lack of control of the shopping process: 35% 
+• Cost: 31% 
+• Not able to talk to a real person for customer service: 31% 
+• Sponsored or paid recommendations not clearly...: 25% 
+• Not being able to process returns: 19% 
+• Poor customer service: 18% 
+• Not being able to process exchanges: 17% 
+• Other, please specify: 2% 
+• None of the above: 6% 
+Key Finding: Data security and privacy as top concerns, followed by accuracy/reliability 
+of purchases (likely driven by past fails on Social commerce). Very few have no 
+concerns. 
+Source: Agentic Commerce Consumer research survey in AUS, n=1,600 
+Figure 2.14: Personal Data Sharing 
+Summary: This figure re
+veals that consumers are wary to share their personal 
+information, with less than half willing to do so, and even less sharing their financial 
+information. 1 in 5 would not share any information at all. 
+Chart Description: 
+• Chart A - Data Sharing Willingness: Horizontal bar chart titled “To use this 
+new service, what personal data would you be willing to share with the company 
+offering it?”” 
+• Personal contact information (full name, email, phone): 44% 
+• Home address: 40% 
+• Transaction history: 25% 
+• Online browsing history: 25% 
+• Financial data – debit card number: 24% 
+• Financial data – credit card number: 20% 
+• Business address: 18% 
+• Financial data – bank account number: 16% 
+• None of the above: 22% (shown in black bar) 
+Key Finding: Consumers are wary to share their personal information, with less than 
+half willing to do so, and even less sharing their financial information. 1 in 5 would not 
+share any information at all. 
+Source:  Agentic Commerce Consumer research survey in AUS, n=1,600 
+©️2025 Visa. All rights reserved. 
+29 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+2.  Australia (continued) 
+Figure 2.15: Controls and Transparency 
+Summary: This figure demonstrates that shoppers widely agree with 85% saying 
+consumer controls and transparency over personal data usage is critical. Only 1 in 4 
+would still consider using a shopping agent if no control is provided over consumer’s 
+data usage. 
+Chart Description: 
+• Chart A - Importance of Data Control: Vertical bar chart titled “When using 
+AI-enabled e-commerce, the AI Agent may be collecting information about your 
+shopping preferences and purchases. How important is it that you can control or 
+delete how the Agent uses your data?” 
+• Very important: 58% (dark blue bar) 
+• Important: 28% (dark blue bar) 
+• Somewhat important: 12% (gray bar) 
+• Somewhat not important: 2% (gray bar) 
+• Not important at all: 1% (gray bar) 
+• Chart B - Likelihood of Using Without Control: Vertical bar chart titled “If you 
+cannot control how the Agent uses your data, what is the likelihood that you will 
+still use the Agent?” 
+• Extremely likely: 11% (dark blue bar) 
+• Very likely: 17% (dark blue bar)
+ 
+• Somewhat likely: 22% (gray bar) 
+• Not very likely: 27% (gray bar) 
+• Not at all likely: 24% (gray bar) 
+Key Finding: Shoppers widely agree with 85% saying consumer controls and 
+transparency over personal data usage is critical. Only 1 in 4 would still consider using a 
+shopping agent if no control is provided over consumer’s data usage. 
+Source: Agentic Commerce Consumer research survey in AUS, n=1,600 
+Figure 2.16: Most Trusted Brands 
+Summary: This figure shows trusted companies to provide AI include major payment 
+networks, Amazon marketplace, and Apple. GenAI companies, banks, and other Big 
+Tech less trusted. 
+Chart Description: 
+• Chart A - Company Trust Levels: Horizontal bar chart titled “From which of the 
+following companies would you feel comfortable using the new shopping service 
+you were shown?” 
+• PayPal: 48% 
+• Amazon: 37% 
+• Mastercard: 37% 
+• Visa: 36% 
+• Apple: 35% 
+• OpenAI (ChatGPT): 29% 
+• Microsoft: 25% 
+• Samsung: 24% 
+• Google (Alphabet): 21% 
+• Your primary Bank: 20% 
+• Meta (Facebook): 15% 
+• Amex: 8% 
+• IBM: 7% 
+• Perplexity: 5% 
+• Other, please specify: 0% 
+• None of the above: 13% 
+Key Finding: Trusted Companies to Provide AI: major payment networks, Amazon 
+marketplace, and Apple. GenAI companies, banks, and other Big Tech less trusted. 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.17: Pref
+erence for Retailer with Agent 
+Summary: This figure demonstr
+ates that agents serve as a customer acquisition tool, 
+with 44% of consumers being more likely to shop with a retailer if offering an on-site AI 
+shopping agent. 
+Chart Description: 
+• Chart A - Shopping Likelihood Impact: Vertical bar chart titled “For those retailers 
+you have not made an online purchase in the last 3 months, would an on-site AI 
+shopping agent make you likely to purchase from them?” 
+• More Likely: 44% (dark blue bar) 
+• Neither more or Less Likely: 38% (gray bar) 
+• Less Likely: 18% (gray bar) 
+Key Finding: Agents as a customer acquisition tool: 44% of consumers are more likely to 
+shop with a retailer if offering on-site AI shopping agent. 
+Source: Agentic Commerce Consumer research survey in AUS, N=1,600 
+Figure 2.18: Online Retailers 
+Summary: This figure shows that multi-brand retailers with a strong online presence 
+lead in Australia. 
+Chart Description: 
+• Chart A - Recent Purchase Activity: Horizontal bar chart titled “From which of 
+the following retailers have you purchased a product or service online in the past 
+3 months?” 
+• Woolworths: 57% 
+• Coles: 51% 
+• Kmart: 49% 
+• Big W: 37% 
+• JB Hi-Fi: 32% 
+• Bunnings Warehouse: 30% 
+• ALDI: 27% 
+• Officeworks: 26% 
+• Myer: 21% 
+• Harvey Norman: 14% 
+• Other: 9% 
+• N/A: 7% 
+Key Finding: Multi-brand retailers with a strong online presence lead in Australia. 
+Source:  Agentic Commerce Consumer research survey in AUS, N=1,600 
+©️2025 Visa. All rights reserved. 
+30 Summary About Insights Buyer  journey Adoption What this means Advantages Conclusion Appendix 
+Accessibility Notes 
+3.  New Zealand 
+Figure 3.1: Consumer Familiarity and Usage Frequency 
+Summary: This figure presents data on consumer awareness and usage of 
+AI-powered shopping assistants in New Zealand, showing that less than half of 
+shoppers surveyed are familiar with online AI shopping assistants currently. 
+Chart Descriptions: 
+• Chart A - Familiarity Question: Bar chart titled “Are you familiar with online    
+shopping assistants or e-commerce experiences enabled by AI?” 
+• Yes: 43% (dark blue bar) 
+• No: 57% (gray bar) 
+• Chart B - Usage Frequency Question: Bar chart titled “How often do you use 
+digital shopping assistants or an e-commerce experience enabled by AI?” 
+• Always: 7% (dark blue bar) 
+• Often: 16% (dark blue bar) 
+• Sometimes: 36% (dark blue bar) 
+• Rarely: 26% (gray bar) 
+• Never: 14% (gray bar) 
+Key Findings: 
+• Only 43% of online shoppers are familiar with some version of online AI-
+powered shopping assistants already 
+• 23% of online shoppers familiar with AI-powered assistants often or always 
+use them when shopping 
+Source: Agentic Commerce Consumer research survey in NZ, N=500 
+Figure 3.2: Gen AI Usage and Shopping Prefer ences 
+Summary: This figure show s that there is still room for Gen AI adoption in NZ, 
+with nearly 30% of shoppers having not used any of the currently available Gen AI 
+offerings in the past 3 mo. 
+Chart Descriptions: 
+• Chart A - Gen AI Chatbot Usage: Bar chart titled “Have you used any of the 
+currently available Gen AI chatbots in the past 3 months? (top 3 shown)”
+ 
+• ChatGPT: 57% (dark blue bar) 
+• Meta AI: 29% (dark blue bar) 
+• Gemini: 24% (dark blue bar) 
+• No, I have not used any of the above: 29% (gray bar) 
+• Chart B - Shopping Preference: Bar chart titled “Would you prefer to shop 
+more or less with businesses that offer an AI-powered shopping assistant 
+experience?” 
+• Shop More: 13% (dark blue bar) 
+• Shop the same: 66% (gray bar) 
+• Shop Less: 21% (gray bar) 
+Key Findings: There is still room for Gen AI adoption in NZ, with nearly 30% of 
+shoppers having not used any of the currently available Gen AI offerings in the past 
+3 mo. 
+Source: Agentic Commerce Consumer research survey in NZ, N=500 
+Figure 3.3: Digital vs In-Person and Agentic Replac
+ement 
+Summary: This figure demonstrates str
+ong substitution effects enabled by agentic 
+commerce across the digital buyer journey stages. Product Discovery actions are more 
+skewed to digital, also showing highest Agentic replacement. 
+Chart Descriptions: 
+• Chart A - In-Person vs. Digital: Stacked bar chart showing percentage distribution 
+across four journey stages 
+• Product Discovery: 93% Digital (dark blue), 7% In-Person only (light blue) 
+• Product Evaluation: 89% Digital (dark blue), 11% In-Person only (light blue) 
+• Checkout: 88% Digital (dark blue), 12% In-Person only (light blue) 
+• Post Purchase: 85% Digital (dark blue), 15% In-Person only (light blue) 
+• Chart B - Agentic Replacement of Digital Journey: Stacked bar chart showing 
+replacement vs. non-replacement percentages 
+• Product Discovery: 71% Replacement (dark blue), 29% Non-Replacement 
+(light blue) - 93% Digital Base 
+• Product Evaluation: 61% Replacement (dark blue), 39% Non-Replacement 
+(light blue) - 89% Digital Base 
+• Checkout: 66% Replacement (dark blue), 34% Non-Replacement (light blue) 
+- 88% Digital Base 
+• Post Purchase: 59% Replacement (dark blue), 41% Non-Replacement (light 
+blue) - 85% Digital Base 
+Key Finding: Product Discovery actions are more skewed to digital, also showing highest 
+Agentic replacement.. 
+Source: Agentic Commerce Consumer research survey in NZ, N=500 
+Note: *Average across 4 product categories: Groceries, Electronics, Travel, Gifts. 
+**Agentic Replacement rate based on top digital action by stage of the buyer journey. 
+Figure 3.4: Use Cases Comparison 
+Summary: This figure show
+s that across shopping categories (Birthday Gifts and 
+Electronics), digital penetration and agentic replacement remain consistently high 
+throughout all journey stages. 
+Chart Descriptions: 
+• Chart A - Birthday Gifts, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 96% Digital (dark blue), 4% In-Person (light blue) 
+• Product Evaluation: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Checkout: 90% Digital (dark blue), 10% In-Person (light blue) 
+• Post Purchase: 91% Digital (dark blue), 9% In-Person (light blue) 
+• Chart B - Birthday Gifts, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 71% Replacement (dark blue), 29% Non-Replacement 
+(light blue) 
+• Product Evaluation: 61% Replacement (dark blue), 39% Non-Replacement 
+(light blue) 
+• Checkout: 66% Replacement (dark blue), 34% Non-Replacement (light blue) 
+• Post Purchase: 59% Replacement (dark blue), 41% Non-Replacement 
+(light blue) 
+• Chart C - Electronics, Digital vs. In-Person Journey: Stacked bar chart 
+• Product Discovery: 92% Digital (dark blue), 8% In-Person (light blue) 
+• Product Evaluation: 94% Digital (dark blue), 6% In-Person (light blue) 
+• Checkout: 89% Digital (dark blue), 11% In-Person (light blue) 
+• Post Purchase: 91% Digital (dark blue), 9% In-Person (light blue) 
+Chart D - Electronics, Agentic Replacement: Stacked bar chart 
+• Product Discovery: 73% Replacement (dark blue), 27% Non-Replacement 
+(light blue) 
+• Product Evaluation: 78% Replacement (dark blue), 22% Non-Replacement 
+(light blue) 
+• Checkout: 69% Replacement (dark blue), 31% Non-Replacement (light blue) 
+• Post Purchase: 66% Replacement (dark blue), 34% Non-Replacement 
+(light blue) 
+Source: Agentic Commerce Consumer research survey in NZ; Birthday Gifts N=124, 
+Electronics N=126 
+Note: **Agentic Replacement rate based on top digital action by stage of the buyer 
+journey. 
+©️2025 Visa. All rights reserved. 

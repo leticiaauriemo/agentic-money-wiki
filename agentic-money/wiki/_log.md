@@ -7,6 +7,42 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-04-28] ingest | "The Beginning of Agentic Finance" (Castle Labs, 2026-04-23)
+
+Source file: `The Beginning of Agentic Finance.md` (in ` agentic-money/raw/`)
+Authors: @TradFiHater and @noveleader. Comprehensive 6-chapter thesis on Ethereum as the machine economy settlement layer.
+
+**New pages created:**
+- [[the-beginning-of-agentic-finance]] (summary)
+- [[erc-8183]] (concept) — commerce standard: Job primitive with escrow, delivery, evaluation; co-developed by Virtuals.io + ETH Foundation dAI team
+- [[erc-8211]] (concept) — dynamic execution standard; Biconomy + ETH Foundation, April 2026
+- [[crops-mandate]] (concept) — Ethereum's C/O/P/S framework for trustworthy agentic infrastructure
+
+**Pages updated:**
+- [[x402]] — added V2 features (wallet identity, modular arch, Unified Payment Interface, auto discovery), Upto scheme, speculation-correction note (~200K/day organic baseline; >50% was memecoins until Dec 2025)
+- [[coinbase]] — added x402 V2 and Upto scheme; corrected transaction volume context
+- [[circle]] — added Circle Nanopayments (offchain auth batching, used in OpenMind OM1 robot dog demo)
+
+---
+
+## [2026-04-28] ingest | "The new stack for global finance: Stablecoins edition" (a16z crypto, 2026-04-27)
+
+Source file: `The new stack for global finance Stablecoins edition.md` (in ` agentic-money/raw/`)
+Authors: Noah Levine, Guy Wuollet, Robert Hackett. a16z crypto market map of the stablecoin-powered global finance stack.
+
+**New pages created:**
+- [[the-new-stack-for-global-finance-stablecoins]] (summary)
+- [[circle-arc]] (rail) — Circle's payments-specific blockchain; stablecoin-native gas, privacy, predictable costs
+- [[canton]] (rail) — Digital Asset Holdings institutional blockchain for regulated entities
+- [[onchain-credit-market]] (concept) — Act 2 of stablecoin economy: productive credit on programmable rails
+
+**Pages updated:**
+- [[stablecoin]] — added OCC National Trust Charter race section; added payments-specific blockchain category framework
+- [[stripe]] — added Privy acquisition (alongside Bridge); added three blockchain categories context
+- [[circle]] — added Circle Arc; added OCC charter race section
+
+---
+
 ## [2026-04-27] update | Expanded stablecoin concept page
 
 Raw source added: `stablecoin-volume-record-2025.md` (web search clipping: $33T gross volume in 2025, +72% YoY).

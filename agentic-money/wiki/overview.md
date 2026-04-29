@@ -5,70 +5,294 @@ topic: agentic-money
 tags: []
 sources: []
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-28
 ---
 
 # Agentic Money Movement — Overview
 
-*This page is the living synthesis of everything in this wiki. Claude updates it as new sources are ingested. Treat claims here as provisional until backed by sourced pages.*
+*Living synthesis updated after ingestion of ~69 sources (April 2026). Claims backed by sourced wiki pages.*
 
 ---
 
 ## The core shift
 
-Traditional payments are human-initiated: a person decides to pay, authenticates, and approves a transaction. Agentic payments break this model — software agents initiate, route, and optimize money flows autonomously, on behalf of users or businesses. This creates a fundamentally new layer in financial infrastructure.
+Traditional payments assume humans initiate transactions. Agentic payments break this: software agents trigger, route, and complete money flows autonomously — on behalf of users or businesses — without per-transaction human approval.
 
-The shift is happening across several dimensions simultaneously:
-- **Transaction initiation** — agents triggering payments without human approval at each step
-- **Rail selection** — agents choosing between stablecoins, card networks, ACH, or crypto rails based on cost/speed
-- **Yield optimization** — agents moving idle balances to maximize returns in real time
-- **Commerce** — AI shopping agents completing purchases on behalf of users
-- **B2B treasury** — agents managing cross-border payments, FX conversion, cash management
-
----
-
-## Where it's happening now
-
-*(To be built out through source ingestion — these are seeded hypotheses)*
-
-**Stablecoin commerce** is the furthest along infrastructure-wise. USDC and USDT have programmable, API-accessible transfer capability that makes them natural rails for agent-initiated transactions. Companies like [[bridge]] (acquired by Stripe) are building orchestration layers on top.
-
-**Agentic shopping** is an emerging use case — AI assistants completing purchases. Visa and Mastercard have both announced programs for agent-friendly card credentials. The identity/authorization problem (how do you KYC an agent?) is unsolved.
-
-**Yield optimization** at the consumer level is nascent. At the institutional level, automated treasury management exists but uses rules-based bots, not LLM agents. The line between "algorithm" and "agent" is blurring.
+This is happening now, not hypothetically. As of April 2026:
+- Europe's first live AI agent payment ran inside Santander's regulated production infrastructure (Feb 27)
+- Mastercard Agent Pay is live in Europe, Latin America (16+ banks), and ASEAN
+- x402 has processed **167.96M transactions** and **$49.51M** in volume; 95% on Base; 1M+ txns in the last two weeks of April alone
+- MPP launched on Tempo Mainnet (March 18) with 50.7K transactions
+- Meow Technologies offers a fully MCP-native business bank account for AI agents (April 8)
+- Ramp's AP agents process invoices with **3.5x automation** and **98% accuracy**
+- Stablecoins reached **~$4.5T in Q1 2026 adjusted volume**; consumer-to-business transactions grew **128% YoY**
 
 ---
 
-## Key tensions & open questions
+## The rail landscape
 
-1. **Authorization & liability** — When an agent initiates a transaction, who is liable if something goes wrong? Existing regulations assume a human principal.
-2. **Identity** — KYC/AML frameworks require a human identity. Agents don't have one. This is the regulatory bottleneck.
-3. **Rail fragmentation** — Stablecoins, card rails, bank APIs, and crypto networks each have different speeds, costs, and programmability. No unified "agent payment" standard exists yet.
-4. **Trust** — Users need to trust agents with financial credentials. This is a UX and security problem as much as a technical one.
-5. **Yield vs. regulation** — Automatically moving customer funds to maximize yield may constitute investment advice or money transmission requiring licenses.
+Three protocol families are competing, with different philosophies:
+
+### Crypto-native: x402
+HTTP-native stablecoin micropayments. An agent calls a resource, gets a 402 response with a price, pays with USDC, retries, gets the resource. Zero accounts, zero API keys, ~$0.0001 per transaction, ~200ms on Base.
+
+**V2 (December 2025):** Wallet-based identity + reusable sessions, modular architecture, Unified Payment Interface (multi-chain + legacy rails), automatic API discovery. **Upto scheme:** client authorizes max amount, server settles actual — solves LLM cost-upfront problem.
+
+**Volume context:** Headline 167.96M transactions is inflated by speculation — >50% of volume was memecoins until December 2025. Organic baseline is ~200K transactions/day as of April 2026. See [[the-beginning-of-agentic-finance]].
+
+**Best for:** Permissionless, open-network micropayments; "headless merchants" (AI-operated APIs with no storefront) that traditional processors cannot underwrite; software-to-software API calls (vs. ACP's e-commerce).
+
+**Governance challenge (April 2026):** Agentic.Market — Coinbase's x402 discovery marketplace — hosts unauthorized third-party wrappers of APIs whose terms explicitly prohibit reselling (Wolfram Alpha, Amadeus, formerly Google Flights). The protocol has no visibility into upstream authorization; accountability sits with wrapper operators, not x402 itself. MPP addresses this by marking first-party integrations on each service card. Exa went native x402 (April 7), citing Linux Foundation governance. See [[x402-governance]].
+
+See [[x402]], [[x402-governance]], [[introducing-agentic-market]], [[who-authorized-this-x402]].
+
+### Hybrid fiat+crypto: MPP
+Stripe + Tempo's Machine Payments Protocol. Two intents: **Charge** (per-call, ~500ms) and **Session** (authorize once, continuous micropayments at near-zero latency). Supports stablecoins, Stripe cards, and Lightning Bitcoin natively. 100+ services at launch, explicitly marked as first-party.
+
+**Best for:** High-frequency agent loops; enterprise use cases requiring fiat/card support; situations where integration provenance matters.
+
+See [[mpp]], [[tempo]], [[introducing-the-machine-payments-protocol]], [[session-payments]].
+
+### Card-rails + mandates: AP2 / Agent Pay
+Google's AP2 uses cryptographically-signed Mandates (Intent Mandate + Cart Mandate) as verifiable credentials, creating non-repudiable audit trails. Mastercard Agent Pay uses Agentic Tokens + Payment Passkeys + Verifiable Intent. Both extend existing card rails with agent-specific trust layers.
+
+**Best for:** Large-scale consumer commerce where existing card infrastructure (fraud protection, chargebacks, rewards) must be preserved; regulated contexts requiring full audit trails.
+
+See [[ap2]], [[mastercard]], [[announcing-ap2-google-cloud]].
+
+### Fiat commerce layer: ACP
+OpenAI's Agentic Commerce Protocol defines three specs: **product feed** (how merchants expose catalogs to AI platforms), **agentic checkout** (how agents create and complete checkout sessions), and **delegated payment** (how AI platforms obtain one-time-use payment tokens from PSPs like PayPal/Braintree). The token model means buyer credentials never leave the PSP — the AI platform only ever sees a single-use nonce.
+
+**Best for:** Structured consumer commerce (buy a specific product) via existing AI chat interfaces (ChatGPT, Perplexity, Google); merchants who want to reach AI shopping surfaces without rebuilding their payment stack.
+
+**Confirmed implementations:** [[paypal]] (Braintree nonces), [[stripe]] (Agentic Commerce Suite), ChatGPT, Perplexity, Google.
+
+See [[acp]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]].
+
+### The strategic split
+x402 and MPP solve "how to pay." Neither solves "should this payment happen at all." The decision layer — routing logic that chooses rail, validates authorization, checks balance — is where the actual moat will form. See [[missing-infrastructure-ai-agents-a16z]].
 
 ---
 
-## Landscape map (to be filled in)
+## The volume reality
+
+| Rail / Network | Transactions | Volume |
+|----------------|-------------|--------|
+| x402 (all-time) | 167.96M | $49.51M |
+| NEAR Intents (all-time) | — | $17B+ |
+| Visa stablecoin (annualized) | — | $4.6B |
+| MPP (since Mar 18, 2026) | 50.7K | $7.27K |
+| Kinexys / JPMorgan (daily) | — | $5B+ |
+| Citi Token Services (daily) | — | $1B |
+
+x402's 167M transactions averaging ~$0.30 reflects micropayment + testing dominance. Traditional bank tokenized settlement dwarfs crypto rails by volume. NEAR Intents ($17B+, 31 chains) is the largest cross-chain liquidity layer explicitly targeting AI agents.
+
+---
+
+## The stablecoin usage reality
+
+a16z crypto's Q1 2026 data (Robert Hackett + Jeremy Zhang, April 25) overturns the dominant "stablecoins = cross-border" narrative:
+
+**Volume:** ~$4.5T adjusted in Q1 2026. After stripping trading and treasury flows, ~$350–550B in true payment activity.
+
+**The counterintuitive trend — stablecoins are going local:**
+- Cross-border share has been **declining**, not rising
+- Intra-country transactions grew from **~50% → ~75%** of payment volume (early 2024 → early 2026)
+- Brazil's BRLA (real-backed stablecoin): near zero early 2023 → **$400M/month** by early 2026, driven by PIX integration
+- Non-USD stablecoins growing in Europe (MiCA-driven), settled at $15–25B/month
+
+**Commerce is growing:**
+- C2B (consumer-to-business) transactions: **284.6M in 2025, +128% YoY** (from 124.9M in 2024)
+- Stablecoin velocity doubled: **2.6x → 6x** since early 2024 — supply is being used, not just held
+- Rain-powered stablecoin card collateral: near zero Nov 2024 → **$300M+/month** by early 2026
+
+**Implication for agentic payments:** The market being built is not primarily global cross-border — it is domestic, commerce-focused, and increasingly mainstream. Stablecoins are becoming general-purpose payment infrastructure that happens to run on global rails. See [[9-charts-stablecoins-a16z]], [[stablecoin]].
+
+---
+
+## The scope debate
+
+Two important theses challenge the "everything goes agentic" narrative:
+
+**Robbie Petersen's 95/5 split:** ~95% of agentic deployment over the next 5 years will be **top-down within organizations** (commercial agents automating internal tasks). Only ~5% will be truly autonomous agents transacting in open markets. Commercial agents use existing financial infrastructure (corporate cards, bank APIs). They don't need crypto rails.
+
+**@nlevine19's gap merchant thesis:** Stablecoins won't replace cards for existing commerce. They will serve merchants traditional processors can't underwrite: "headless merchants" and "vibe coders" building AI-generated software with no legal entity. This is the PayPal/eBay pattern — serving the unserved gap before migrating to mainstream rails.
+
+**Kahlil Lalji's labor thesis (Natural seed memo):** The displacement of human workers by agents doesn't just shift commerce volume — it shifts **payroll and labor volume**. US contractor payments ($700B+ annually, via 1099-NEC/K) will be re-routed to agent payments infrastructure as agents replace contractors. Nobody is building for this yet. See [[agentic-payments-memo-natural]].
+
+All three are probably right, in different markets. See [[agentic-economy-massive-commerce-wont]], [[agentic-commerce-wont-kill-cards]], [[headless-merchants]].
+
+---
+
+## The hard constraint problem
+
+**Agents cannot self-regulate spending.** Ramp Labs tested 14,000+ agent messages: budgets were referenced **zero times**. Interactive budget tools were invoked **zero times**. Approval bias runs at 97% when approval is the default framing.
+
+This validates a core design principle: **hard architectural constraints are mandatory**. Soft guardrails (prompts, budget displays, instructions) systematically fail. Spend limits, session caps, and authorization scopes must be enforced at the infrastructure/protocol level.
+
+This shapes everything:
+- Ramp's Agent Cards enforce limits at the Visa network level
+- Meow's platform requires initiator+approver for all transfers
+- Slash uses RSA-OAEP encryption so agents never see raw card numbers
+- MPP Session payments are bounded by pre-authorized session limits
+- AP2 mandates are cryptographically scoped
+- Natural's Wallet product allows per-transaction limits and JIT funding
+
+See [[coding-agents-ignore-budgets]], [[slash]], [[meow-technologies]], [[natural]].
+
+---
+
+## The EVM agentic finance stack
+
+The Ethereum ecosystem has a four-standard stack forming a complete commercial lifecycle for machines:
+
+| Standard | Layer | Status |
+|----------|-------|--------|
+| **ERC-8004** | Identity / trust | Live mainnet Jan 2026; 98K agent registrations, 10+ EVM chains |
+| **[[x402]]** | Payments | Live May 2025; V2 Dec 2025; ~200K txns/day organic baseline |
+| **[[erc-8183]]** | Commerce (escrow, work delivery, disputes) | Live 2026; co-developed Virtuals.io + ETH Foundation dAI team |
+| **[[erc-8211]]** | Dynamic execution (multi-step DeFi) | Spec live April 2026; Biconomy + ETH Foundation |
+
+**The CROPS mandate** — Ethereum's bar for trustworthy agentic infrastructure: Censorship Resistant, Open-source, Private (full-stack), and provably Secure. Current gap: onchain transactions are public by default; RPC nodes see intent + IP; wallet interfaces leak fingerprints. Ethereum's Kohaku SDK (privacy-preserving transactions) is in development. See [[crops-mandate]].
+
+**Security threat — prompt injection:** When an agent queries an external source (ENS record, price feed, contract metadata), a poisoned response can instruct the agent to drain its wallet. No phishing link, no malware, no human error required. New attack class with no equivalent in human-operated finance.
+
+**First working demo (early 2026):** OpenMind's OM1 robot dog paid for electricity autonomously — OM1 OS triggered spend, x402 handled HTTP payment, Circle Nanopayments batched offchain authorizations into single onchain settlements. Full economic loop, no human in the loop. — *[[the-beginning-of-agentic-finance]]*
+
+See [[erc-8183]], [[erc-8211]], [[crops-mandate]], [[erc-8004-trustless-agents]].
+
+---
+
+## The identity gap (Know Your Agent)
+
+KYA (Know Your Agent) is the most unresolved layer. Every transaction needs to answer:
+1. **Who is this agent?** (identity)
+2. **What is it authorized to do?** (scope)
+3. **On whose behalf?** (principal)
+4. **Within what behavioral bounds?** (guardrails)
+
+**Current approaches:**
+- **Platform-based:** Ramp/Brex enforce via corporate account context
+- **Cryptographic mandates:** AP2's Intent + Cart Mandates as verifiable credentials
+- **Scoped credentials:** Visa/Mastercard Agent Tokens bound to specific agent+user pairs
+- **Licensed institution anchor:** Catena Labs — regulated entity as the KYA provider
+
+**Most live deployment: ERC-8004** (live mainnet since January 2026) — co-authored by MetaMask, Ethereum Foundation, Google, and Coinbase. Three lightweight on-chain registries:
+- **Identity Registry:** ERC-721 NFT per agent; agent URI points to registration file listing endpoints (A2A, MCP, ENS, DID, wallet)
+- **Reputation Registry:** On-chain feedback signals from any party; x402 proof-of-payment can enrich reputation data
+- **Validation Registry:** ZK/TEE third-party attestation (Validation Registry still under active development with TEE community)
+- **Adoption:** 98K agent registrations as of April 2026; Base leads, then Ethereum, then MegaETH
+
+Trust is pluggable and proportional to value at risk — low-stake tasks use reputation; high-stake tasks use cryptographic validation. See [[erc-8004-trustless-agents]], [[know-your-agent]].
+
+The Consumer Bankers Association identified consumer liability under EFTA as the critical unresolved legal question: when an agent makes an erroneous transfer, existing law may make the consumer liable, not the institution. No current framework handles it adequately. See [[agentic-ai-payments-regulatory-frameworks]].
+
+---
+
+## The stablecoin foundation
+
+Stablecoins are the preferred rail for agentic payments for three structural reasons:
+1. **Programmable:** Smart contract logic can enforce conditions, escrow, and release
+2. **Push-only:** No chargebacks means no fraud model mismatch for agent-initiated payments
+3. **Permissionless:** Agents can transact without merchant agreements or processor onboarding
+
+USDC ($76B supply) dominates. The GENIUS Act (US) establishes reserve requirements (T-bills, cash, liquid instruments) that make stablecoins "narrow banks" in spirit.
+
+**The OCC charter race (2026):** Post-GENIUS Act, stablecoin issuers are racing for an OCC National Trust Charter. The stakes: if OCC charter holders receive direct access to Federal Reserve payment rails, early movers become integrated into the core payment hierarchy — potentially becoming the foundation for the next wave of credit and capital markets. Circle (USDC) is among the strongest candidates. See [[the-new-stack-for-global-finance-stablecoins]].
+
+**Three blockchain categories (a16z, April 2026):**
+- *General-purpose* (Ethereum, Solana L2s) — DeFi, trading, capital markets
+- *Payments-specific* (Tempo, [[circle-arc]]) — stablecoin-native gas, privacy, predictable costs for fintechs
+- *Institutional* ([[canton]]) — permissioned, compliance-compatible, for regulated entities
+
+**The counterargument (JPMorgan, Citigroup):** Deposit tokens integrate existing compliance infrastructure and may be better suited for large-value institutional payments. JPMorgan Kinexys handles $5B+/day; Citi Token Services is live in 5 markets. These are tokenized bank deposits — different regulatory treatment, different programmability.
+
+**Act 2 — onchain credit:** a16z frames payments as the first act and credit as the more consequential second. Trillions in stablecoin float create demand for productive capital deployment; stablecoin-enabled dollar access in emerging markets becomes the wedge into credit, investing, and wealth management. See [[onchain-credit-market]].
+
+See [[stablecoin]], [[jpmorgan]], [[jpmorgan-citi-payments-frontier]], [[the-new-stack-for-global-finance-stablecoins]].
+
+---
+
+## Consumer trust (the demand side)
+
+Visa's consumer research (US/AU/NZ, ~3,700 respondents):
+- **55–59%** of consumers are familiar with AI shopping assistants
+- **~1 in 3** expect to use AI agents regularly for shopping
+- **54%** would stop using agents if they lost data control
+- Most trusted brands for AI agents: **PayPal, Amazon, Visa** (~42% each)
+- **1 in 6** Black Friday 2025 purchases involved AI-assisted buying
+
+**OpenClaw signal (January 2026):** Peter Steinberger's open-source personal AI assistant went viral within days of launch. Users immediately gave it access to email, calendar, credit cards, and system files. This is direct evidence that consumer readiness for autonomous personal agents is real — and that the user base willing to delegate financial control is large and growing. See [[openclaw-product]], [[peter-steinberger]].
+
+The demand is real but fragile. Trust is the constraint, not technology. See [[earning-consumer-trust-summary]].
+
+---
+
+## Full-stack players emerging
+
+Beyond protocol competition, full-stack agentic payment companies are emerging:
+
+**[[natural]]** (Kahlil Lalji) — Six-product stack: Wallet (FDIC-insured), Pay, Collect, Credit, Bill, Transfer. Covers A2A, A2B, A2C payment flows. The outcome-based **Bill** product (charge per result, not per API call) is unique in the market. Starting with ACH; expanding rails over time. Backed by Forerunner Ventures and others.
+
+**[[bvnk]]** — Enterprise stablecoin infrastructure for 4,600+ businesses in 130+ countries. Two models: Managed (BVNK handles compliance/custody) and Layer1 (customer runs their own stablecoin network in-house). Customers: Worldpay, dLocal, Deel. Being acquired by [[mastercard]] for $1.8B — the largest traditional finance acquisition of a stablecoin infrastructure company to date.
+
+**[[near]]** — NEAR Intents: $17B+ all-time volume, 31 chains, 125+ assets. Intent-based cross-chain liquidity explicitly designed for AI agents. Single API covers all major chains.
+
+---
+
+## PayPal's full strategy
+
+PayPal has deployed the most complete incumbent response to agentic commerce:
+
+- **Store Sync** — product catalog syndication to AI shopping platforms via Wix, Cymbio (acquired), BigCommerce/Feedonomics, Shopware
+- **Agent Ready** — OpenAI's Agentic Commerce Protocol (ACP) implementation; issues one-time-use Braintree payment nonces to AI platforms for secure agent checkout
+- **Confirmed live partners:** ChatGPT (via ACP), Perplexity, Google
+
+The strategy: preserve PayPal as the settlement layer and merchant-of-record even when AI platforms are the commerce interface. One-time-use nonces mean buyer payment credentials never leave PayPal/Braintree. See [[paypal]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]].
+
+**The core tension:** PayPal's model preserves the traditional trust stack. Crypto-native players ([[x402]], [[mpp]], [[natural]]) are building to bypass it. The two approaches are not yet competing at scale — but they will be.
+
+---
+
+## Landscape map (April 2026)
 
 | Layer | What it is | Key players |
 |-------|-----------|-------------|
-| Rails | Underlying transaction infrastructure | |
-| Wallets & custody | Where the money sits | |
-| Orchestration | APIs/SDKs for agent-initiated payments | |
-| Identity/compliance | KYC, authorization, liability | |
-| Consumer apps | End-user facing agentic commerce | |
-| B2B / treasury | Enterprise agent money management | |
-| Regulators | Who sets the rules | |
+| **Settlement rails** | Underlying transaction infrastructure | [[x402]] (Base), [[mpp]] (Tempo), card networks, ACH, Kinexys, NEAR Intents |
+| **Protocol standards** | How agents request and authorize payments | [[acp]] (OpenAI), [[ap2]] (Google), [[mpp]] (Stripe/Tempo), [[x402]] (Coinbase) |
+| **Wallets & custody** | Where agent money sits | [[meow-technologies]], [[slash]], [[era]], [[catena-labs]], [[natural]], Coinbase AgentKit |
+| **Stablecoin issuance** | The money itself | [[circle]] (USDC), [[tempo]] (TIP-20), [[bvnk]] (Layer1 infra) |
+| **Card network adapters** | Extending existing rails for agents | [[mastercard]] (Agent Pay), [[visa]] (Intelligent Commerce) |
+| **Enterprise finance agents** | B2B internal money movement | [[ramp]], [[brex]], [[stripe]] (Agentic Commerce Suite) |
+| **Agent banking platforms** | Full banking for agents | [[meow-technologies]], [[catena-labs]], [[era]], [[natural]] |
+| **Commerce discovery** | Product catalogs for AI platforms | [[paypal]] (Store Sync/Cymbio), [[universal-commerce-protocol]] (Google UCP) |
+| **Service discovery** | Finding and paying for APIs | [[merit-systems]] (AgentCash, x402scan), [[introducing-agentic-market]] (Agentic.Market) |
+| **Identity / KYA** | Verifying agent authority | ERC-8004 (draft standard), [[ap2]] mandates, [[visa]] tokens, [[slash]] RSA |
+| **Cross-chain liquidity** | Routing across chains | [[near]] (NEAR Intents, $17B+, 31 chains) |
+| **Institutional settlement** | Large-value tokenized payments | [[jpmorgan]] (Kinexys), Citi Token Services |
 
 ---
 
-## Thesis (evolving)
+## Thesis (updated April 2026)
 
-*To be developed through research. Initial hypothesis:*
+The thesis has sharpened considerably with new data:
 
-The bottleneck for agentic money movement is not technical — programmable money exists. The bottleneck is **authorization infrastructure**: a standards layer that lets humans delegate financial authority to agents in a way that is auditable, revocable, and compliant. Whoever solves this (a protocol, a card network program, a regulatory framework) unlocks the rest of the stack.
+**1. Four protocols, two philosophies.** ACP and AP2 are the "trusted commerce" protocols — fiat-native, identity-preserving, built on existing payment infrastructure. x402 and MPP are the "permissionless" protocols — crypto-native, no merchant agreements required. ACP is winning structured consumer commerce (ChatGPT, Perplexity, Google shopping); AP2 is winning enterprise mandate-based payments; x402 leads permissionless micropayments; MPP leads high-frequency agent loops.
+
+**2. Stablecoins are going local, not just cross-border.** The dominant narrative (stablecoins = remittances, cross-border payments) is being overtaken by data. Intra-country transactions now make up ~75% of stablecoin payment volume. C2B commerce is the fastest-growing category (+128% YoY). Stablecoins are becoming domestic payment infrastructure, which means they will be everywhere agents transact — not just at the international boundary.
+
+**3. The identity problem is the last mile.** Both tracks stall without KYA. ERC-8004 is the most technically mature proposal (MetaMask + Ethereum Foundation + Google + Coinbase). But it's a draft standard, not a deployed system. The EFTA liability gap remains unresolved: consumers may legally bear liability for agent-initiated mistakes.
+
+**4. The authorization problem is not just technical — it's governance.** The x402 unauthorized wrapper crisis shows that open protocols without authorization provenance layers become liability traps. Providers bear server costs while wrapper operators capture revenue. This is a solvable problem (MPP's first-party marking, Exa's native integration), but it must be solved for the ecosystem to attract mainstream API providers.
+
+**5. The labor market is the sleeper opportunity.** Nobody is explicitly targeting the $700B+ US contractor payment market being displaced by agents. Natural's seed memo frames this clearly: as agents replace contractors, payroll volume must be re-routed through agent payment rails. The company that owns "how agents pay for labor" may capture more long-term volume than the company that owns "how agents buy things."
+
+**6. Consumer trust is the adoption ceiling.** 54% of consumers would stop using agents if they lose data control. Whoever becomes the trusted permissioning layer — between consumer intent and autonomous execution — captures the most durable position in the stack. Current trust hierarchy: PayPal > Amazon > Visa > card networks > tech giants.
+
+**7. The EVM stack is converging.** x402, ERC-8004, ERC-8183, and ERC-8211 together form the first complete machine commerce system on a public, censorship-resistant settlement layer. The Ethereum Foundation dAI team (Davide Crapis) holds an explicit mandate to make Ethereum the AI settlement layer. Citrini Research's structural argument: agents programmed to minimize costs will systematically avoid 2–3% interchange fees when stablecoin L2 transactions cost fractions of a cent. The question is not if but when.
+
+**8. Credit is the next phase.** Payments is act 1 of the stablecoin economy. a16z's market map makes clear that as stablecoin float grows to trillions, productive credit markets follow — serving borrowers the legacy system underserves, in a structure analogous to private credit's growth over the last decade. The companies that own the dollar-access wedge will have first-mover advantage.
 
 ---
 
-*Sources: none yet — overview seeded from prior knowledge. Update as sources are ingested.*
+*Sources: ~69 raw sources ingested April 2025–2026. See [[_index]] for complete page catalog.*
