@@ -17,6 +17,7 @@ Also read the root `../CLAUDE.md` for general conventions.
 - How is agentic commerce being enabled — shopping, subscriptions, micro-payments?
 - Where is this going in 2–3 years? What are the bottlenecks (regulatory, technical, trust)?
 - How do identity, KYC, and compliance work in an agent-initiated transaction?
+- Why are stablecoins the currency for agentic payments? 
 
 ---
 
