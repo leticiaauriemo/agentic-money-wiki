@@ -46,9 +46,14 @@ context making every subsequent job better than the last.
 
 ## The wedge
 
-Financial services research first. Then legal. Then compliance. Verticals
-where data sensitivity makes the safety story a feature, buyers have
-budget, and outputs are judgment-heavy enough that clients pay for quality.
+Management consulting and policy research first. Both verticals share
+three properties that make them the right entry point: data sensitivity
+makes the safety story a feature, buyers have budget, and outputs are
+judgment-heavy enough that clients pay for quality over speed. Consulting
+firms run intensive research workflows with tight deadlines; policy
+institutions (think tanks, government-adjacent research orgs) run similar
+workflows with comparably high accuracy requirements but without the
+compliance overhead of financial services.
 
 ## The moat
 

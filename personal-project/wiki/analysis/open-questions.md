@@ -34,8 +34,8 @@ integrate the answer into the relevant concept/analysis page.
 ## Market
 
 - [ ] Who is the exact first customer? (Working hypothesis: Director/VP
-      at a $500M–$5B AUM investment firm)
-- [ ] Financial services research vs. legal research as first vertical?
+      at a top-tier management consulting firm or policy research institution)
+- [ ] Management consulting vs. policy/think tank as the very first pilot?
 - [ ] Curated specialist network from day one, or controlled opening later?
 - [ ] Do we seed with in-house-built specialists, or partner from the start?
 - [ ] What does the sales motion look like — bottoms-up (agent developer
@@ -72,6 +72,10 @@ integrate the answer into the relevant concept/analysis page.
 - [ ] How long before AWS/Azure ship a cross-org version of AgentCore?
 - [ ] Does Coinbase's Agentic.market launch change the timeline?
 - [ ] Is there a path where MindStudio pivots into this position?
+- [ ] Rothschild et al. name "walled garden vs. open web" as the
+      defining architecture question. If one dominant platform (OpenAI,
+      Anthropic, Google) wins the enterprise assistant market, does our
+      neutral trust layer still exist, or does it get absorbed?
 
 ---
 

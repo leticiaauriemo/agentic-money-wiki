@@ -63,7 +63,7 @@ Use these `type:` values in frontmatter:
 ## Key questions this wiki is helping answer
 
 - Who is my first customer?
-- What vertical do I start with? (Current lean: financial services research)
+- What vertical do I start with? (Current lean: management consulting and policy research)
 - How do I keep specialists honest when they have incentive to overclaim?
 - Where does AWS AgentCore stop and my service begin?
 - Will foundation models make this obsolete, or make it more valuable?

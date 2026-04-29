@@ -27,9 +27,9 @@ Master catalog of all wiki pages. Read first when answering queries.
 | [[memory-wall]] | Five failure modes of long-running agents; why bigger context doesn't fix it; architectural responses |
 | [[discovery-problem]] | Three layers of discovery; IoA framework; why MCP alone is insufficient; trust as the hardest layer |
 | [[subagents-and-orchestration]] | Tool/skill/sub-agent/agent taxonomy; how data flows to specialists; PRIME (Stanford MCTS); clean room model |
-| [[sandboxed-execution]] | Technical isolation for cross-org trust |
-| [[client-context-moat]] | The compounding per-client context advantage |
-| [[continuous-evaluation]] | Quality flywheel via benchmarks and staked reputation |
+| [[sandboxed-execution]] | Tomašev delegation axes applied to isolation; TEEs; output verification; specialist incentive mitigations |
+| [[client-context-moat]] | Guo memory-enhanced discovery basis; what accumulates; diversity requirement (El et al.); risks |
+| [[continuous-evaluation]] | HAL log analysis; first-proposal bias (Bansal); four evaluation layers; staked reputation; quality flywheel |
 
 ## Analysis
 
@@ -70,8 +70,27 @@ Master catalog of all wiki pages. Read first when answering queries.
 
 ## Summaries (ingested sources)
 
-*None yet — add sources to `raw/` and ask Claude to ingest them.*
+| Page | Summary |
+|------|---------|
+| [[summary-agentic-economy-rothschild-2025]] | Rothschild et al. (Microsoft Research) — communication friction framing, walled garden vs. web of agents, preference economy |
+| [[summary-ioa-agent-discovery-guo-2025]] | Guo et al. (Xi'an Jiaotong) — two-stage capability discovery framework; semantic profiling, scalable indexing, memory-enhanced continual discovery |
+| [[summary-lost-in-the-middle-liu-2023]] | Liu et al. (Stanford) — empirical basis for instruction dilution; U-shaped attention curve; bigger windows don't fix it |
+| [[summary-mindstudio-memory-wall]] | MindStudio blog — practitioner framing of memory wall; tasks vs. jobs; five failure modes; architectural responses |
+| [[summary-mindstudio-discovery-problem]] | MindStudio blog — three-layer discovery; MCP as power outlet not app store; what a full agent app store needs |
+| [[summary-ai-agent-market-liu-2026]] | Liu (2026) — Coasean framing; 40x cost advantage of specialists; seven-layer market design; governance requirements |
+| [[summary-magentic-marketplace-bansal-2025]] | Bansal et al. (Microsoft) — open-source agentic market simulation; first-proposal bias 10-30x; scale degrades performance |
+| [[summary-holistic-agent-leaderboard-kapoor-2025]] | Kapoor et al. (Princeton/Stanford) — agent evaluation infrastructure; scaffolds matter as much as models; shortcuts and catastrophic behaviors |
+| [[summary-intelligent-ai-delegation-tomasev-2026]] | Tomašev et al. (DeepMind) — delegation framework; verifiability/reversibility axes; certifiable agentic capabilities |
+| [[summary-internet-of-agents-chen-2024]] | Chen et al. (Tsinghua/Peking) — IoA framework; dynamic team formation; heterogeneous agent integration; 66–76% win rate |
+| [[summary-prime-planning-zou-stanford-2025]] | Zou et al. (Stanford) — MCTS-based learned orchestration; decomposition as option discovery; outperforms LATS |
+| [[summary-meta-agent-inefficiencies-el-stanford-2025]] | El et al. (Stanford) — meta-agents don't learn from prior designs; low diversity; economic viability requires 15k+ examples |
+| [[summary-modular-decomposition-pan-2025]] | Pan & Wu (CMU/USC) — formal modular decomposition; attention-weighted subtask generation; global consistency mechanism |
+| [[summary-agent-subagent-skill-tool-piskala-2026]] | Piskala (2026) — control-axis taxonomy; tool/skill/sub-agent/agent; autonomy earned through necessity |
+| [[summary-agentic-services-computing-deng-2025]] | Deng et al. (Zhejiang) — ASC paradigm; four-phase lifecycle; trustworthiness as cross-cutting commitment |
+| [[summary-gdpval-openai-2025]] | OpenAI (2025) — frontier models approaching expert quality on professional tasks; 7-hour task average; 44 occupations |
+| [[summary-metr-long-task-completion-2025]] | METR (2025) — 50% time horizon 110 mins; doubling every 7 months; accelerating since 2024 |
+| [[summary-darwin-godel-machine-zhang-2025]] | Zhang et al. (UBC/Sakana) — self-improving agents via open-ended evolution; SWE-bench 20%→50%; sandboxing required |
 
 ---
 
-*Last updated: 2026-04-22 — wiki initialized.*
+*Last updated: 2026-04-23 — all concept stubs expanded (sandboxed-execution, client-context-moat, continuous-evaluation).*
