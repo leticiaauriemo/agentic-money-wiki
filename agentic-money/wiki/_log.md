@@ -7,6 +7,27 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-05-03] ingest | KYAPay protocol suite + Agentic Protocol Stack (kyapay.org)
+
+Sources: `KYA.md`, `What is KYA.md`, `Buy-side roles.md`, `Sell-side roles.md`, `Infrastructure.md`, `The Agentic Protocol Stack.md` (all kyapay.org)
+
+**New pages created:**
+- [[agentic-protocol-stack-kyapay]] (summary) — three-rail taxonomy; Trust Gap analysis; AGNTCY/MCP-I; KYAPay token primitives
+
+**Updated pages:**
+- [[concepts/know-your-agent]] — major expansion: KYAPay token primitives (kya/pay/kya-pay), three buy-side identity tiers, Trust Gap (OAuth handoff problem), Relational Rail framing
+
+**Key new concepts:**
+- Three-rail taxonomy: Lightweight (x402) / High-Assurance (AP2) / Relational (KYAPay) — the "stablecoins vs. cards" framing is wrong; there are three distinct rails
+- Trust Gap: no current standard for bounded agent delegation ("acting as User Y, authorized for Z only"); OAuth handoff is broken for autonomous agents
+- Identity tiers: Human Principal → Agent Platform → Agent (all three must be resolved for compliant agentic transactions)
+- AGNTCY (Cisco/Linux Foundation): portable "Digital Passport" for agents using W3C DIDs/VCs
+- KYAPay consortium: Akamai, Experian, Consumer Reports, Forter, DataDome, Imperva, Skyfire
+
+**x402 stats updated:** 75.41M txns/30 days (≈2.5M/day), $24.24M volume, 94K buyers, 22K sellers — significant growth from April 25 snapshot (167.96M all-time, ~200K/day)
+
+---
+
 ## [2026-05-03] ingest | "Why AI Agents Need Stablecoin Payments" (Eco, 2026-04-30)
 
 Source file: `Why AI Agents Need Stablecoin Payments.md` (in ` agentic-money/raw/`)

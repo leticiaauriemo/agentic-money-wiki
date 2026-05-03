@@ -15,7 +15,8 @@ Read this first when answering queries to find relevant pages.
 ## Rails & Protocols
 | Page | Summary |
 |------|---------|
-| [[x402]] | Coinbase's HTTP-native stablecoin micropayment protocol; 167.96M txns (50%+ was speculative until Dec 2025); V2 + Upto scheme |
+| [[x402]] | Coinbase's HTTP-native stablecoin micropayment protocol; 75.41M txns/30 days (2.5M/day, $0.32 avg), 94K buyers; V2 + Upto scheme |
+| [[agentic-protocol-stack-kyapay]] | KYAPay three-rail taxonomy (Vending Machine / B2B PO / Relational); Trust Gap analysis; AGNTCY/MCP-I identity protocols |
 | [[mpp]] | Stripe + Tempo's Machine Payments Protocol; 50.7K txns, $7.27K volume; tracked on MPPscan |
 | [[ap2]] | Google's Agent Payments Protocol; 60+ partners; Mandate/VC model; A2A x402 extension |
 | [[acp]] | OpenAI's Agentic Commerce Protocol; product feed + agentic checkout + delegated payment; PayPal + Stripe implement |
