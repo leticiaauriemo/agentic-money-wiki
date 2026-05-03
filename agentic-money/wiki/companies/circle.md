@@ -6,9 +6,9 @@ tags: [stablecoin, infrastructure, compliance]
 founded: 2013
 stage: public
 hq: Boston, MA
-sources: [Should we give AI a bank account?.md, Stablecoins Were Just the Beginning.md]
+sources: [Should we give AI a bank account?.md, Stablecoins Were Just the Beginning.md, Stripe Is Trying to Make Crypto Disappear.md]
 created: 2026-04-25
-updated: 2026-04-28
+updated: 2026-05-03
 ---
 
 # Circle
@@ -60,7 +60,19 @@ The "singleness of money" problem identified by Sean Neville: a world with 10,00
 
 ## OCC National Trust Charter race
 
-Post-GENIUS Act, stablecoin issuers are racing for an **OCC National Trust Charter**. Immediate benefit is regulatory legitimacy; longer-term stakes are higher: if the OCC eventually extends charter holders **direct access to Federal Reserve rails**, the first movers become integrated into the core payment hierarchy — potential to become foundational to credit and capital markets at scale. Circle's USDC compliance positioning (T-bills/cash reserves, regular attestations) makes it one of the strongest charter candidates. — *[[the-new-stack-for-global-finance-stablecoins]]*
+Post-GENIUS Act, stablecoin issuers are racing for an **OCC National Trust Charter**. Immediate benefit is regulatory legitimacy; longer-term stakes are higher: if the OCC eventually extends charter holders **direct access to Federal Reserve rails**, the first movers become integrated into the core payment hierarchy — potential to become foundational to credit and capital markets at scale.
+
+Circle's entity: **First National Digital Currency Bank** — received OCC conditional approval in **December 2025**. Circle's USDC compliance positioning (T-bills/cash reserves, regular attestations) makes it one of the strongest charter candidates.
+
+[[bridge]] (Stripe's subsidiary) received its OCC conditional approval in February 2026. The two timelines are running close. See [[the-new-stack-for-global-finance-stablecoins]] and [[stripe-is-trying-to-make-crypto-disappear]].
+
+## Policy vs. distribution strategy
+
+Jeremy Allaire is pursuing the policy-legitimacy path: Davos panels, IMF stablecoin sessions, central bank forums, regulatory carve-out lobbying. Stripe is pursuing the developer-distribution path (Stripe Sessions as the primary venue, not multilateral policy forums).
+
+When stablecoin regulatory frameworks are written in Brussels or Singapore in 2026–2027, Allaire will likely be in the room. The Collisons likely will not. Circle may extract specific regulatory carve-outs that Stripe has to retrofit — a potential strategic asymmetry despite architectural convergence.
+
+**From [@snapcrackle](https://x.com/snapcrackle/status/2050910293597856077):** "Two of the largest crypto-adjacent companies in the world, running in parallel for most of 2025, independently converged on the same architectural answer: a permissioned layer-one blockchain where the validators are named financial institutions."
 
 ## Open questions
 

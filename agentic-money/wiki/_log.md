@@ -7,6 +7,44 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-05-03] ingest | Second batch — 10 new sources → 20 pages
+
+**Source files ingested** (from ` agentic-money/raw/` with leading space):
+- `Stripe Is Trying to Make Crypto Disappear.md` (@snapcrackle, 2026-05-03)
+- `AI at the Checkout > AI is the Checkout.md` (@sytaylor, 2026-05-03)
+- `Giving agents the ability to pay.md` (Stripe/Dan Hill, 2026-04-29)
+- `Modern banking for AI Agents.md` (meow.com/mcp, 2026-05-03)
+- `Post by @0xSammy on X.md` (DripStack thread, 2026-05-01)
+- `Post by @illscience on X.md` + `Post by @illscience on X 1.md` (profitable apathy; duplicates, 2026-04-27)
+- `Post by @illscience on X 2.md` (agent networks open questions, 2026-05-01)
+- `Post by @lightspark on X 1.md` (Grid Global Accounts, 2026-04-28)
+- `Post by @lightspark on X.md` (Visa stablecoin/Bitcoin cards, 2026-04-30)
+
+**New summary pages:**
+[[stripe-is-trying-to-make-crypto-disappear]], [[ai-at-the-checkout]], [[giving-agents-the-ability-to-pay]], [[modern-banking-for-ai-agents-meow]], [[post-0xsammy-dripstack]], [[post-illscience-profitable-apathy]], [[post-illscience-agent-networks]], [[post-lightspark-grid-accounts]], [[post-lightspark-visa-cards]]
+
+**New entity pages:**
+- [[bridge]] (company) — Stripe's stablecoin orchestration + Open Issuance subsidiary; xUSD; OCC conditional trust bank charter Feb 2026; Zach Abrams CEO
+- [[lightspark]] (company) — Grid platform; bounded delegation; Visa stablecoin/Bitcoin cards; MPP Bitcoin Lightning; David Marcus CEO
+- [[profitable-apathy]] (concept) — consumer FS disruption thesis by Anish Acharya
+
+**Major rewrites:**
+- [[tempo]] — complete rewrite: EVM-compatible L1, Reth + Commonware, stablecoin-native gas, ISO 20022 memos, dedicated payment lanes, Tempo Zones, $5B valuation, 11 validators (Visa/Stripe/Zodia), Farcaster founders, Matt Huang triple-role CEO, Liam Horne payment channel primitive
+- [[mpp]] — major expansion: 4 production features vs x402, pre-funded session model (Lightning for stablecoins), IETF submission, multi-rail at launch (stablecoin/card/Lightning), Visa card extension
+- [[stripe]] — full vertical stack update: Bridge acquisition details, Privy chain-agnostic hedge, Valora team, Link 250M consumers, Issuing for agents, Link's wallet for agents, GENIUS Act positioning, Sessions 2026 signals
+
+**Moderate updates:**
+- [[universal-commerce-protocol]] — UCP Tech Council expansion (April 24, 2026); Walmart conversion data; layered architecture; merchant-owned won
+- [[visa]] — anchor Tempo validator; MPP card extension; Lightspark Visa cards; x402 Foundation participation
+- [[meow-technologies]] — full rail list confirmed; Grasshopper Bank N.A. (FDIC) as banking partner; MCP tool schema
+- [[circle]] — First National Digital Currency Bank OCC conditional approval Dec 2025; policy vs. distribution strategy vs. Stripe
+
+**Overview additions:** UCP Tech Council; Walmart data; profitable apathy thesis; Stripe full vertical stack; Lightspark in landscape map; Bridge in stablecoin issuance row; theses 9 and 10.
+
+_index.md updated: 119+ pages total.
+
+---
+
 ## [2026-04-28] ingest | "The Beginning of Agentic Finance" (Castle Labs, 2026-04-23)
 
 Source file: `The Beginning of Agentic Finance.md` (in ` agentic-money/raw/`)

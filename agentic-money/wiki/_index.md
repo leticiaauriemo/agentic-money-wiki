@@ -28,12 +28,14 @@ Read this first when answering queries to find relevant pages.
 | Page | Summary |
 |------|---------|
 | [[brex]] | Corporate card + Audit/Review/Assistant AI agents for expense management |
+| [[bridge]] | Stripe's stablecoin orchestration + Open Issuance subsidiary; xUSD; OCC trust bank charter (conditional Feb 2026); Zach Abrams CEO |
 | [[bvnk]] | Enterprise stablecoin payments; 4,600+ customers; 130+ countries; Managed + Layer1; acquired by Mastercard ($1.8B) |
 | [[catena-labs]] | First AI-native financial institution; Sean Neville (Circle co-founder); cryptographic compliance |
 | [[circle]] | USDC issuer ($76B supply); $10T processed; ~$13B valuation; GENIUS Act reserve-compliant |
 | [[coinbase]] | x402 creator; CDP facilitator; AgentKit; Agentic Wallet; Base L2; co-founded x402 Foundation |
 | [[era]] | SEC-regulated personal finance MCP; autonomous money management for Claude/ChatGPT |
 | [[jpmorgan]] | Kinexys ($3T+ volume, $5B+ daily); JPM Coin on Base; cautious on external stablecoins |
+| [[lightspark]] | Grid platform: bounded delegation (Grid Global Accounts), Visa stablecoin/Bitcoin cards (100+ countries), MPP Bitcoin Lightning integration; David Marcus CEO |
 | [[mastercard]] | Agent Pay platform; Agentic Tokens + Payment Passkeys + Verifiable Intent; live Europe/LAC/ASEAN; BVNK acquisition ($1.8B) |
 | [[meow-technologies]] | First agentic banking platform for AI agents; $1B+ assets; $30M raised; MCP at meow.com/mcp |
 | [[merit-systems]] | MPPscan, x402scan, AgentCash (524K+ API calls), Poncho; "Google of open agentic economy" |
@@ -60,6 +62,7 @@ Read this first when answering queries to find relevant pages.
 | [[erc-8211]] | EVM "execution" standard (Biconomy + ETH Foundation, Apr 2026); dynamic constraint-guarded DeFi execution for agents |
 | [[headless-merchants]] | AI-operated API services with no storefront; ununderwritable by traditional processors; stablecoin's natural market |
 | [[know-your-agent]] | Agent-economy KYC equivalent; identity, authorization scope, behavioral bounds |
+| [[profitable-apathy]] | Consumer FS profit pools built on customer inertia — systematically destroyed by agents optimizing every financial decision |
 | [[onchain-credit-market]] | Act 2 of the stablecoin economy — productive credit, working capital, and capital formation on programmable rails |
 | [[session-payments]] | Authorize-once, continuous-micropayment model for high-frequency agent loops; MPP's key innovation |
 | [[stablecoin]] | Fiat-pegged blockchain assets; $300B supply; GENIUS Act; OCC charter race; three-blockchain-category framework |
@@ -191,4 +194,19 @@ Read this first when answering queries to find relevant pages.
 
 ---
 
-*Last updated: 2026-04-28 — 105+ pages total. New 2026-04-28 additions: 2 summary pages (Castle Labs agentic finance thesis; a16z global finance stablecoins market map), 4 concept pages (ERC-8183, ERC-8211, CROPS mandate, onchain credit market), 2 rail pages (Circle Arc, Canton). Key updates: x402 V2 + Upto scheme + speculation correction; Circle Arc + Nanopayments; OCC charter race; three blockchain categories; Stripe Privy acquisition.*
+## Summaries — New Sources (May 3)
+| Page | Source | Type |
+|------|---------|------|
+| [[stripe-is-trying-to-make-crypto-disappear]] | @snapcrackle on X, 2026-05-03 | social |
+| [[ai-at-the-checkout]] | @sytaylor on X, 2026-05-03 | analysis |
+| [[giving-agents-the-ability-to-pay]] | Stripe Blog (Dan Hill), 2026-04-29 | company-blog |
+| [[modern-banking-for-ai-agents-meow]] | meow.com/mcp, 2026-05-03 | company-blog |
+| [[post-0xsammy-dripstack]] | @0xSammy on X, 2026-05-01 | social |
+| [[post-illscience-profitable-apathy]] | @illscience on X (Anish Acharya), 2026-04-27 | social |
+| [[post-illscience-agent-networks]] | @illscience on X (Anish Acharya), 2026-05-01 | social |
+| [[post-lightspark-grid-accounts]] | @lightspark on X, 2026-04-28 | company-blog |
+| [[post-lightspark-visa-cards]] | @lightspark on X, 2026-04-30 | company-blog |
+
+---
+
+*Last updated: 2026-05-03 — 119+ pages total. New 2026-05-03 additions: 9 summary pages; 2 company pages (Bridge, Lightspark); 1 concept page (profitable-apathy). Key updates: Tempo full rewrite (Reth/Commonware/Zones/triple-role/$5B valuation/Farcaster founders); MPP major expansion (4 production features vs x402/session model/IETF/multi-rail); Stripe full vertical stack (Bridge/Privy/Valora/Link 250M/Issuing for agents); UCP Tech Council expansion + Walmart data; Visa anchor validator + MPP extension + Lightspark cards; Meow full rail list + Grasshopper Bank confirmed; Circle First National Digital Currency Bank OCC Dec 2025.*

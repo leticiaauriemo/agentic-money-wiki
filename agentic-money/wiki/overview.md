@@ -5,7 +5,7 @@ topic: agentic-money
 tags: []
 sources: []
 created: 2026-04-20
-updated: 2026-04-28
+updated: 2026-05-03
 ---
 
 # Agentic Money Movement — Overview
@@ -60,14 +60,18 @@ Google's AP2 uses cryptographically-signed Mandates (Intent Mandate + Cart Manda
 
 See [[ap2]], [[mastercard]], [[announcing-ap2-google-cloud]].
 
-### Fiat commerce layer: ACP
-OpenAI's Agentic Commerce Protocol defines three specs: **product feed** (how merchants expose catalogs to AI platforms), **agentic checkout** (how agents create and complete checkout sessions), and **delegated payment** (how AI platforms obtain one-time-use payment tokens from PSPs like PayPal/Braintree). The token model means buyer credentials never leave the PSP — the AI platform only ever sees a single-use nonce.
+### Fiat commerce layer: ACP + UCP
+OpenAI's Agentic Commerce Protocol (ACP) defines three specs: **product feed** (how merchants expose catalogs to AI platforms), **agentic checkout** (how agents create and complete checkout sessions), and **delegated payment** (how AI platforms obtain one-time-use payment tokens from PSPs like PayPal/Braintree). The token model means buyer credentials never leave the PSP — the AI platform only ever sees a single-use nonce.
 
 **Best for:** Structured consumer commerce (buy a specific product) via existing AI chat interfaces (ChatGPT, Perplexity, Google); merchants who want to reach AI shopping surfaces without rebuilding their payment stack.
 
 **Confirmed implementations:** [[paypal]] (Braintree nonces), [[stripe]] (Agentic Commerce Suite), ChatGPT, Perplexity, Google.
 
-See [[acp]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]].
+**ACP vs. UCP: merchant-owned checkout won.** ACP began with "checkout inside the LLM" (ChatGPT Instant Checkout). UCP co-developed by Google + Shopify, started from the merchant-owned commerce flow. Walmart tested 200,000 SKUs through ChatGPT Instant Checkout — conversion was one-third of click-out rates. Daniel Danker (Walmart EVP): "unsatisfying." Two weeks later OpenAI closed Instant Checkout. Walmart's merchant-owned alternative (Sparky inside Walmart's own app) converts at ~70% of Walmart.com direct rates. Additional evidence: merchant-owned AI (Tatcha, Microsoft Copilot) consistently shows 3x conversion and 35–38% AOV uplift. ACP has since evolved toward the merchant-owned model too.
+
+**April 24, 2026 — UCP Tech Council expansion:** Amazon, Meta, Microsoft, Salesforce, and Stripe joined the [[universal-commerce-protocol]] Tech Council. Now the full roster spans every hyperscaler, every major commerce platform, and all major PSPs and card schemes. First time agentic commerce has agreed on a single standard.
+
+See [[acp]], [[universal-commerce-protocol]], [[agent-ready-paypal]], [[agentic-commerce-services-paypal]], [[ai-at-the-checkout]].
 
 ### The strategic split
 x402 and MPP solve "how to pay." Neither solves "should this payment happen at all." The decision layer — routing logic that chooses rail, validates authorization, checks balance — is where the actual moat will form. See [[missing-infrastructure-ai-agents-a16z]].
@@ -119,6 +123,8 @@ Two important theses challenge the "everything goes agentic" narrative:
 **@nlevine19's gap merchant thesis:** Stablecoins won't replace cards for existing commerce. They will serve merchants traditional processors can't underwrite: "headless merchants" and "vibe coders" building AI-generated software with no legal entity. This is the PayPal/eBay pattern — serving the unserved gap before migrating to mainstream rails.
 
 **Kahlil Lalji's labor thesis (Natural seed memo):** The displacement of human workers by agents doesn't just shift commerce volume — it shifts **payroll and labor volume**. US contractor payments ($700B+ annually, via 1099-NEC/K) will be re-routed to agent payments infrastructure as agents replace contractors. Nobody is building for this yet. See [[agentic-payments-memo-natural]].
+
+**Anish Acharya's profitable apathy thesis:** Consumer financial services profits are largely built on **customer inertia** — teaser rates that expire, deposits earning near zero, mispriced debt that could be refinanced, fees from friction. Agents will eliminate this asymmetry systematically: optimizing yield, canceling on expiration, routing around fees, navigating UIs directly. End state: a headless credit auction where lenders bid on each transaction in real time. Many consumer FS profit pools contract. See [[profitable-apathy]], [[post-illscience-profitable-apathy]].
 
 All three are probably right, in different markets. See [[agentic-economy-massive-commerce-wont]], [[agentic-commerce-wont-kill-cards]], [[headless-merchants]].
 
@@ -232,6 +238,10 @@ The demand is real but fragile. Trust is the constraint, not technology. See [[e
 
 Beyond protocol competition, full-stack agentic payment companies are emerging:
 
+**[[stripe]]** — The most vertically integrated player. Full stack: [[tempo]] (settlement chain), [[bridge]] (stablecoin issuance + OCC trust charter), Privy (developer wallets), Link (250M consumer wallets), [[mpp]] (machine payment protocol). Makes crypto invisible — merchants see Stripe Balance; consumers see Link; neither sees a wallet or chain. $1.9T 2025 payment volume as the distribution moat. See [[stripe-is-trying-to-make-crypto-disappear]].
+
+**[[lightspark]]** (David Marcus) — Grid platform: bounded delegation wallets for agents (hard spending constraints at wallet level); Visa debit cards backed by stablecoins/Bitcoin in 100+ countries; MPP's Bitcoin Lightning integration partner.
+
 **[[natural]]** (Kahlil Lalji) — Six-product stack: Wallet (FDIC-insured), Pay, Collect, Credit, Bill, Transfer. Covers A2A, A2B, A2C payment flows. The outcome-based **Bill** product (charge per result, not per API call) is unique in the market. Starting with ACH; expanding rails over time. Backed by Forerunner Ventures and others.
 
 **[[bvnk]]** — Enterprise stablecoin infrastructure for 4,600+ businesses in 130+ countries. Two models: Managed (BVNK handles compliance/custody) and Layer1 (customer runs their own stablecoin network in-house). Customers: Worldpay, dLocal, Deel. Being acquired by [[mastercard]] for $1.8B — the largest traditional finance acquisition of a stablecoin infrastructure company to date.
@@ -260,13 +270,14 @@ The strategy: preserve PayPal as the settlement layer and merchant-of-record eve
 |-------|-----------|-------------|
 | **Settlement rails** | Underlying transaction infrastructure | [[x402]] (Base), [[mpp]] (Tempo), card networks, ACH, Kinexys, NEAR Intents |
 | **Protocol standards** | How agents request and authorize payments | [[acp]] (OpenAI), [[ap2]] (Google), [[mpp]] (Stripe/Tempo), [[x402]] (Coinbase) |
-| **Wallets & custody** | Where agent money sits | [[meow-technologies]], [[slash]], [[era]], [[catena-labs]], [[natural]], Coinbase AgentKit |
-| **Stablecoin issuance** | The money itself | [[circle]] (USDC), [[tempo]] (TIP-20), [[bvnk]] (Layer1 infra) |
-| **Card network adapters** | Extending existing rails for agents | [[mastercard]] (Agent Pay), [[visa]] (Intelligent Commerce) |
+| **Commerce protocols** | End-to-end agent-to-merchant commerce | [[universal-commerce-protocol]] (Google + Shopify; April 2026 full industry coalition) |
+| **Wallets & custody** | Where agent money sits | [[meow-technologies]], [[slash]], [[era]], [[catena-labs]], [[natural]], [[lightspark]] (Grid), Coinbase AgentKit |
+| **Stablecoin issuance** | The money itself | [[circle]] (USDC), [[bridge]] (Open Issuance, xUSD), [[tempo]] (TIP-20), [[bvnk]] (Layer1 infra) |
+| **Card network adapters** | Extending existing rails for agents | [[mastercard]] (Agent Pay), [[visa]] (Intelligent Commerce + Tempo anchor validator) |
 | **Enterprise finance agents** | B2B internal money movement | [[ramp]], [[brex]], [[stripe]] (Agentic Commerce Suite) |
 | **Agent banking platforms** | Full banking for agents | [[meow-technologies]], [[catena-labs]], [[era]], [[natural]] |
 | **Commerce discovery** | Product catalogs for AI platforms | [[paypal]] (Store Sync/Cymbio), [[universal-commerce-protocol]] (Google UCP) |
-| **Service discovery** | Finding and paying for APIs | [[merit-systems]] (AgentCash, x402scan), [[introducing-agentic-market]] (Agentic.Market) |
+| **Service discovery** | Finding and paying for APIs | [[merit-systems]] (AgentCash, x402scan, MPPscan), [[introducing-agentic-market]] (Agentic.Market) |
 | **Identity / KYA** | Verifying agent authority | ERC-8004 (draft standard), [[ap2]] mandates, [[visa]] tokens, [[slash]] RSA |
 | **Cross-chain liquidity** | Routing across chains | [[near]] (NEAR Intents, $17B+, 31 chains) |
 | **Institutional settlement** | Large-value tokenized payments | [[jpmorgan]] (Kinexys), Citi Token Services |
@@ -293,6 +304,10 @@ The thesis has sharpened considerably with new data:
 
 **8. Credit is the next phase.** Payments is act 1 of the stablecoin economy. a16z's market map makes clear that as stablecoin float grows to trillions, productive credit markets follow — serving borrowers the legacy system underserves, in a structure analogous to private credit's growth over the last decade. The companies that own the dollar-access wedge will have first-mover advantage.
 
+**9. Merchant-owned checkout won.** The first controlled experiment at scale (Walmart, 200K SKUs) proved that AI-owned checkout (ACP-style, ChatGPT Instant Checkout) converts at ~⅓ of click-out rates. Merchant-owned AI (Sparky, Tatcha's on-site agent) produces 3x conversion and 35–38% AOV uplift. UCP's architecture — where the merchant owns their namespace and checkout — is now backed by the full industry coalition. This does not mean AI shopping fails; it means the merchant who deploys AI wins, not the platform that intercepts the purchase.
+
+**10. Profitable apathy is the sleeper disruption in consumer finance.** Consumer FS profit pools are largely built on customer inertia — teaser rates, yield gaps, mispriced debt, fee friction. Agents will route around all of it. The end state is a real-time auction for each credit transaction (headless credit auction). The consumer FS incumbents who survive will be those who build for agents rather than depend on customers not doing so. Regulatory capture into the agentic economy (tighter API restrictions, more friction for agent-initiated transfers) is the strategic response to watch for.
+
 ---
 
-*Sources: ~69 raw sources ingested April 2025–2026. See [[_index]] for complete page catalog.*
+*Sources: ~79 raw sources ingested April–May 2026. See [[_index]] for complete page catalog.*
