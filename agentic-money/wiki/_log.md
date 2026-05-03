@@ -7,6 +7,30 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-05-03] ingest | "Why AI Agents Need Stablecoin Payments" (Eco, 2026-04-30)
+
+Source file: `Why AI Agents Need Stablecoin Payments.md` (in ` agentic-money/raw/`)
+Author: Eco (eco.com) — stablecoin execution network, 15 chains.
+
+**New pages created:**
+- [[why-ai-agents-need-stablecoin-payments-eco]] (summary) — structural case; four card-rail mismatches; production evidence table; five live trade-offs; orchestration layer
+- [[eco]] (company) — cross-chain stablecoin routing network; Hyperlane + CCTP
+
+**Key new data:**
+- Visa stablecoin settlement updated to **$7B cumulative run-rate** across **9 blockchains** (April 2026, The Block) — supersedes prior $4.6B figure
+- Stripe x402 launch date confirmed: **February 10, 2026** (Base/USDC, Solana on roadmap)
+- x402 active agents: ~**69K** (distinct from 519K wallet buyers)
+- x402 average ticket: $0.31 (consistent with $0.29 dashboard figure; different snapshot dates)
+- Stablecoin supply (April 29, 2026): **$318B** total — USDT $189.5B, USDC $77.3B, USDS $7.8B
+- Card-rail break-even: ~$5–10 ticket; x402 average at $0.31 is well below
+
+**Pages updated:**
+- [[x402]] — added Stripe (Feb 10, 2026) and Circle as builders; confirmed 69K active agent stat; updated stat table
+- [[visa]] — updated stablecoin settlement to $7B cumulative run-rate / 9 blockchains
+- [[overview]] — updated volume table; added stablecoin supply note
+
+---
+
 ## [2026-05-03] ingest | Second batch — 10 new sources → 20 pages
 
 **Source files ingested** (from ` agentic-money/raw/` with leading space):

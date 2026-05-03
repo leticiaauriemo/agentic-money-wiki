@@ -33,6 +33,7 @@ Read this first when answering queries to find relevant pages.
 | [[catena-labs]] | First AI-native financial institution; Sean Neville (Circle co-founder); cryptographic compliance |
 | [[circle]] | USDC issuer ($76B supply); $10T processed; ~$13B valuation; GENIUS Act reserve-compliant |
 | [[coinbase]] | x402 creator; CDP facilitator; AgentKit; Agentic Wallet; Base L2; co-founded x402 Foundation |
+| [[eco]] | Stablecoin execution network across 15 chains; cross-chain routing layer for x402/MPP agent payments; Hyperlane + CCTP |
 | [[era]] | SEC-regulated personal finance MCP; autonomous money management for Claude/ChatGPT |
 | [[jpmorgan]] | Kinexys ($3T+ volume, $5B+ daily); JPM Coin on Base; cautious on external stablecoins |
 | [[lightspark]] | Grid platform: bounded delegation (Grid Global Accounts), Visa stablecoin/Bitcoin cards (100+ countries), MPP Bitcoin Lightning integration; David Marcus CEO |
@@ -206,7 +207,8 @@ Read this first when answering queries to find relevant pages.
 | [[post-illscience-agent-networks]] | @illscience on X (Anish Acharya), 2026-05-01 | social |
 | [[post-lightspark-grid-accounts]] | @lightspark on X, 2026-04-28 | company-blog |
 | [[post-lightspark-visa-cards]] | @lightspark on X, 2026-04-30 | company-blog |
+| [[why-ai-agents-need-stablecoin-payments-eco]] | Eco (eco.com), 2026-04-30 | company-blog |
 
 ---
 
-*Last updated: 2026-05-03 — 119+ pages total. New 2026-05-03 additions: 9 summary pages; 2 company pages (Bridge, Lightspark); 1 concept page (profitable-apathy). Key updates: Tempo full rewrite (Reth/Commonware/Zones/triple-role/$5B valuation/Farcaster founders); MPP major expansion (4 production features vs x402/session model/IETF/multi-rail); Stripe full vertical stack (Bridge/Privy/Valora/Link 250M/Issuing for agents); UCP Tech Council expansion + Walmart data; Visa anchor validator + MPP extension + Lightspark cards; Meow full rail list + Grasshopper Bank confirmed; Circle First National Digital Currency Bank OCC Dec 2025.*
+*Last updated: 2026-05-03 — 122+ pages total. New 2026-05-03 additions: 9 summary pages; 2 company pages (Bridge, Lightspark); 1 concept page (profitable-apathy); 1 summary page (Eco structural case); 1 company page (Eco). Key updates: Tempo full rewrite; MPP major expansion; Stripe full vertical stack; UCP Tech Council expansion + Walmart data; Visa $7B run-rate (9 blockchains) + anchor validator; Meow Grasshopper Bank; Circle OCC Dec 2025; x402 Stripe Feb 10 launch + 69K active agents stat.*

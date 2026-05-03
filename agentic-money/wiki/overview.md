@@ -82,14 +82,16 @@ x402 and MPP solve "how to pay." Neither solves "should this payment happen at a
 
 | Rail / Network | Transactions | Volume |
 |----------------|-------------|--------|
-| x402 (all-time) | 167.96M | $49.51M |
+| x402 (all-time) | 167.96M (~69K active agents) | $49.51M |
 | NEAR Intents (all-time) | — | $17B+ |
-| Visa stablecoin (annualized) | — | $4.6B |
+| Visa stablecoin (cumulative run-rate, 9 chains, Apr 2026) | — | $7B+ |
 | MPP (since Mar 18, 2026) | 50.7K | $7.27K |
 | Kinexys / JPMorgan (daily) | — | $5B+ |
 | Citi Token Services (daily) | — | $1B |
 
-x402's 167M transactions averaging ~$0.30 reflects micropayment + testing dominance. Traditional bank tokenized settlement dwarfs crypto rails by volume. NEAR Intents ($17B+, 31 chains) is the largest cross-chain liquidity layer explicitly targeting AI agents.
+x402's 167M transactions averaging ~$0.30 reflects micropayment + testing dominance. Visa's $7B stablecoin settlement run-rate (April 2026, expanded to 9 blockchains) supersedes the $4.6B figure from earlier in 2026. Traditional bank tokenized settlement dwarfs crypto rails by volume. NEAR Intents ($17B+, 31 chains) is the largest cross-chain liquidity layer explicitly targeting AI agents.
+
+**Stablecoin supply (April 29, 2026):** $318B total — USDT $189.5B, USDC $77.3B, USDS $7.8B, USDe $3.8B, PYUSD $3.4B, RLUSD $1.6B. Source: DeFiLlama.
 
 ---
 

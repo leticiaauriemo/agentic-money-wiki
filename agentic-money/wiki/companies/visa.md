@@ -37,7 +37,8 @@ Notable: Visa went from publicly skeptical of crypto for years to becoming a sta
 ## Funding & traction
 
 Public company. Key metrics from 2026:
-- $4.6B annualized stablecoin volume on Visa rails
+- **$7B cumulative settlement run-rate** across **9 blockchains** (The Block, April 2026) — updated from $4.6B annualized figure (earlier 2026 source)
+- Stablecoin settlement program expanded from 4 to 9 blockchains by April 2026
 - Agentic commerce live in US + CEMEA
 - Stablecoin cards live in 50+ countries
 - USDC settlement live in the US
