@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [infrastructure, agentic-commerce, stablecoin, card-rails]
-sources: ["Post by Victor Yaromin on LinkedIn.md"]
+sources: [Post by Victor Yaromin on LinkedIn.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

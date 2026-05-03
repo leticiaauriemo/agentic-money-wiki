@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [infrastructure, agentic-commerce, crypto-l2]
-sources: ["Coinbase's Jesse Pollak says AI agents are the next big wave for crypto payments.md"]
+sources: [Coinbase's Jesse Pollak says AI agents are the next big wave for crypto payments.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [b2b-payments, agentic-commerce, compliance, payment-processor]
-sources: ["Agents on Brex Welcome to intelligent finance.md"]
+sources: [Agents on Brex Welcome to intelligent finance.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

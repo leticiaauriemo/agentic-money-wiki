@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [infrastructure, agentic-commerce, crypto-l2]
-sources: ["Post by @merit_systems on X.md"]
+sources: [Post by @merit_systems on X.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

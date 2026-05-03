@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: transcript
 tags: [stablecoin, identity-kyc, compliance, infrastructure, wallet]
-sources: ["Should we give AI a bank account?.md"]
+sources: [Should we give AI a bank account?.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

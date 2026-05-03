@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [agentic-commerce, compliance, identity-kyc, infrastructure]
-sources: ["Agentic Payments The Buzz Is Real", "But So Is The Gap.md"]
+sources: [Agentic Payments The Buzz Is Real, But So Is The Gap.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

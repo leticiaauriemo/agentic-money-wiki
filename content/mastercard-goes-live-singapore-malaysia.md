@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [card-rails, agentic-commerce, compliance, infrastructure]
-sources: ["Mastercard goes live with agentic payments in Singapore", "Malaysia.md"]
+sources: [Mastercard goes live with agentic payments in Singapore, Malaysia.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

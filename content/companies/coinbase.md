@@ -8,7 +8,7 @@ stage: public
 hq: San Francisco, CA
 sources: [Welcome to x402.md, x402 - Payment Required.md, Understanding x402 and MPP in One Article Two Routes for Agent Payments.md, Announcing Agent Payments Protocol (AP2) Google Cloud Blog.md]
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-04-28
 ---
 
 # Coinbase
@@ -19,7 +19,7 @@ updated: 2026-04-25
 
 Coinbase's agentic payments strategy centers on three products:
 
-**1. x402 Protocol** — the open HTTP-native payment standard built on Base (and other chains). Coinbase authored the whitepaper (May 2025), runs the facilitator service, and co-founded the x402 Foundation with Cloudflare. License: Apache 2.0.
+**1. x402 Protocol** — the open HTTP-native payment standard built on Base (and other chains). Coinbase authored the whitepaper (May 2025), runs the facilitator service, and co-founded the x402 Foundation with Cloudflare. License: Apache 2.0. V2 launched December 2025 (wallet-based identity, modular architecture, Unified Payment Interface, automatic discovery). **Upto scheme** (2026): client authorizes max amount, server settles actual — solves the LLM cost-upfront problem.
 
 **2. Coinbase Developer Platform (CDP) Facilitator** — processes ERC-20 payments on Base, Polygon, Arbitrum, World, and Solana. Free tier: 1,000 transactions/month; $0.001/transaction thereafter. Enables agents to pay without running their own on-chain infrastructure.
 
@@ -33,7 +33,7 @@ Quoted by Erik Reppel (Head of Engineering, CDP) in the AP2 announcement: "With 
 
 ## Key stats
 
-- x402 all-time transactions: **167.96M** (April 2026)
+- x402 all-time transactions: **167.96M** (April 2026) — *note: >50% was speculative (memecoins) until Dec 2025; organic baseline now ~200K/day*
 - x402 all-time volume: **$49.51M**
 - x402 buyers: **519.45K**
 - x402 sellers: **99K**
@@ -76,3 +76,4 @@ Quoted by Erik Reppel (Head of Engineering, CDP) in the AP2 announcement: "With 
 - [[x402-payment-required]]
 - [[understanding-x402-and-mpp]]
 - [[announcing-ap2-google-cloud]]
+- [[the-beginning-of-agentic-finance]]

@@ -6,9 +6,9 @@ tags: [card-rails, infrastructure, agentic-commerce, stablecoin, identity-kyc]
 founded: 1958
 stage: public
 hq: San Francisco, CA
-sources: [Visa advances agentic commerce with developer updates.md, Visa Intelligent Commerce for Agents.md, Thread by @fintechfrank.md]
+sources: [Visa advances agentic commerce with developer updates.md, Visa Intelligent Commerce for Agents.md, Thread by @fintechfrank.md, Stripe Is Trying to Make Crypto Disappear.md, Post by @lightspark on X.md]
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-03
 ---
 
 # Visa
@@ -37,7 +37,8 @@ Notable: Visa went from publicly skeptical of crypto for years to becoming a sta
 ## Funding & traction
 
 Public company. Key metrics from 2026:
-- $4.6B annualized stablecoin volume on Visa rails
+- **$7B cumulative settlement run-rate** across **9 blockchains** (The Block, April 2026) — updated from $4.6B annualized figure (earlier 2026 source)
+- Stablecoin settlement program expanded from 4 to 9 blockchains by April 2026
 - Agentic commerce live in US + CEMEA
 - Stablecoin cards live in 50+ countries
 - USDC settlement live in the US
@@ -61,15 +62,40 @@ No named individuals in sources.
 - [[ramp]] — Ramp Agent Cards use Visa Intelligent Commerce
 - [[mastercard]] — both networks building parallel but different approaches
 
+## Tempo anchor validator and MPP card extension
+
+Visa went well beyond signaling to make concrete infrastructure commitments to Stripe's payment stack:
+
+- **Anchor validator on Tempo** — announced April 14, 2026; Visa ran a six-month in-house engineering build before making the validator commitment. This is not a standard design-partner arrangement.
+- **MPP card extension** — Visa's own engineering team published a card-based extension to [[mpp]], enabling Visa card payments to flow through MPP alongside stablecoin and Lightning routes. Called Visa Trusted Agent Protocol in some contexts.
+
+Visa simultaneously participates in the [[x402]] Foundation (alongside Adyen, AWS, American Express, Google, Mastercard, Shopify, Stripe). Every major consortium member is hedging.
+
+**Analyst read ([@snapcrackle](https://x.com/snapcrackle/status/2050910293597856077)):** "Visa is going in deep" on Tempo — anchor validator position, MPP extension team, Trusted Agent Protocol. But Visa also hedges with x402 Foundation participation. When you see Visa weight toward one protocol over the other, that will be the key signal.
+
+## Lightspark Visa debit card partnership
+
+Announced April 30, 2026: Lightspark + Visa partnership to enable **stablecoin and Bitcoin-backed Visa debit cards across 100+ countries** via Lightspark's Grid platform.
+
+Cardholders can fund Visa debit cards with:
+- Stablecoins (USDC and others on Solana, Base, and Spark)
+- Bitcoin (via Spark or Lightning)
+- Fiat (USD, EUR)
+
+Usable at 175M+ Visa-accepting merchants worldwide — bridging on-chain accounts to everyday purchases.
+
 ## Open questions
 
 - What is the timeline for Visa MCP Server and Toolkit to exit pilot?
 - How does Visa handle dispute resolution when an agent makes an unauthorized transaction?
-- Will Visa's stablecoin settlement infrastructure (USDC) become the backend for x402?
 - How does Visa's card-based approach compare to [[mpp]] and [[x402]] for micropayments (<$0.01)?
+- Will Visa tilt decisively toward Tempo or maintain the x402 Foundation hedge?
+- How does the Lightspark card settle at point of sale — real-time crypto conversion or pre-funding?
 
 ## Sources
 
 - [[visa-advances-agentic-commerce]]
 - [[visa-intelligent-commerce-for-agents]]
 - [[thread-fintechfrank]]
+- [[stripe-is-trying-to-make-crypto-disappear]]
+- [[post-lightspark-visa-cards]]

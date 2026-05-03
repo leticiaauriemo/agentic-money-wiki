@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: transcript
 tags: [stablecoin, infrastructure, compliance, identity-kyc]
-sources: ["Stablecoins Were Just the Beginning.md"]
+sources: [Stablecoins Were Just the Beginning.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

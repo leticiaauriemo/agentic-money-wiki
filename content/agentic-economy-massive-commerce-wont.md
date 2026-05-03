@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [agentic-commerce, stablecoin, card-rails, infrastructure]
-sources: ["The Agentic Economy Will Be Massive. Agentic Commerce Won't.md"]
+sources: [The Agentic Economy Will Be Massive. Agentic Commerce Won't.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

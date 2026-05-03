@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [agentic-commerce, stablecoin, card-rails]
-sources: ["Agentic Commerce Won't Kill Cards", "But It'll Open A Gap.md"]
+sources: [Agentic Commerce Won't Kill Cards, But It'll Open A Gap.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

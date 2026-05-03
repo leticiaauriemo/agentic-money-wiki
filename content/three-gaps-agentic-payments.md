@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [compliance, identity-kyc, infrastructure, bank-api, agentic-commerce]
-sources: ["three-gaps-agentic-payments.md.md"]
+sources: [three-gaps-agentic-payments.md.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

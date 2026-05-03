@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [infrastructure, crypto-l1, crypto-l2]
-sources: ["Ritual-WP.txt"]
+sources: [Ritual-WP.txt]
 created: 2026-04-25
 updated: 2026-04-25
 ---

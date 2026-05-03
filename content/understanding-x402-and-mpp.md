@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [infrastructure, agentic-commerce, crypto-l2, payment-processor]
-sources: ["Understanding x402 and MPP in One Article Two Routes for Agent Payments.md"]
+sources: [Understanding x402 and MPP in One Article Two Routes for Agent Payments.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

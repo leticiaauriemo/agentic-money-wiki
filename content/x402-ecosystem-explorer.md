@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, agentic-commerce, crypto-l2]
-sources: ["x402 Ecosystem Explorer 1.md", "Marketplace  x402scan.md"]
+sources: [x402 Ecosystem Explorer 1.md, Marketplace  x402scan.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

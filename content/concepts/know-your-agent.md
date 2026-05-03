@@ -3,9 +3,9 @@ title: "Know Your Agent (KYA)"
 type: concept
 topic: agentic-money
 tags: [identity-kyc, compliance, infrastructure, agentic-commerce]
-sources: [Should we give AI a bank account?.md, Is 2026 the Year of Agentic Payments?.md, Agentic Payments Use Cases Risks & How to Get Started.md]
+sources: [Should we give AI a bank account?.md, Is 2026 the Year of Agentic Payments?.md, Agentic Payments Use Cases Risks & How to Get Started.md, KYA.md, What is KYA.md, Buy-side roles.md, Sell-side roles.md, Infrastructure.md]
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-03
 ---
 
 # Know Your Agent (KYA)
@@ -54,15 +54,34 @@ No universal KYA standard exists as of April 2026. Multiple approaches are being
 - ATXP — ERC-8004 on-chain agent identity (12.6K x402 transactions, largest server in ecosystem)
 - AgentLux — agent identity and reputation engine, NFT-based on Base
 
+## The KYAPay protocol (May 2026 addition)
+
+KYAPay (kyapay.org) has formalised the KYA concept into a production protocol with explicit identity tiers and token primitives. It defines three buy-side tiers:
+
+- **Human Principal** (`bid`) — ultimate responsible party; required for KYC/AML
+- **Buyer Agent** (`aid`) — specific software process; ephemeral, identified by source IP
+- **Buyer Agent Platform** (`apd`) — infrastructure host (e.g., OpenAI, cloud provider)
+
+Three JWT token primitives handle different commerce flows:
+- `kya` — identity only; creates a merchant account for a first-time agent
+- `pay` — payment only; recurring/subscription renewals for known agents
+- `kya-pay` — combined; simultaneous identity + account creation + payment in one step
+
+KYAPay positions itself as the "Relational Rail" — the middle layer between anonymous x402 micropayments and high-assurance AP2 contracts, enabling subscriptions, loyalty, and long-term merchant relationships.
+
+**The Trust Gap:** KYAPay identifies the core unsolved problem as the handoff between OAuth Authorization Code Flow (human present) and Identity Assertion Grant (machine acting alone). No current standard provides bounded delegation: "I am Agent X, acting for User Y, authorized to do specifically Z." See [[agentic-protocol-stack-kyapay]] for full analysis.
+
 ## Related concepts
 
 - [[bank-readiness-agentic-payments]] — fraud detection gap is a symptom of missing KYA
 - [[stablecoin]] — agent needs wallet identity to hold and spend stablecoins
 - [[agentic-commerce]]
 - [[ap2]]
+- [[agentic-protocol-stack-kyapay]] — full protocol stack analysis including KYAPay
 
 ## Sources
 
 - [[should-we-give-ai-a-bank-account]]
 - [[is-2026-year-agentic-payments]]
 - [[agentic-payments-use-cases-ramp]]
+- [[agentic-protocol-stack-kyapay]]

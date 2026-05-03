@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: report
 tags: [infrastructure, stablecoin, crypto-l2, agentic-commerce]
-sources: ["x402-whitepaper.pdf"]
+sources: [x402-whitepaper.pdf]
 created: 2026-04-25
 updated: 2026-04-25
 ---

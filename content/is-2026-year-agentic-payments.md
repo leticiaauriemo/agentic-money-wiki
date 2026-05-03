@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: analysis
 tags: [compliance, identity-kyc, stablecoin, infrastructure, card-rails]
-sources: ["Is 2026 the Year of Agentic Payments?.md"]
+sources: [Is 2026 the Year of Agentic Payments?.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: social
 tags: [infrastructure, compliance, agentic-commerce]
-sources: ["Coding agents ignore their own budgets.md"]
+sources: [Coding agents ignore their own budgets.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [infrastructure, stablecoin, bank-api, compliance]
-sources: ["JPMorgan and Citi Square Off on the Next Payments Frontier.md"]
+sources: [JPMorgan and Citi Square Off on the Next Payments Frontier.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

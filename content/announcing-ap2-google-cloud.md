@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: company-blog
 tags: [infrastructure, agentic-commerce, compliance, identity-kyc]
-sources: ["Announcing Agent Payments Protocol (AP2)  Google Cloud Blog.md"]
+sources: [Announcing Agent Payments Protocol (AP2)  Google Cloud Blog.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---

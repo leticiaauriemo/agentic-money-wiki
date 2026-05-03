@@ -4,7 +4,7 @@ type: summary
 topic: agentic-money
 source_type: news
 tags: [bank-api, wallet, agentic-commerce, infrastructure]
-sources: ["Meow Technologies launches the first agentic banking platform for AI agents.md"]
+sources: [Meow Technologies launches the first agentic banking platform for AI agents.md]
 created: 2026-04-25
 updated: 2026-04-25
 ---
