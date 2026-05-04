@@ -9,6 +9,7 @@ Read this first when answering queries to find relevant pages.
 | Page | Summary |
 |------|---------|
 | [[overview]] | Top-level synthesis of the agentic money movement landscape |
+| [[open-questions]] | Unresolved structural, technical, and legal questions — @illscience thread + wiki uncertainty audit |
 
 ---
 
@@ -212,4 +213,4 @@ Read this first when answering queries to find relevant pages.
 
 ---
 
-*Last updated: 2026-05-03 — 122+ pages total. New 2026-05-03 additions: 9 summary pages; 2 company pages (Bridge, Lightspark); 1 concept page (profitable-apathy); 1 summary page (Eco structural case); 1 company page (Eco). Key updates: Tempo full rewrite; MPP major expansion; Stripe full vertical stack; UCP Tech Council expansion + Walmart data; Visa $7B run-rate (9 blockchains) + anchor validator; Meow Grasshopper Bank; Circle OCC Dec 2025; x402 Stripe Feb 10 launch + 69K active agents stat.*
+*Last updated: 2026-05-03 — 123+ pages total. New 2026-05-03 additions: 9 summary pages; 2 company pages (Bridge, Lightspark); 1 concept page (profitable-apathy); 1 summary page (Eco structural case); 1 company page (Eco). Key updates: Tempo full rewrite; MPP major expansion; Stripe full vertical stack; UCP Tech Council expansion + Walmart data; Visa $7B run-rate (9 blockchains) + anchor validator; Meow Grasshopper Bank; Circle OCC Dec 2025; x402 Stripe Feb 10 launch + 69K active agents stat.*

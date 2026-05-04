@@ -7,6 +7,18 @@ Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---
 
+## [2026-05-03] analysis | Open questions page created
+
+**New page:** [[open-questions]] (`analysis/open-questions.md`)
+
+Combines:
+- 10 structural questions from @illscience (Anish Acharya, a16z GP) Twitter thread (2026-05-01), with John Collison response (MPP/Stripe Sessions demo) and three comment threads (Ferhat G on memory manipulation as ad slot, Baiwu Zhang on discovery value declining, Daniel Norkin on multi-homing breaking network-effect playbook)
+- Uncertainty audit across wiki: 25 hedge markers surfaced across legal/regulatory (EFTA liability gap, Regulation E crypto gap, dispute arbitration, money transmission licensing, return liability), technical/governance (Trust Gap, x402 authorization gap, ERC-8004 Validation Registry not live, agent memory manipulation as undefended attack vector, Tempo decentralization unresolved, BVNK acquisition status), and structural/strategic questions
+
+_index.md updated: 123+ pages total.
+
+---
+
 ## [2026-05-03] ingest | KYAPay protocol suite + Agentic Protocol Stack (kyapay.org)
 
 Sources: `KYA.md`, `What is KYA.md`, `Buy-side roles.md`, `Sell-side roles.md`, `Infrastructure.md`, `The Agentic Protocol Stack.md` (all kyapay.org)
