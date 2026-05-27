@@ -3,6 +3,10 @@
 Append-only activity record. Format: `## [YYYY-MM-DD] type | description`
 Types: `ingest` | `query` | `lint` | `init`
 
+## [2026-05-27] ingest | tryprofound.com/features/shopping
+
+Added [[profound]] (company) and [[ai-shopping-visibility-optimization]] (use case). Profound is the earliest known entrant building brand-side analytics for AI shopping surfaces (ChatGPT Shopping). Open questions: other surfaces beyond ChatGPT? Scraping vs. API? Optimization layer?
+
 Parse recent entries: `grep "^## \[" _log.md | tail -10`
 
 ---

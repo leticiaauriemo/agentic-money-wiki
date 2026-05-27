@@ -1,0 +1,34 @@
+---
+title: "When innovation fails: whatever happened to CurrentC?"
+source: "https://medium.com/enrique-dans/when-innovation-fails-whatever-happened-to-currentc-b7f40c8bf39b"
+author:
+  - "[[Enrique Dans]]"
+published: 2018-09-11
+created: 2026-05-03
+description: "Tomorrow marks the fourth anniversary of Apple’s mobile payment system, Apple Pay. The launch aroused a lot of interest in an area that, at"
+tags:
+  - "clippings"
+---
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NoTpKs87nHhrLclkXTVq1g.jpeg)
+
+Tomorrow marks the fourth anniversary of Apple’s mobile payment system, Apple Pay. The launch aroused a lot of interest in an area that, at the time, had been moving desperately slowly and in disconnected initiatives from many different actors for a long time, and it seemed that Apple, after garnering the participation of banks, credit cards and the big stores in the project, was about to take things forward.
+
+Four days after the launch, however, a problem arose: an association, the [Merchant Customer Exchange (MCX)](https://en.wikipedia.org/wiki/Merchant_Customer_Exchange), which included important chains such as Rite Aid, CVS, Kmart, Sears, Target, Walmart, Best Buy and 7 Eleven, decided to block Apple Pay from its members establishments by disabling the NFC in its payment terminals, announcing its own payment system, called CurrentC, which worked by customers scanning QR codes, which were then shown on a smartphone screen to cashiers, who in turn scanned the QR code with another device.
+
+The system offered no advantage over Apple Pay, which is the epitome of simplicity, but raised two very important issues for the chains involved: first, loyalty card cards, which many of these large chains had issued to customers, who wouldn’t use them if they were purchasing via Apple Pay (with all that entailed in terms of loss of user data). And secondly, and not least, the elimination of the credit card and the commissions shops paid for using them: purchases made through CurrentC were automatically debited from customers’ bank accounts.
+
+## Get Enrique Dans’s stories in your inbox
+
+Join Medium for free to get updates from this writer.
+
+I touched upon CurrentC on a number of occasions in classes and conferences: my first entry was called “ [Chronicle of a death foretold](https://medium.com/enrique-dans/chronicle-of-a-death-foretold-currentc-499c14cc9ee0) ”, which was followed less than a year later with [a piece about social adoption processes](https://medium.com/enrique-dans/currentc-and-the-social-adoption-processes-598c98772bd9). Today, four years later, [I noticed this piece of news about 7Eleven and CVS’s decision to start accepting Apple Pay and Android Pay](https://www.macrumors.com/2018/09/10/7-eleven-apple-pay-rollout/), which prompted me to read a little more about CurrentC, whose web domain has been resold to a commission page that resells Amazon products. Another major participant, [Best Buy, announced in mid-2015 that it would start accepting Apple Pay despite its support for MCX](https://arstechnica.com/gadgets/2015/04/best-buy-will-accept-apple-pay-despite-allegiance-to-currentc-and-mcx/), because “today’s consumers have many different ways to spend their money and we want to give our customers as many options as possible in how they pay for goods and services at Best Buy.” Soon after, in August 2015, Rite Aid announced it would stop blocking the NFC in its terminals, making it possible to use Apple Pay or Android Pay.
+
+[What happened to CurrentC?](https://www.applicoinc.com/blog/happened-currentc-platform-innovation-fails/) The case is a model of failed innovation, and as such, the conclusions we might draw from its post-mortem are very interesting. Right from its launch, despite being tested under limited conditions, was controversial, involving possible [collusion](https://www.recode.net/2014/11/4/11632560/what-are-the-anti-apple-pay-merchants-afraid-of) and [possible breaches of competition rules](https://www.theverge.com/2014/10/29/7101549/mcx-tries-fails-to-explain-apply-pay-blocking-in-favor-of-currentc). In addition, the system soon encountered its first security problems: it was [hacked](http://time.com/3546186/apple-pay-currentc-hacked/) by accessing e-mails between the participants. The matter was further complicated when [customers fed up with not being able to use Apple Pay or Android Pay in MCX stores gave minimum scores to the CurrentC app](https://www.theverge.com/2014/10/29/7089829/iphone-android-currentc-reviews). Finally, in May 2016, MCX, after [many delays and dismissals that affected half of the developer team](https://consumerist.com/2016/05/17/currentc-gets-delayed-again-half-of-team-laid-off/index.html), announced that it was terminating CurrentC tests, cut short its deployment at the national level and that June 28 would be its last day and that all accounts would later be deactivated with no intention of continuing its development.
+
+What was the problem with CurrentC? In the first place, in taking on a solution many people had needed for some time and which today is considered [a successful](https://www.statista.com/topics/4322/apple-pay/) [payment solution](https://expandedramblings.com/index.php/apple-pay-statistics-facts/) in such a complex area. Apple Pay is important to Apple, which turned it into a company with growing revenues linked to a service that [receives commissions from banks](https://dealbook.nytimes.com/2014/09/11/banks-did-it-apples-way-in-payments-by-mobile/), even positioning itself as [a possible future competitor](https://money.cnn.com/2018/05/15/news/companies/tech-banking-amazon-apple-facebook/index.html) without — of course — saying so. [The launch of Apple Pay pretty much paid for the iPhone](https://www.theguardian.com/technology/2014/sep/14/iphone-6-literally-pays-for-itself) through additional income with huge growth potential, to the point that, by 2014, many analysts were already talking about Apple becoming a trillion-dollar company. Apple Pay solved a problem many people wanted solved, backed by a prestigious company and that didn’t cost customers anything.
+
+Instead, CurrentC solved a problem for the big stores but not for consumers, who were expected to use QR code technology, which is slower and offers no apparent advantage. The system, in fact, was considered less attractive than credit cards. In the end, the whole thing turned out to be a text-book failure, one whose limitations were discussed at the time, but which were ignored by those behind it.
+
+At least the rest of us can learn something from this particular failure…
+
+*(En español,* [*aquí*](https://www.enriquedans.com/2018/09/casos-de-innovacion-fallida-que-fue-de-currentc.html)*)*

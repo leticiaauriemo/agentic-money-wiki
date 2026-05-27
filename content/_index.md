@@ -38,12 +38,20 @@ Read this first when answering queries to find relevant pages.
 | [[natural]] | Full-stack agentic payments (Wallet, Pay, Collect, Credit, Bill, Transfer); A2A/A2B/A2C; founded by Kahlil Lalji |
 | [[near]] | NEAR Protocol; NEAR Intents — $17B+ volume, 31 chains, 125+ assets; universal liquidity for agents |
 | [[paypal]] | Most trusted brand for AI agents (42%); Cymbio + Store Sync + Agent Ready (ACP/OpenAI); AP2 partner |
+| [[profound]] | Brand-side analytics for AI shopping surfaces; SKU visibility, keyword intelligence, merchant layer; ChatGPT Shopping |
 | [[ramp]] | 3 agentic products (AP, Accounting, Policy agents); 13x AI token spend; Agent Cards via Visa |
 | [[slash]] | MCP-native card issuance + spend controls; RSA-OAEP encryption; VGS tokenization; 5,000+ businesses |
 | [[stripe]] | MPP co-author; ACP (with OpenAI); Agentic Commerce Suite live; $1.9T 2025 volume |
 | [[sui]] | Layer-1 blockchain; USDsui native stablecoin (via Bridge/Stripe); Hoshi; DeepBook |
 | [[tempo]] | MPP co-author; ~500ms finality; sub-cent fees; TIP-20 stablecoin standard |
 | [[visa]] | Intelligent Commerce (4 services); MCP Server (pilot); $4.6B annualized stablecoin volume; 50+ countries |
+
+---
+
+## Use Cases
+| Page | Summary |
+|------|---------|
+| [[ai-shopping-visibility-optimization]] | Brand monitoring and optimization of product appearance in AI shopping agents; LLM-era SEO |
 
 ---
 
