@@ -30,6 +30,40 @@ Agentic commerce is the demand-side driver for all the payment protocol infrastr
 
 **Bear case** (@robbiepetersen_ / Dragonfly): 95%+ of agentic deployments are commercial agents within organizations that don't transact autonomously — their costs are bundled into SaaS pricing, not granular micropayments. Consumer agents will remain research assistants that hand off to humans for authorization. Only "bottom-up" agents (OpenClaw-style) will truly transact, and only on crypto rails because they need permissionlessness.
 
+## Commerce lifecycle autonomy map (May 2026)
+
+Simon Taylor (FintechBrainFood, 2026-05-24) mapped each stage of the e-commerce journey to an autonomy level, arguing payments are the *least* impacted stage right now:
+
+| Stage | Level | Key insight |
+|-------|-------|-------------|
+| Discovery | L2→L3 | Agents compare thousands of SKUs; structured catalog converts 2x better |
+| Referral | L1→L2 | UCP carries intent; agents don't choose referral path autonomously |
+| Intent | L1 | AP2 mandates exist in spec; live volume thin |
+| Delegation | L1 | TAP/AP2/ACP/UCP protocols shipping but don't interoperate |
+| Policy | L1 | Merchants defining agent policies unilaterally |
+| Cart | L1→L2 | UCP April 2026 added cart capability; Walmart sees 77% abandonment inside ChatGPT |
+| Payment | L1 | 95% of AI-driven commerce completes on merchant's own site |
+| Fulfillment | L1 | UCP spec includes fulfillment events; identity linking beginning |
+
+**Key data points (Q1 2026):**
+- Shopify: AI-driven traffic 8x YoY, AI-powered orders 13x YoY
+- Adobe: AI referrals convert 42% better (up from 31% holiday 2025)
+- Walmart/ChatGPT: 1.18% conversion rate, 77% cart abandonment vs. 2.5–3% industry average
+- eMarketer/Stripe: 95% of AI-platform-driven e-commerce completes off the AI platform
+
+**Stripe's 5 levels of agentic commerce** (from 2025 annual letter):
+- L1: Humans choose items, agents complete purchase
+- L2: Agent researches, presents options, human chooses, agent buys
+- L3: Human delegates ("buy coffee beans under $20"), agent executes
+- L4: Agent manages complex tasks (inventory replenishment, subscriptions) with policies
+- L5: Agent anticipates needs and buys proactively
+
+**The audit trail problem:** No single entity sees the full transaction. Visa sees auth; Shopify sees cart; Google UCP sees checkout session; AI lab sees intent; merchant sees fulfillment. This compliance vacuum led Target to update its terms treating AI purchases as "authorized by you," and Amazon to get a federal injunction blocking Perplexity's Comet browser agent.
+
+**FIDO Alliance convergence (April 2026):** Agentic Authentication Working Group launched with Google (AP2) and Mastercard (Verifiable Intent) as initial contributors. OpenAI joined FIDO's board. Signals protocol convergence beginning.
+
+Source: [[commerce-for-ai-brainfood]]
+
 ## Current state (April 2026)
 
 **Protocols live:**

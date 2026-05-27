@@ -3,6 +3,14 @@
 Append-only activity record. Format: `## [YYYY-MM-DD] type | description`
 Types: `ingest` | `query` | `lint` | `init`
 
+## [2026-05-27] ingest | FintechBrainFood "Commerce is Being Reinvented for AI" + Google Universal Cart
+
+New pages: [[commerce-for-ai-brainfood]] (summary), [[introducing-universal-cart]] (summary), [[mercury]] (company).
+
+Updated pages: [[agentic-commerce]] (full lifecycle autonomy map + key data: Shopify 13x, Walmart 77% abandonment, 95% off-platform), [[brex]] (Capital One acquisition $5.15B — stage: acquired), [[stripe]] (5 levels of agentic commerce from annual letter, Atlas 41% YoY), [[universal-commerce-protocol]] (April 2026 updates: Cart/Catalog/Identity Linking; confirmed merchant list; geographic expansion Canada/AU/UK; hotel+food delivery verticals), [[ap2]] (Gemini Spark launch timeline, privacy-preserving tech, FIDO contribution), [[mastercard]] (FIDO Alliance Agentic Authentication Working Group contribution).
+
+Key new facts: Brex acquired by Capital One $5.15B. Mercury OCC conditional approval, $5.2B Series D. AP2 launching in Gemini Spark. UCP cart conversion reality check — 77% abandonment inside ChatGPT. FIDO Alliance standardizing agent identity with AP2 + Verifiable Intent.
+
 ## [2026-05-27] ingest | tryprofound.com/features/shopping
 
 Added [[profound]] (company) and [[ai-shopping-visibility-optimization]] (use case). Profound is the earliest known entrant building brand-side analytics for AI shopping surfaces (ChatGPT Shopping). Open questions: other surfaces beyond ChatGPT? Scraping vs. API? Optimization layer?

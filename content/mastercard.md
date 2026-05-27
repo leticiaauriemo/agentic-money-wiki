@@ -55,6 +55,12 @@ Public company. Key milestones:
 - 16+ Latin American banks and processors — live transactions
 - Opening AI Center of Excellence in Singapore (largest innovation space in Asia Pacific)
 
+## FIDO Alliance contribution (April 2026)
+
+Mastercard contributed **Verifiable Intent** to the FIDO Alliance's new Agentic Authentication Working Group (April 2026), alongside Google contributing AP2. OpenAI joined FIDO's board the same month. This signals that the two most operationally advanced agent authorization systems are converging toward a shared standard — Mastercard's tamper-proof user authorization records and Google's cryptographic mandate model are being contributed to the same standards body.
+
+Source: [[commerce-for-ai-brainfood]]
+
 ## Open questions
 
 - How does Mastercard's approach compare to [[ap2]] mandates on liability when an agent makes an unauthorized transaction?

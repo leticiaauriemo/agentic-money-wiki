@@ -28,6 +28,22 @@ Stripe's agentic commerce strategy has three layers:
 
 **3. Same infrastructure, extended** — All existing Stripe services (tax, fraud protection, reporting, accounting integrations, refunds) work automatically for agent payments. Merchants using Stripe get agent payments "in a few lines of code."
 
+## 5 levels of agentic commerce (2025 annual letter)
+
+Stripe coined a self-driving-inspired autonomy scale for commerce (source: [[commerce-for-ai-brainfood]]):
+
+| Level | Commerce |
+|-------|---------|
+| L1 | Humans choose items, agents complete the purchase |
+| L2 | Agent researches items, presents them to the human, human chooses, agent buys |
+| L3 | Human delegates an action (e.g. "buy coffee beans under $20") and agent completes |
+| L4 | Agent manages complex tasks — replenishing inventory or managing subscriptions, enforced with policies |
+| L5 | Agent anticipates needs and buys things proactively |
+
+**Stripe's leading indicator framing:** Stripe Atlas (company-in-a-few-hours product) saw formations up 41% YoY since AI arrival. Thesis: AI lets people build more with less — this is a leading indicator for the full agentic commerce wave. When early adopters get value, the mainstream follows.
+
+**95% reality check (2026):** eMarketer analysis of Stripe's annual letter notes that in 2026, 95% of e-commerce sales driven by AI platforms still complete on the merchant's own site. The agent drives discovery; the human still clicks "buy."
+
 ## Relevance to agentic money
 
 Stripe is uniquely positioned: $1.9T in 2025 payment volume (34% YoY growth), deep merchant relationships, and the developer ecosystem that built the modern internet's commerce layer. By owning the abstraction layer above both x402 and fiat rails, Stripe bets that it doesn't matter which protocol wins — developers will route through Stripe regardless.

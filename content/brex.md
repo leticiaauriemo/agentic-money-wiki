@@ -4,16 +4,20 @@ type: company
 topic: agentic-money
 tags: [infrastructure, agentic-commerce, compliance, bank-api]
 founded: 2017
-stage: private
+stage: acquired
+acquirer: Capital One
+acquisition_price: $5.15B
 hq: San Francisco, CA
-sources: ["Agents on Brex Welcome to intelligent finance.md"]
+sources: ["Agents on Brex Welcome to intelligent finance.md", "🧠 How Commerce is Being Reinvented for Agentic AI.md"]
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-27
 ---
 
 # Brex
 
-**One-line:** Fintech corporate card company adding agentic finance capabilities — AI agents that audit, review, and approve expenses, and a personal Brex Assistant that replaces manual expense reporting.
+> **Note (2026-05-27):** Per Simon Taylor / FintechBrainFood (May 2026), Brex was acquired by Capital One for $5.15B. Stage updated from private → acquired. Details of deal structure, timing, and what happens to Brex's product roadmap are not yet in wiki sources.
+
+**One-line:** Corporate card and agentic finance platform acquired by Capital One for $5.15B; previously known for AI audit, review, and expense agents for enterprise finance teams.
 
 ## What they're building
 

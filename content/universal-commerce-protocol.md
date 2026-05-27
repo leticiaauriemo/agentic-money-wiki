@@ -28,10 +28,38 @@ UCP handles the commerce workflow (discovery → offer) at Layer 1 (Intent and O
 
 The IMF Note identifies UCP as one of the most impactful standards for Layer 1, alongside MCP and A2A.
 
+## April 2026 updates
+
+UCP added three major capabilities (source: [[commerce-for-ai-brainfood]]):
+
+1. **Cart** — agents can save or add multiple items to a shopping cart from a single store in one action
+2. **Catalog** — agents can retrieve real-time product details including variants, inventory, and pricing
+3. **Identity Linking** — shoppers receive the same loyalty and member benefits they'd get when logged into a retailer's own site; beginning of a post-purchase trust chain for agents
+
+These updates shift some power from the merchant (who previously "trapped" users in their checkout flow) to the agent (who now brings a signed intent to the merchant, rather than the merchant trapping the user).
+
+**UCP adoption coalition (as of May 2026):** PayPal, Checkout.com, Adyen, Stripe, Visa, Mastercard, and major merchants have backed UCP. Simon Taylor (FintechBrainFood): "UCP is a Trojan horse — it makes merchants and their SKUs headless, enabling agents to securely buy from any UCP-integrated merchant."
+
+**Google Universal Cart (Google I/O, May 2026):** Google announced a Universal Shopping Cart that follows users across Search, YouTube, and Gmail. Identifies incompatible items. Notifies on price drops and restocks. Rolls out summer 2026 in the US via Search and Gemini. UCP is the protocol making this possible beyond Google surfaces.
+
 ## Live implementations
 
 - **Google Search AI Mode** — Native Checkout for qualifying merchants
 - **Google Gemini** — Shopping via UCP (Etsy, Wayfair confirmed)
+
+## Google I/O 2026 launch (May 2026)
+
+Source: [[introducing-universal-cart]] (Vidhya Srinivasan, 2026-05-19)
+
+**Confirmed merchants at launch:** Nike, Sephora, Target, Ulta Beauty, Walmart, Wayfair, Fenty (via Shopify), Steve Madden (via Shopify)
+
+**Geographic expansion:** Canada and Australia in coming months, then UK
+
+**Surface expansion:** YouTube (US) coming soon; Gmail to follow
+
+**Vertical expansion:** Hotel booking and local food delivery coming soon
+
+**UCP GitHub:** New tech partners welcomed to steer the open standard — UCP is formally open for external contribution
 
 ## Significance
 

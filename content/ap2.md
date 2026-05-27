@@ -57,6 +57,16 @@ AP2's Mandate/VC model appears designed with compliance in mind — the audit tr
 - [[mpp]] — Stripe + Tempo's machine payments protocol
 - [[stablecoin]]
 
+## Gemini Spark launch (announced Google I/O 2026)
+
+AP2 is coming to Google products in the coming months, starting with **Gemini Spark** (source: [[introducing-universal-cart]]). Technical details confirmed at launch:
+- Creates a transparent, verifiable link between user, merchant, and payment processor
+- Uses **privacy-preserving technology** to keep user data safe
+- Tamper-proof digital mandates — permanent digital paper trail for returns and disputes
+- User and merchant see the same record — critical for dispute resolution
+
+**FIDO Alliance contribution (April 2026):** AP2's framework contributed to the FIDO Alliance Agentic Authentication Working Group alongside Mastercard's Verifiable Intent. OpenAI joined FIDO's board. Signals convergence of the two leading authorization protocols toward a shared standard. Source: [[commerce-for-ai-brainfood]]
+
 ## Open questions
 
 - Will AP2 achieve interoperability with x402 and MPP, or will these protocols fragment?

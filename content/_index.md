@@ -38,6 +38,7 @@ Read this first when answering queries to find relevant pages.
 | [[natural]] | Full-stack agentic payments (Wallet, Pay, Collect, Credit, Bill, Transfer); A2A/A2B/A2C; founded by Kahlil Lalji |
 | [[near]] | NEAR Protocol; NEAR Intents — $17B+ volume, 31 chains, 125+ assets; universal liquidity for agents |
 | [[paypal]] | Most trusted brand for AI agents (42%); Cymbio + Store Sync + Agent Ready (ACP/OpenAI); AP2 partner |
+| [[mercury]] | Startup-focused neobank becoming a chartered bank; $200M Series D at $5.2B; OCC conditional approval April 2026 |
 | [[profound]] | Brand-side analytics for AI shopping surfaces; SKU visibility, keyword intelligence, merchant layer; ChatGPT Shopping |
 | [[ramp]] | 3 agentic products (AP, Accounting, Policy agents); 13x AI token spend; Agent Cards via Visa |
 | [[slash]] | MCP-native card issuance + spend controls; RSA-OAEP encryption; VGS tokenization; 5,000+ businesses |
@@ -182,6 +183,12 @@ Read this first when answering queries to find relevant pages.
 |------|---------|------|
 | [[imf-agentic-ai-payments]] | IMF Note 2026/004, Davidovic & Tourpe | report |
 | [[x402-whitepaper-technical]] | x402 Whitepaper, Coinbase (May 2025) | report |
+
+## Summaries — New Sources (May 27)
+| Page | Source | Type |
+|------|---------|------|
+| [[commerce-for-ai-brainfood]] | Simon Taylor, FintechBrainFood, 2026-05-24 | analysis |
+| [[introducing-universal-cart]] | Vidhya Srinivasan, Google Blog, 2026-05-19 | company-blog |
 
 ---
 
