@@ -60,7 +60,11 @@ Conventional wisdom assumed stablecoins would be primarily a cross-border paymen
 
 ## Current state
 
-- Circulating supply: ~**$300 billion** (grown 10x over 5 years) — *[[what-are-stablecoins-tempo-1]]*
+- Circulating supply: ~**$318 billion** as of April 29, 2026 (DeFiLlama) — *[[why-ai-agents-need-stablecoin-payments-eco]]*
+  - USDT: $189.5B (largest by market cap)
+  - USDC: $77.3B
+  - USDS: $7.8B
+  - PYUSD: $3.4B; RLUSD: $1.6B; USDe: $3.8B
 - US Treasury projects $3 trillion by 2030
 - Dominant assets: USDC (Circle/Coinbase, compliance-focused), USDT (Tether, largest by market cap)
 
@@ -105,3 +109,5 @@ Key entrants: [[tempo]] (Stripe's chain), [[circle-arc]] (Circle's chain). These
 - [[stablecoin-volume-record-2025]]
 - [[9-charts-stablecoins-a16z]]
 - [[the-new-stack-for-global-finance-stablecoins]]
+- [[why-ai-agents-need-stablecoin-payments-eco]]
+- [[b2b-payments-statistics-2026]]

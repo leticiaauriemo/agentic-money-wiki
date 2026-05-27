@@ -3,6 +3,20 @@
 Append-only activity record. Format: `## [YYYY-MM-DD] type | description`
 Types: `ingest` | `query` | `lint` | `init`
 
+## [2026-05-27] ingest | Batch ingest — 13 new summaries from space-prefixed raw folder
+
+Summary pages created: [[stablecoin-volume-record-2025]] (Bloomberg $33T record), [[visa-agentic-ready-global-expansion]] (85+ new partners APAC/LATAM), [[visa-token-strategy]] (17.5B tokens, 3x cards), [[eip-3009-overview]] (gasless USDC signing for x402), [[b2b-payments-statistics-2026]] ($150-180T market, baseline data), [[regulation-ii-debit-interchange]] (Fed cap: 21¢ + 5bp), [[2028-global-intelligence-crisis]] (Citrini scenario: agents route around interchange → stablecoins), [[when-innovation-fails-currentc]] (canonical case study for payment coalition failure), [[post-davidsenra-armstrong-wallets]] (Brian Armstrong: agents need stablecoin "corporate cards"), [[post-shafu0x-agentic-tools]] (60+ APIs via x402 no API keys), [[post-shoalresearch-micropayments]] (Shoal Signal Ep.6 with shafu0x).
+
+Entity updates: [[visa]] — stablecoin volume updated to $7B cumulative run-rate / 9 blockchains; 17.5B tokens; 85+ Agentic Ready partners.
+
+Key new facts:
+- x402 now at 165M txns / $50M cumulative / 69K active agents (Apr 2026, from Eco article)
+- Visa stablecoin settlement: $7B cumulative run-rate on 9 chains (expanded from 4)
+- B2B payments = $150-180T/year, 85% of global payment value — biggest opportunity for agents
+- EIP-3009 is the cryptographic substrate enabling gasless x402 payments; USDT doesn't implement it
+- CitriniResearch 2028 scenario explicitly names stablecoin routing around interchange as the financial risk for card networks
+- Brian Armstrong (Coinbase): "Traditional corporate cards can't be issued to non-human entities" — why stablecoin wallets for agents
+
 ## [2026-05-27] ingest | FintechBrainFood "Commerce is Being Reinvented for AI" + Google Universal Cart
 
 New pages: [[commerce-for-ai-brainfood]] (summary), [[introducing-universal-cart]] (summary), [[mercury]] (company).

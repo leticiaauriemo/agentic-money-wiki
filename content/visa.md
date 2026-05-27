@@ -37,10 +37,10 @@ Notable: Visa went from publicly skeptical of crypto for years to becoming a sta
 ## Funding & traction
 
 Public company. Key metrics from 2026:
-- $4.6B annualized stablecoin volume on Visa rails
-- Agentic commerce live in US + CEMEA
-- Stablecoin cards live in 50+ countries
-- USDC settlement live in the US
+- $4.6B annualized stablecoin volume on Visa rails (updated to **$7B cumulative run-rate** as of Apr 2026, expanded to 9 blockchains — per Eco/The Block)
+- **17.5 billion tokens in circulation** globally — more than 3x physical cards linked to network (as of Mar 2026)
+- Agentic Commerce live in US + CEMEA, now expanded to **85+ partners across Asia Pacific and Latin America** via Agentic Ready program (Apr 2026)
+- USDC settlement live in the US; stablecoin settlement expanded across 9 chains (Apr 2026)
 - MCP Server and Acceptance Agent Toolkit both in pilot
 
 ## Key people
@@ -73,3 +73,6 @@ No named individuals in sources.
 - [[visa-advances-agentic-commerce]]
 - [[visa-intelligent-commerce-for-agents]]
 - [[thread-fintechfrank]]
+- [[visa-agentic-ready-global-expansion]]
+- [[visa-token-strategy]]
+- [[why-ai-agents-need-stablecoin-payments-eco]]

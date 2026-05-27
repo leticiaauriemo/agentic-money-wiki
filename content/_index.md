@@ -189,7 +189,18 @@ Read this first when answering queries to find relevant pages.
 |------|---------|------|
 | [[commerce-for-ai-brainfood]] | Simon Taylor, FintechBrainFood, 2026-05-24 | analysis |
 | [[introducing-universal-cart]] | Vidhya Srinivasan, Google Blog, 2026-05-19 | company-blog |
+| [[stablecoin-volume-record-2025]] | Bloomberg / Suvashree Ghosh, 2026-01-08 | news |
+| [[visa-agentic-ready-global-expansion]] | Visa Press Release, 2026-04-29 | company-blog |
+| [[visa-token-strategy]] | Zacks / Yahoo Finance, 2026-03-16 | analysis |
+| [[eip-3009-overview]] | Extropy Academy / Laurence Kirk | analysis |
+| [[b2b-payments-statistics-2026]] | ClearlyPayments / Kalle Radage, 2026-01-15 | analysis |
+| [[regulation-ii-debit-interchange]] | Federal Reserve Board | report |
+| [[2028-global-intelligence-crisis]] | CitriniResearch / Citrini, 2026-02-22 | analysis |
+| [[when-innovation-fails-currentc]] | Enrique Dans, Medium, 2018-09-11 | analysis |
+| [[post-davidsenra-armstrong-wallets]] | @davidsenra on X, 2026-03-01 | social |
+| [[post-shafu0x-agentic-tools]] | @shafu0x on X, 2026-05-23 | social |
+| [[post-shoalresearch-micropayments]] | Shoal Signal Ep. 6, @Shoalresearch, 2026-05-14 | social |
 
 ---
 
-*Last updated: 2026-04-26 — 95+ pages total. Added 15 new source summaries + 5 entity pages: Natural, BVNK, NEAR, Peter Steinberger, x402-governance concept. Key additions: x402 governance crisis, PayPal full agent strategy (Store Sync + Agent Ready + ACP), Natural seed memo, ERC-8004 standard, a16z stablecoin usage data (Q1 2026 ~$4.5T; cross-border declining; C2B +128%), OpenClaw, NEAR Intents.*
+*Last updated: 2026-05-27 — 110+ pages total. Added 13 new summary pages from batch ingestion of space-prefixed raw folder. Key additions: Visa 17.5B tokens / $7B stablecoin run-rate / 85+ Agentic Ready partners; EIP-3009 gasless USDC signing substrate for x402; Citrini 2028 scenario (agents routing around interchange → stablecoin); B2B payments baseline ($150-180T, 85% of global value); stablecoin $33T record (Bloomberg); CurrentC as canonical failed-payment-coalition case study; Brian Armstrong on agents as digital employees with stablecoin corporate cards; shafu0x's 60+ API ecosystem via x402 without API keys.*
